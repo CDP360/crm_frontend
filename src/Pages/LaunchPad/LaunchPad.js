@@ -16,7 +16,8 @@ function Launchpad() {
         flexDirection: "column",
         alignItems: "center",
         backgroundColor:' #f2f7fa',
-        marginTop:'20px'
+        marginTop:'20px',
+        height:'100vh'
       }}
     >
       <div>

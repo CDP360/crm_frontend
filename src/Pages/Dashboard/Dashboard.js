@@ -9,13 +9,18 @@ import Sms from "../../assests/sms.png";
 function Dashboard() {
   return (
     <div
-      style={{ padding: "15px", overflow: "auto", backgroundColor: "#f0f5fc",paddingTop:'25px' }}
+      style={{
+        padding: "15px",
+        overflow: "auto",
+        backgroundColor: "#f0f5fc",
+        paddingTop: "25px",
+      }}
     >
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <div
           style={{
             width: "32.5%",
-            backgroundColor: "black",
+            backgroundColor: "white",
             paddingTop: "10px",
             paddingBottom: "10px",
             borderRadius: "3px",
@@ -23,10 +28,16 @@ function Dashboard() {
         >
           <div style={{ display: "flex", justifyContent: "space-around" }}>
             <p>Opportunities</p>
-            <p style={{ color: "blue",cursor:'pointer' }}>3 May, 2022 - 4 Nov, 2022</p>
+            <p style={{ color: "blue", cursor: "pointer" }}>
+              3 May, 2022 - 4 Nov, 2022
+            </p>
           </div>
           <hr style={{ border: "1px solid #f0f5fc" }} />
-          <div style={{ textAlign: "center", fontSize: "50px",fontWeight:200 }}>1</div>
+          <div
+            style={{ textAlign: "center", fontSize: "50px", fontWeight: 200 }}
+          >
+            1
+          </div>
           <div
             style={{
               display: "flex",
@@ -57,10 +68,16 @@ function Dashboard() {
         >
           <div style={{ display: "flex", justifyContent: "space-around" }}>
             <p>Pipeline Value</p>
-            <p style={{ color: "blue",cursor:'pointer' }}>3 May, 2022 - 4 Nov, 2022</p>
+            <p style={{ color: "blue", cursor: "pointer" }}>
+              3 May, 2022 - 4 Nov, 2022
+            </p>
           </div>
           <hr style={{ border: "1px solid #f0f5fc" }} />
-          <div style={{ textAlign: "center", fontSize: "50px",fontWeight:200 }}>A$0.00</div>
+          <div
+            style={{ textAlign: "center", fontSize: "50px", fontWeight: 200 }}
+          >
+            A$0.00
+          </div>
           <div
             style={{
               display: "flex",
@@ -91,10 +108,16 @@ function Dashboard() {
         >
           <div style={{ display: "flex", justifyContent: "space-around" }}>
             <p>Conversion Rate</p>
-            <p style={{ color: "blue",cursor:'pointer' }}>3 May, 2022 - 4 Nov, 2022</p>
+            <p style={{ color: "blue", cursor: "pointer" }}>
+              3 May, 2022 - 4 Nov, 2022
+            </p>
           </div>
           <hr style={{ border: "1px solid #f0f5fc" }} />
-          <div style={{ textAlign: "center", fontSize: "50px",fontWeight:200 }}>0.00%</div>
+          <div
+            style={{ textAlign: "center", fontSize: "50px", fontWeight: 200 }}
+          >
+            0.00%
+          </div>
         </div>
       </div>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
@@ -125,7 +148,9 @@ function Dashboard() {
               </select>
               {/* <img src={DownArrow} style={{ width: "20px" }} /> */}
             </div>
-            <div style={{ color: "blue",cursor:'pointer' }}>3 May, 2022 - 4 Nov, 2022</div>
+            <div style={{ color: "blue", cursor: "pointer" }}>
+              3 May, 2022 - 4 Nov, 2022
+            </div>
           </div>
           <hr style={{ border: "1px solid #f0f5fc" }} />
           <div>
@@ -232,7 +257,9 @@ function Dashboard() {
               <div>YOUR PROMOTION Pipeline (1)</div>
               <img src={DownArrow} style={{ width: "20px" }} />
             </div>
-            <div style={{ color: "blue",cursor:'pointer' }}>3 May, 2022 - 4 Nov, 2022</div>
+            <div style={{ color: "blue", cursor: "pointer" }}>
+              3 May, 2022 - 4 Nov, 2022
+            </div>
           </div>
           <hr style={{ border: "1px solid #f0f5fc" }} />
           <div>
@@ -465,7 +492,9 @@ function Dashboard() {
           }}
         >
           <p>Lead Source Report</p>
-          <p style={{ color: "blue",cursor:'pointer' }}>3 May, 2022 - 4 Nov, 2022</p>
+          <p style={{ color: "blue", cursor: "pointer" }}>
+            3 May, 2022 - 4 Nov, 2022
+          </p>
         </div>
         <hr style={{ border: "1px solid #f0f5fc" }} />
         <div style={{ display: "flex", justifyContent: "space-around" }}>
