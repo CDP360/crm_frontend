@@ -11,12 +11,12 @@ import Folder from "../../assests/folder.png";
 
 const Sites = () => {
   return (
-    <div style={{ width: "100%", background: "#dee2e6" }}>
+    <div style={{ width: "100%", background: "#f0f5fc" }}>
       <div
         style={{
           display: "flex",
           justifyContent: "space-between",
-          boxShadow: "5px 20px 18px #adb5bd",
+          boxShadow: "2px 1px #adb5bd",
           background: "white",
         }}
       >
@@ -96,6 +96,7 @@ const Sites = () => {
         <p>Media</p>
         <p>URL Redirection</p>
       </div>
+      <div style={{paddingLeft:'5%'}}>
       <div>
         <p>Funnels</p>
       </div>
@@ -105,6 +106,7 @@ const Sites = () => {
             height: "100%",
             display: "flex",
             justifyContent: "flex-end",
+            marginRight:'4.5%'
           }}
         >
           <button
@@ -191,7 +193,7 @@ const Sites = () => {
       </div>
       <div>
         <Container>
-          <Card style={{ marginTop: "2%", width: "95%", marginLeft: "2.5%" }}>
+          <Card style={{ marginTop: "2%", width: "95%",  }}>
             <div style={{ display: "flex" }}>
               <div style={{ display: "flex" }}>
                 <img
@@ -227,7 +229,7 @@ const Sites = () => {
                     height: "48%",
                     width: "9%",
                     marginTop: "2.5%",
-                    background: "green",
+                    background: "#84f084",
                     // marginRight: "10%",
                   }}
                 >
@@ -267,7 +269,7 @@ const Sites = () => {
       </div>
       <div>
         <Container>
-          <Card style={{ marginTop: "2%", width: "95%", marginLeft: "2.5%" }}>
+          <Card style={{ marginTop: "2%", width: "95%" }}>
             <div style={{ display: "flex" }}>
               <div style={{ display: "flex" }}>
                 <img
@@ -303,7 +305,7 @@ const Sites = () => {
                     height: "48%",
                     width: "9%",
                     marginTop: "2.5%",
-                    background: "green",
+                    background: "#84f084",
                     // marginRight: "10%",
                   }}
                 >
@@ -340,7 +342,7 @@ const Sites = () => {
       </div>
       <div>
         <Container>
-          <Card style={{ marginTop: "2%", width: "95%", marginLeft: "2.5%" }}>
+          <Card style={{ marginTop: "2%", width: "95%" }}>
             <div style={{ display: "flex" }}>
               <div style={{ display: "flex" }}>
                 <img
@@ -374,7 +376,7 @@ const Sites = () => {
                     height: "48%",
                     width: "9%",
                     marginTop: "2.5%",
-                    background: "green",
+                    background: "#84f084",
                     // marginRight: "10%",
                   }}
                 >
@@ -417,6 +419,7 @@ const Sites = () => {
               justifyContent: "space-between",
               marginTop: "3%",
               marginBottom: "3%",
+              marginRight:'4.5%'
             }}
           >
             <div style={{ display: "flex" }}>
@@ -441,6 +444,7 @@ const Sites = () => {
             </div>
           </div>
         </Container>
+      </div>
       </div>
     </div>
   );

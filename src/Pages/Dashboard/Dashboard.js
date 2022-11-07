@@ -137,7 +137,7 @@ function Dashboard() {
             }}
           >
             <div>Funnel</div>
-            <div style={{ display: "flex" }}>
+            <div style={{ display: "flex",cursor:'pointer' }}>
               <select style={{ borderColor: "white" }}>
                 <option
                   value="YOUR PROMOTION Pipeline (1)"
@@ -253,7 +253,7 @@ function Dashboard() {
             }}
           >
             <div>Stages Distribution</div>
-            <div style={{ display: "flex" }}>
+            <div style={{ display: "flex",cursor:'pointer' }}>
               <div>YOUR PROMOTION Pipeline (1)</div>
               <img src={DownArrow} style={{ width: "20px" }} />
             </div>
@@ -378,14 +378,14 @@ function Dashboard() {
             }}
           >
             <div>Manual Actions</div>
-            <div style={{ display: "flex" }}>
+            <div style={{ display: "flex",cursor:'pointer' }}>
               <div>Select Campaign / Workflow</div>
               <img
                 src={DownArrow}
                 style={{ width: "15px", marginLeft: "5px", marginTop: "5px" }}
               />
             </div>
-            <div style={{ display: "flex" }}>
+            <div style={{ display: "flex",cursor:'pointer' }}>
               <select style={{ borderColor: "white" }}>
                 <option value="Select Assignee">Select Assignee</option>
                 <option value="All">All</option>
@@ -460,7 +460,7 @@ function Dashboard() {
           </div>
           <div>
             <p
-              style={{ marginTop: "auto", textAlign: "end", marginRight: "5%" }}
+              style={{ marginTop: "auto", textAlign: "end", marginRight: "5%",cursor:'pointer' }}
             >
               Go to Manual Actions
             </p>
@@ -497,7 +497,7 @@ function Dashboard() {
           </p>
         </div>
         <hr style={{ border: "1px solid #f0f5fc" }} />
-        <div style={{ display: "flex", justifyContent: "space-around" }}>
+        <div style={{ display: "flex", justifyContent: "space-around",cursor:'pointer' }}>
           <p>Source</p>
           <p>Total Leads</p>
           <p>Total Values</p>

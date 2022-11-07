@@ -1,0 +1,25 @@
+.header-container {
+  position: sticky;
+  top: 0%;
+  height: 3%;
+}
+.header-card {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1%;
+  background-color: white;
+}
+.notification-img {
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  border-radius: 100%;
+  padding: 5px;
+  margin-right: 1%;
+}
+.name {
+  margin-top: 1px;
+  background-color: orange;
+  border-radius: 100%;
+  padding: 4px;
+}
