@@ -8,18 +8,12 @@ import Funnel from "../../assests/funnel.png";
 import Spanner from "../../assests/spanner.png";
 import PlayButton from "../../assests/play-button.png";
 import Folder from "../../assests/folder.png";
+import "./styles/sites.scss";
 
 const Sites = () => {
   return (
-    <div style={{ width: "100%", background: "#f0f5fc", marginTop: "4%" }}>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          boxShadow: "2px 1px #adb5bd",
-          background: "white",
-        }}
-      >
+    <div className="main-container">
+      <div className="sites-header">
         <p>Sites</p>
         <p>Funnels</p>
         <p>Websites</p>
@@ -28,7 +22,7 @@ const Sites = () => {
           <Dropdown.Toggle
             variant="light"
             id="dropdown-basic"
-            style={{ background: "white", border: "none", marginTop: "-4%" }}
+            className="sites-dropdown"
           >
             WordPress
           </Dropdown.Toggle>
@@ -41,7 +35,7 @@ const Sites = () => {
           <Dropdown.Toggle
             variant="light"
             id="dropdown-basic"
-            style={{ background: "white", border: "none", marginTop: "-4%" }}
+            className="sites-dropdown"
           >
             Membership
           </Dropdown.Toggle>
@@ -58,11 +52,7 @@ const Sites = () => {
           <Dropdown.Toggle
             variant="light"
             id="dropdown-basic"
-            style={{
-              background: "white",
-              border: "none",
-              marginTop: "-5.5%",
-            }}
+            className="sites-dropdown"
           >
             Forms
           </Dropdown.Toggle>
@@ -77,11 +67,7 @@ const Sites = () => {
           <Dropdown.Toggle
             variant="light"
             id="dropdown-basic"
-            style={{
-              background: "white",
-              border: "none",
-              marginTop: "-5.5%",
-            }}
+            className="sites-dropdown"
           >
             Surveys
           </Dropdown.Toggle>
@@ -96,329 +82,154 @@ const Sites = () => {
         <p>Media</p>
         <p>URL Redirection</p>
       </div>
-      <div style={{ paddingLeft: "5%" }}>
+      <div className="sites-body">
         <div>
           <p>Funnels</p>
         </div>
         <div>
-          <div
-            style={{
-              height: "100%",
-              display: "flex",
-              justifyContent: "flex-end",
-              marginRight: "4.5%",
-            }}
-          >
+          <div className="sites-body-option">
             <button
+              className="sites-body-option-searchbtn"
               type="type"
               placeholder="Search"
-              style={{
-                width: "27%",
-                // height: "38px",
-                background: "white",
-                borderRadius: "5px",
-                marginRight: "7px",
-                display: "flex",
-              }}
             >
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "flex-start",
-                  alignItems: "center",
-                  marginLeft: "2%",
-                }}
-              >
-                <img style={{ width: "7%" }} src={Search} alt="Search" />
-                <p style={{ color: "gray", marginLeft: "5%" }}>Search</p>
+              <div className="sites-body-inner-searchbtn">
+                <img
+                  className="sites-body-searchbtn-img"
+                  src={Search}
+                  alt="Search"
+                />
+                <p className="sites-body-searchbtn-p">Search</p>
               </div>
             </button>
 
             <button
+              className="sites-body-createfolderbtn"
               type="type"
               placeholder="Search"
-              style={{
-                width: "18%",
-                // height: "38px",
-                background: "white",
-                borderRadius: "5px",
-                marginRight: "7px",
-                padding: "0px",
-                borderColor: "blue",
-                display: "flex",
-              }}
             >
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-evenly",
-                  alignItems: "center",
-                }}
-              >
+              <div className="sites-body-inner-createfolderbtn">
                 <img
-                  style={{ width: "11%", height: "2%" }}
+                  className="sites-body-inner-createfolderbtn-img"
                   src={Folder}
                   alt="Folder"
                 />
-                <p style={{ color: "gray" }}>Create Folder</p>
+                <p className="sites-body-inner-createfolderbtn-p">
+                  Create Folder
+                </p>
               </div>
             </button>
 
             <button
+              className="sites-body-newfunnel"
               type="type"
               placeholder="Search"
-              style={{
-                width: "18%",
-                // height: "38px",
-                background: "green",
-                borderRadius: "5px",
-                marginRight: "7px",
-                border: "none",
-                display: "flex",
-                justifyContent: "space-around",
-              }}
             >
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-evenly",
-                  alignItems: "center",
-                }}
-              >
-                <img style={{ width: "8%" }} src={Plus} alt="Search" />
-                <p style={{ color: "white" }}>New Funnel</p>
+              <div className="sites-body-inner-newfunnel">
+                <img
+                  className="sites-body-inner-newfunnel-img"
+                  src={Plus}
+                  alt="Search"
+                />
+                <p className="sites-body-inner-newfunnel-p">New Funnel</p>
               </div>
             </button>
           </div>
         </div>
         <div>
           <Container>
-            <Card style={{ marginTop: "2%", width: "95%" }}>
-              <div style={{ display: "flex" }}>
-                <div style={{ display: "flex" }}>
+            <Card className="sites-body-card">
+              <div className="sites-body-main">
+                <div className="sites-body-sec">
                   <img
-                    style={{
-                      width: "5.5%",
-                      height: "45%",
-                      marginTop: "4%",
-                      marginLeft: "3%",
-                    }}
+                    className="sites-body-funnel-img"
                     src={Funnel}
                     alt="funnel"
                   />
-                  <p style={{ marginTop: "4%", marginLeft: "3%" }}>
-                    Sellers Guide
-                  </p>
-                  <button
-                    style={{
-                      marginLeft: "3%",
-                      color: "purple",
-                      marginTop: "3%",
-                      height: "62%",
-                      border: "none",
-                    }}
-                  >
-                    Version 2
-                  </button>
+                  <p className="sites-body-funnel-text">Sellers Guide</p>
+                  <button className="sites-body-versionbtn">Version 2</button>
                 </div>
-                <div style={{ display: "flex", justifyContent: "flex-end" }}>
-                  <button
-                    style={{
-                      border: "none",
-                      borderRadius: "45%",
-                      height: "48%",
-                      width: "9%",
-                      marginTop: "2.5%",
-                      background: "#84f084",
-                      // marginRight: "10%",
-                    }}
-                  >
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-around",
-                      }}
-                    >
+                <div className="sites-body-third">
+                  <button className="sites-body-card-testbtn">
+                    <div className="sites-body-card-inner-testbtn">
                       <img
-                        style={{ width: "28%", height: "3%", marginTop: "10%" }}
+                        className="sites-body-card-spanner-img"
                         src={Spanner}
                         alt="Spanner"
                       />
-                      <p style={{ marginTop: "9%" }}>Test</p>
+                      <p className="sites-body-card-test-p">Test</p>
                     </div>
                   </button>
-                  <p style={{ marginTop: "2.5%", marginLeft: "3%" }}>
-                    4 months ago
-                  </p>
-                  <p style={{ marginTop: "2.5%", marginLeft: "3%" }}>2 Steps</p>
+                  <p className="sites-body-card-paratag">4 months ago</p>
+                  <p className="sites-body-card-paratag">2 Steps</p>
                   <img
-                    style={{
-                      width: "2.5%",
-                      height: "22%",
-                      marginTop: "3.5%",
-                      marginLeft: "3%",
-                      marginRight: "3%",
-                    }}
+                    className="sites-body-card-plus-img"
                     src={Plus}
                     alt="Plus"
                   />
                 </div>
               </div>
             </Card>
-          </Container>
-        </div>
-        <div>
-          <Container>
-            <Card style={{ marginTop: "2%", width: "95%" }}>
-              <div style={{ display: "flex" }}>
-                <div style={{ display: "flex" }}>
+
+            <Card className="sites-body-card">
+              <div className="sites-body-main">
+                <div className="sites-body-sec">
                   <img
-                    style={{
-                      width: "5.5%",
-                      height: "45%",
-                      marginTop: "4%",
-                      marginLeft: "3%",
-                    }}
+                    className="sites-body-funnel-img"
                     src={Funnel}
                     alt="funnel"
                   />
-                  <p style={{ marginTop: "4%", marginLeft: "3%" }}>
-                    Buyer List Funnel
-                  </p>
-                  <button
-                    style={{
-                      marginLeft: "3%",
-                      color: "purple",
-                      marginTop: "3%",
-                      height: "62%",
-                      border: "none",
-                    }}
-                  >
-                    Version 2
-                  </button>
+                  <p className="sites-body-funnel-text">Buyer List Funnel</p>
+                  <button className="sites-body-versionbtn">Version 2</button>
                 </div>
-                <div style={{ display: "flex", justifyContent: "flex-end" }}>
-                  <button
-                    style={{
-                      border: "none",
-                      borderRadius: "45%",
-                      height: "48%",
-                      width: "9%",
-                      marginTop: "2.5%",
-                      background: "#84f084",
-                      // marginRight: "10%",
-                    }}
-                  >
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-around",
-                      }}
-                    >
+                <div className="sites-body-third">
+                  <button className="sites-body-card-testbtn">
+                    <div className="sites-body-card-inner-testbtn">
                       <img
-                        style={{
-                          width: "25%",
-                          height: "46%",
-                          marginTop: "13%",
-                        }}
+                        className="sites-body-card-live-img"
                         src={PlayButton}
                         alt="PlayButton"
                       />
-                      <p style={{ marginTop: "9%" }}>Live</p>
+                      <p className="sites-body-card-test-p">Live</p>
                     </div>
                   </button>
-                  <p style={{ marginTop: "2.5%", marginLeft: "3%" }}>
-                    4 months ago
-                  </p>
-                  <p style={{ marginTop: "2.5%", marginLeft: "3%" }}>1 Step</p>
+                  <p className="sites-body-card-paratag">4 months ago</p>
+                  <p className="sites-body-card-paratag">1 Step</p>
                   <img
-                    style={{
-                      width: "2.5%",
-                      height: "22%",
-                      marginTop: "3.5%",
-                      marginLeft: "3%",
-                      marginRight: "3%",
-                    }}
+                    className="sites-body-card-plus-img"
                     src={Plus}
                     alt="Plus"
                   />
                 </div>
               </div>
             </Card>
-          </Container>
-        </div>
-        <div>
-          <Container>
-            <Card style={{ marginTop: "2%", width: "95%" }}>
-              <div style={{ display: "flex" }}>
-                <div style={{ display: "flex" }}>
+
+            <Card className="sites-body-card">
+              <div className="sites-body-main">
+                <div className="sites-body-sec">
                   <img
-                    style={{
-                      width: "5.5%",
-                      height: "45%",
-                      marginTop: "4%",
-                      marginLeft: "3%",
-                    }}
+                    className="sites-body-funnel-img"
                     src={Funnel}
                     alt="funnel"
                   />
-                  <p style={{ marginTop: "4%", marginLeft: "3%" }}>
-                    Home Buyer
-                  </p>
-                  <button
-                    style={{
-                      marginLeft: "3%",
-                      color: "purple",
-                      marginTop: "3%",
-                      height: "62%",
-                      border: "none",
-                    }}
-                  >
-                    Version 2
-                  </button>
+                  <p className="sites-body-funnel-text">Home Buyer</p>
+                  <button className="sites-body-versionbtn">Version 2</button>
                 </div>
-                <div style={{ display: "flex", justifyContent: "flex-end" }}>
-                  <button
-                    style={{
-                      border: "none",
-                      borderRadius: "45%",
-                      height: "48%",
-                      width: "9%",
-                      marginTop: "2.5%",
-                      background: "#84f084",
-                      // marginRight: "10%",
-                    }}
-                  >
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-around",
-                      }}
-                    >
+                <div className="sites-body-third">
+                  <button className="sites-body-card-testbtn">
+                    <div className="sites-body-card-inner-testbtn">
                       <img
-                        style={{
-                          width: "25%",
-                          height: "46%",
-                          marginTop: "13%",
-                        }}
+                        className="sites-body-card-live-img"
                         src={PlayButton}
                         alt="PlayButton"
                       />
-                      <p style={{ marginTop: "9%" }}>Live</p>
+                      <p className="sites-body-card-test-p">Live</p>
                     </div>
                   </button>
-                  <p style={{ marginTop: "2.5%", marginLeft: "3%" }}>
-                    4 months ago
-                  </p>
-                  <p style={{ marginTop: "2.5%", marginLeft: "3%" }}>1 Step</p>
+                  <p className="sites-body-card-paratag">4 months ago</p>
+                  <p className="sites-body-card-paratag">1 Step</p>
                   <img
-                    style={{
-                      width: "2.5%",
-                      height: "22%",
-                      marginTop: "3.5%",
-                      marginLeft: "3%",
-                      marginRight: "3%",
-                    }}
+                    className="sites-body-card-plus-img"
                     src={Plus}
                     alt="Plus"
                   />
@@ -429,34 +240,15 @@ const Sites = () => {
         </div>
         <div>
           <Container>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                marginTop: "3%",
-                marginBottom: "3%",
-                marginRight: "4.5%",
-              }}
-            >
-              <div style={{ display: "flex" }}>
-                <p>Showing 1 to 3 of 3 items</p>
-              </div>
-              <div style={{ display: "flex" }}>
-                <button
-                  style={{ marginRight: "8%", border: "none", height: "72%" }}
-                >
+            <div className="sites-card-page">
+              <p className="sites-card-pageshowing">
+                Showing 1 to 3 of 3 items
+              </p>
+              <div className="sites-card-page-btn">
+                <button className="sites-card-page-previous-btn">
                   Previous
                 </button>
-                <button
-                  style={{
-                    marginRight: "4%",
-                    border: "none",
-                    marginLeft: "-4%",
-                    height: "72%",
-                  }}
-                >
-                  Next
-                </button>
+                <button className="sites-card-page-next-btn">Next</button>
               </div>
             </div>
           </Container>
