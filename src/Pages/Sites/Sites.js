@@ -13,8 +13,9 @@ import "./styles/sites.scss";
 const Sites = () => {
   return (
     <div className="main-container">
+      <div className="sites-header-container">
       <div className="sites-header">
-        <p>Sites</p>
+        <p className="sites-heading">Sites</p>
         <p>Funnels</p>
         <p>Websites</p>
         <p>Blog</p>
@@ -81,6 +82,7 @@ const Sites = () => {
         <p>Chat Widget</p>
         <p>Media</p>
         <p>URL Redirection</p>
+      </div>
       </div>
       <div className="sites-body">
         <div>

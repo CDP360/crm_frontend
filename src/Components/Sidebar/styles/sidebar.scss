@@ -1,1 +1,140 @@
 @import "./variables";
+
+.sidebar-container{
+    width: 16%;
+    padding-left: 10px;
+    height: 100vh;
+    position:sticky;
+    top: 0%;
+    .logo{
+        display: block;
+        width: 50%;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .account-container{
+        border-radius: 15px;
+        border: none;
+        background-color:#f0f1f2 ;
+        width: 100%;
+        height: 30px;
+        margin-top: 7%;
+        display: flex;
+        justify-content: space-around;
+        .account-name{
+            /* margin-top: 5px; */
+        }
+        .arrow-container{
+            display: flex;
+            flex-direction: column;
+            margin-top: 4px;
+            .arrow-img{
+                width:10px;
+                height: 10px;
+            }
+        }
+    }
+    .search-container{
+        margin-top: 10%;
+        height: 40px;
+        display: flex;
+        padding: 5px;
+        .search-button{
+            display: flex;
+            width: 80%;
+            background-color: #f0f1f2;
+            border-radius: 7px;
+            border: none;
+            cursor: pointer;
+            .search-img{
+                width: 15px;
+                height: 15px;
+                margin-top: 5px;
+            }
+            .search-name{
+                margin-left: 8%;
+            }
+            .control-button{
+                margin-left: 15%;
+                margin-top: 4px;
+                height: 20px;
+                font-size: 10px;
+                background-color: gray;
+                border: none;
+                border-radius: 5px;
+            }
+        }
+        .thunder-button{
+            height: 30px;
+            border-color:#f0f1f2 ;
+            border-radius:5px ;
+            border: none;
+            cursor: pointer;
+            margin-left: 5%;
+            .thunder-img{
+                width: 20px; 
+                margin-top: 5px
+            }
+        }
+    }
+    .sidebar-contant{
+        margin-top: 5%;
+        padding: 10px;
+        height: 67%;
+        overflow: auto;
+        cursor: pointer;
+        .sidebar-option{
+            display: flex;
+            margin-top: 5px;
+            .sidebar-img{
+                width: 20px;
+                height: 20px;
+            }
+            .sidebar-name{
+                margin-top: auto;
+                margin-left: 10px;
+                font-size: 14px;
+            }
+        }
+    }
+    .sidebar-setting{
+        display: flex;
+        margin-top: 20px;
+        padding: 2%;
+        .sidebar-img{
+            width: 20px;
+            height: 20px;
+        }
+        .sidebar-name{
+            margin-top: auto;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+    }
+    .setting-container{
+        position: sticky;
+        top:0px;
+        background-color:$light ;
+        margin-top: 3%;
+        .goback-btn{
+            border-radius: 16px;
+            border: none;
+            background-color: $grey;
+            width: 40%;
+            height: 30px;
+            margin-top: 7%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    .settings-content{
+        overflow: auto;
+        cursor: pointer;
+        height: 66vh;
+        .settings-name{
+            font-size: 10px;
+            margin-top: 5%;
+        }
+    }
+}

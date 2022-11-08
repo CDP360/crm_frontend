@@ -13,7 +13,7 @@ function Dashboard() {
         padding: "15px",
         overflow: "auto",
         backgroundColor: "#f0f5fc",
-        paddingTop: "25px",
+        paddingTop: "15px",
       }}
     >
       <div style={{ display: "flex", justifyContent: "space-between" }}>
