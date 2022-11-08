@@ -1,1 +1,96 @@
 @import "./variables";
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 55%;
+  background-color: $primary;
+  border-radius: 5px;
+}
+.container1 {
+  display: flex;
+  padding: 12px;
+  justify-content: space-between;
+}
+.buttonone {
+  background-color: $lightgreen;
+  width: 15%;
+  height: 39px;
+  border-radius: 7px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+  margin-top: 20px;
+  height: 100vh;
+}
+
+.container-model-one {
+  font-size: x-large;
+  font-weight: 500;
+}
+.android {
+  width: 11%;
+  margin-left: 2%;
+}
+
+.para-one {
+  font-size: small;
+  font-weight: 300;
+}
+
+.home {
+  width: 9%;
+  margin-left: 2%;
+}
+.para-two {
+  font-size: small;
+  width: 50%;
+  font-weight: 300;
+}
+
+.facebook {
+  width: 8%;
+  margin-left: 2%;
+}
+
+.para-three {
+  font-size: small;
+  width: 50%;
+  font-weight: 300;
+}
+
+.comment {
+  width: 8%;
+  margin-left: 2%;
+}
+.para-four {
+  font-size: small;
+  width: 50%;
+  font-weight: 300;
+}
+
+.stripe {
+  width: 8%;
+  margin-left: 2%;
+}
+
+.para-five {
+  font-size: small;
+  width: 50%;
+  font-weight: 300;
+}
+
+.word {
+  width: 8%;
+  margin-left: 2%;
+}
+
+.para-six {
+  font-size: "small";
+  width: 50%;
+  font-weight: 300;
+}
