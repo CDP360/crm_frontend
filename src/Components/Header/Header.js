@@ -1,6 +1,6 @@
 import React from "react";
-import "./Header.css";
 import Notification from "../../assests/notification.png";
+import "./styles/header.scss";
 
 function Header() {
   return (

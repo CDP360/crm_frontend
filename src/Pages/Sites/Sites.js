@@ -11,7 +11,7 @@ import Folder from "../../assests/folder.png";
 
 const Sites = () => {
   return (
-    <div style={{ width: "100%", background: "#f0f5fc" }}>
+    <div style={{ width: "100%", background: "#f0f5fc", marginTop: "4%" }}>
       <div
         style={{
           display: "flex",
@@ -96,355 +96,371 @@ const Sites = () => {
         <p>Media</p>
         <p>URL Redirection</p>
       </div>
-      <div style={{paddingLeft:'5%'}}>
-      <div>
-        <p>Funnels</p>
-      </div>
-      <div>
-        <div
-          style={{
-            height: "100%",
-            display: "flex",
-            justifyContent: "flex-end",
-            marginRight:'4.5%'
-          }}
-        >
-          <button
-            type="type"
-            placeholder="Search"
-            style={{
-              width: "27%",
-              // height: "38px",
-              background: "white",
-              borderRadius: "5px",
-              marginRight: "7px",
-              display: "flex",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "flex-start",
-                alignItems: "center",
-                marginLeft: "2%",
-              }}
-            >
-              <img style={{ width: "7%" }} src={Search} alt="Search" />
-              <p style={{ color: "gray", marginLeft: "5%" }}>Search</p>
-            </div>
-          </button>
-
-          <button
-            type="type"
-            placeholder="Search"
-            style={{
-              width: "18%",
-              // height: "38px",
-              background: "white",
-              borderRadius: "5px",
-              marginRight: "7px",
-              padding: "0px",
-              borderColor: "blue",
-              display: "flex",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-evenly",
-                alignItems: "center",
-              }}
-            >
-              <img
-                style={{ width: "11%", height: "2%" }}
-                src={Folder}
-                alt="Folder"
-              />
-              <p style={{ color: "gray" }}>Create Folder</p>
-            </div>
-          </button>
-
-          <button
-            type="type"
-            placeholder="Search"
-            style={{
-              width: "18%",
-              // height: "38px",
-              background: "green",
-              borderRadius: "5px",
-              marginRight: "7px",
-              border: "none",
-              display: "flex",
-              justifyContent: "space-around",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-evenly",
-                alignItems: "center",
-              }}
-            >
-              <img style={{ width: "8%" }} src={Plus} alt="Search" />
-              <p style={{ color: "white" }}>New Funnel</p>
-            </div>
-          </button>
+      <div style={{ paddingLeft: "5%" }}>
+        <div>
+          <p>Funnels</p>
         </div>
-      </div>
-      <div>
-        <Container>
-          <Card style={{ marginTop: "2%", width: "95%",  }}>
-            <div style={{ display: "flex" }}>
-              <div style={{ display: "flex" }}>
-                <img
-                  style={{
-                    width: "5.5%",
-                    height: "45%",
-                    marginTop: "4%",
-                    marginLeft: "3%",
-                  }}
-                  src={Funnel}
-                  alt="funnel"
-                />
-                <p style={{ marginTop: "4%", marginLeft: "3%" }}>
-                  Sellers Guide
-                </p>
-                <button
-                  style={{
-                    marginLeft: "3%",
-                    color: "purple",
-                    marginTop: "3%",
-                    height: "62%",
-                    border: "none",
-                  }}
-                >
-                  Version 2
-                </button>
-              </div>
-              <div style={{ display: "flex", justifyContent: "flex-end" }}>
-                <button
-                  style={{
-                    border: "none",
-                    borderRadius: "45%",
-                    height: "48%",
-                    width: "9%",
-                    marginTop: "2.5%",
-                    background: "#84f084",
-                    // marginRight: "10%",
-                  }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-around",
-                    }}
-                  >
-                    <img
-                      style={{ width: "28%", height: "3%", marginTop: "10%" }}
-                      src={Spanner}
-                      alt="Spanner"
-                    />
-                    <p style={{ marginTop: "9%" }}>Test</p>
-                  </div>
-                </button>
-                <p style={{ marginTop: "2.5%", marginLeft: "3%" }}>
-                  4 months ago
-                </p>
-                <p style={{ marginTop: "2.5%", marginLeft: "3%" }}>2 Steps</p>
-                <img
-                  style={{
-                    width: "2.5%",
-                    height: "22%",
-                    marginTop: "3.5%",
-                    marginLeft: "3%",
-                    marginRight: "3%",
-                  }}
-                  src={Plus}
-                  alt="Plus"
-                />
-              </div>
-            </div>
-          </Card>
-        </Container>
-      </div>
-      <div>
-        <Container>
-          <Card style={{ marginTop: "2%", width: "95%" }}>
-            <div style={{ display: "flex" }}>
-              <div style={{ display: "flex" }}>
-                <img
-                  style={{
-                    width: "5.5%",
-                    height: "45%",
-                    marginTop: "4%",
-                    marginLeft: "3%",
-                  }}
-                  src={Funnel}
-                  alt="funnel"
-                />
-                <p style={{ marginTop: "4%", marginLeft: "3%" }}>
-                  Buyer List Funnel
-                </p>
-                <button
-                  style={{
-                    marginLeft: "3%",
-                    color: "purple",
-                    marginTop: "3%",
-                    height: "62%",
-                    border: "none",
-                  }}
-                >
-                  Version 2
-                </button>
-              </div>
-              <div style={{ display: "flex", justifyContent: "flex-end" }}>
-                <button
-                  style={{
-                    border: "none",
-                    borderRadius: "45%",
-                    height: "48%",
-                    width: "9%",
-                    marginTop: "2.5%",
-                    background: "#84f084",
-                    // marginRight: "10%",
-                  }}
-                >
-                  <div
-                    style={{ display: "flex", justifyContent: "space-around" }}
-                  >
-                    <img
-                      style={{ width: "25%", height: "46%", marginTop: "13%" }}
-                      src={PlayButton}
-                      alt="PlayButton"
-                    />
-                    <p style={{ marginTop: "9%" }}>Live</p>
-                  </div>
-                </button>
-                <p style={{ marginTop: "2.5%", marginLeft: "3%" }}>
-                  4 months ago
-                </p>
-                <p style={{ marginTop: "2.5%", marginLeft: "3%" }}>1 Step</p>
-                <img
-                  style={{
-                    width: "2.5%",
-                    height: "22%",
-                    marginTop: "3.5%",
-                    marginLeft: "3%",
-                    marginRight: "3%",
-                  }}
-                  src={Plus}
-                  alt="Plus"
-                />
-              </div>
-            </div>
-          </Card>
-        </Container>
-      </div>
-      <div>
-        <Container>
-          <Card style={{ marginTop: "2%", width: "95%" }}>
-            <div style={{ display: "flex" }}>
-              <div style={{ display: "flex" }}>
-                <img
-                  style={{
-                    width: "5.5%",
-                    height: "45%",
-                    marginTop: "4%",
-                    marginLeft: "3%",
-                  }}
-                  src={Funnel}
-                  alt="funnel"
-                />
-                <p style={{ marginTop: "4%", marginLeft: "3%" }}>Home Buyer</p>
-                <button
-                  style={{
-                    marginLeft: "3%",
-                    color: "purple",
-                    marginTop: "3%",
-                    height: "62%",
-                    border: "none",
-                  }}
-                >
-                  Version 2
-                </button>
-              </div>
-              <div style={{ display: "flex", justifyContent: "flex-end" }}>
-                <button
-                  style={{
-                    border: "none",
-                    borderRadius: "45%",
-                    height: "48%",
-                    width: "9%",
-                    marginTop: "2.5%",
-                    background: "#84f084",
-                    // marginRight: "10%",
-                  }}
-                >
-                  <div
-                    style={{ display: "flex", justifyContent: "space-around" }}
-                  >
-                    <img
-                      style={{ width: "25%", height: "46%", marginTop: "13%" }}
-                      src={PlayButton}
-                      alt="PlayButton"
-                    />
-                    <p style={{ marginTop: "9%" }}>Live</p>
-                  </div>
-                </button>
-                <p style={{ marginTop: "2.5%", marginLeft: "3%" }}>
-                  4 months ago
-                </p>
-                <p style={{ marginTop: "2.5%", marginLeft: "3%" }}>1 Step</p>
-                <img
-                  style={{
-                    width: "2.5%",
-                    height: "22%",
-                    marginTop: "3.5%",
-                    marginLeft: "3%",
-                    marginRight: "3%",
-                  }}
-                  src={Plus}
-                  alt="Plus"
-                />
-              </div>
-            </div>
-          </Card>
-        </Container>
-      </div>
-      <div>
-        <Container>
+        <div>
           <div
             style={{
+              height: "100%",
               display: "flex",
-              justifyContent: "space-between",
-              marginTop: "3%",
-              marginBottom: "3%",
-              marginRight:'4.5%'
+              justifyContent: "flex-end",
+              marginRight: "4.5%",
             }}
           >
-            <div style={{ display: "flex" }}>
-              <p>Showing 1 to 3 of 3 items</p>
-            </div>
-            <div style={{ display: "flex" }}>
-              <button
-                style={{ marginRight: "8%", border: "none", height: "72%" }}
-              >
-                Previous
-              </button>
-              <button
+            <button
+              type="type"
+              placeholder="Search"
+              style={{
+                width: "27%",
+                // height: "38px",
+                background: "white",
+                borderRadius: "5px",
+                marginRight: "7px",
+                display: "flex",
+              }}
+            >
+              <div
                 style={{
-                  marginRight: "4%",
-                  border: "none",
-                  marginLeft: "-4%",
-                  height: "72%",
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  alignItems: "center",
+                  marginLeft: "2%",
                 }}
               >
-                Next
-              </button>
-            </div>
+                <img style={{ width: "7%" }} src={Search} alt="Search" />
+                <p style={{ color: "gray", marginLeft: "5%" }}>Search</p>
+              </div>
+            </button>
+
+            <button
+              type="type"
+              placeholder="Search"
+              style={{
+                width: "18%",
+                // height: "38px",
+                background: "white",
+                borderRadius: "5px",
+                marginRight: "7px",
+                padding: "0px",
+                borderColor: "blue",
+                display: "flex",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-evenly",
+                  alignItems: "center",
+                }}
+              >
+                <img
+                  style={{ width: "11%", height: "2%" }}
+                  src={Folder}
+                  alt="Folder"
+                />
+                <p style={{ color: "gray" }}>Create Folder</p>
+              </div>
+            </button>
+
+            <button
+              type="type"
+              placeholder="Search"
+              style={{
+                width: "18%",
+                // height: "38px",
+                background: "green",
+                borderRadius: "5px",
+                marginRight: "7px",
+                border: "none",
+                display: "flex",
+                justifyContent: "space-around",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-evenly",
+                  alignItems: "center",
+                }}
+              >
+                <img style={{ width: "8%" }} src={Plus} alt="Search" />
+                <p style={{ color: "white" }}>New Funnel</p>
+              </div>
+            </button>
           </div>
-        </Container>
-      </div>
+        </div>
+        <div>
+          <Container>
+            <Card style={{ marginTop: "2%", width: "95%" }}>
+              <div style={{ display: "flex" }}>
+                <div style={{ display: "flex" }}>
+                  <img
+                    style={{
+                      width: "5.5%",
+                      height: "45%",
+                      marginTop: "4%",
+                      marginLeft: "3%",
+                    }}
+                    src={Funnel}
+                    alt="funnel"
+                  />
+                  <p style={{ marginTop: "4%", marginLeft: "3%" }}>
+                    Sellers Guide
+                  </p>
+                  <button
+                    style={{
+                      marginLeft: "3%",
+                      color: "purple",
+                      marginTop: "3%",
+                      height: "62%",
+                      border: "none",
+                    }}
+                  >
+                    Version 2
+                  </button>
+                </div>
+                <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                  <button
+                    style={{
+                      border: "none",
+                      borderRadius: "45%",
+                      height: "48%",
+                      width: "9%",
+                      marginTop: "2.5%",
+                      background: "#84f084",
+                      // marginRight: "10%",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-around",
+                      }}
+                    >
+                      <img
+                        style={{ width: "28%", height: "3%", marginTop: "10%" }}
+                        src={Spanner}
+                        alt="Spanner"
+                      />
+                      <p style={{ marginTop: "9%" }}>Test</p>
+                    </div>
+                  </button>
+                  <p style={{ marginTop: "2.5%", marginLeft: "3%" }}>
+                    4 months ago
+                  </p>
+                  <p style={{ marginTop: "2.5%", marginLeft: "3%" }}>2 Steps</p>
+                  <img
+                    style={{
+                      width: "2.5%",
+                      height: "22%",
+                      marginTop: "3.5%",
+                      marginLeft: "3%",
+                      marginRight: "3%",
+                    }}
+                    src={Plus}
+                    alt="Plus"
+                  />
+                </div>
+              </div>
+            </Card>
+          </Container>
+        </div>
+        <div>
+          <Container>
+            <Card style={{ marginTop: "2%", width: "95%" }}>
+              <div style={{ display: "flex" }}>
+                <div style={{ display: "flex" }}>
+                  <img
+                    style={{
+                      width: "5.5%",
+                      height: "45%",
+                      marginTop: "4%",
+                      marginLeft: "3%",
+                    }}
+                    src={Funnel}
+                    alt="funnel"
+                  />
+                  <p style={{ marginTop: "4%", marginLeft: "3%" }}>
+                    Buyer List Funnel
+                  </p>
+                  <button
+                    style={{
+                      marginLeft: "3%",
+                      color: "purple",
+                      marginTop: "3%",
+                      height: "62%",
+                      border: "none",
+                    }}
+                  >
+                    Version 2
+                  </button>
+                </div>
+                <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                  <button
+                    style={{
+                      border: "none",
+                      borderRadius: "45%",
+                      height: "48%",
+                      width: "9%",
+                      marginTop: "2.5%",
+                      background: "#84f084",
+                      // marginRight: "10%",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-around",
+                      }}
+                    >
+                      <img
+                        style={{
+                          width: "25%",
+                          height: "46%",
+                          marginTop: "13%",
+                        }}
+                        src={PlayButton}
+                        alt="PlayButton"
+                      />
+                      <p style={{ marginTop: "9%" }}>Live</p>
+                    </div>
+                  </button>
+                  <p style={{ marginTop: "2.5%", marginLeft: "3%" }}>
+                    4 months ago
+                  </p>
+                  <p style={{ marginTop: "2.5%", marginLeft: "3%" }}>1 Step</p>
+                  <img
+                    style={{
+                      width: "2.5%",
+                      height: "22%",
+                      marginTop: "3.5%",
+                      marginLeft: "3%",
+                      marginRight: "3%",
+                    }}
+                    src={Plus}
+                    alt="Plus"
+                  />
+                </div>
+              </div>
+            </Card>
+          </Container>
+        </div>
+        <div>
+          <Container>
+            <Card style={{ marginTop: "2%", width: "95%" }}>
+              <div style={{ display: "flex" }}>
+                <div style={{ display: "flex" }}>
+                  <img
+                    style={{
+                      width: "5.5%",
+                      height: "45%",
+                      marginTop: "4%",
+                      marginLeft: "3%",
+                    }}
+                    src={Funnel}
+                    alt="funnel"
+                  />
+                  <p style={{ marginTop: "4%", marginLeft: "3%" }}>
+                    Home Buyer
+                  </p>
+                  <button
+                    style={{
+                      marginLeft: "3%",
+                      color: "purple",
+                      marginTop: "3%",
+                      height: "62%",
+                      border: "none",
+                    }}
+                  >
+                    Version 2
+                  </button>
+                </div>
+                <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                  <button
+                    style={{
+                      border: "none",
+                      borderRadius: "45%",
+                      height: "48%",
+                      width: "9%",
+                      marginTop: "2.5%",
+                      background: "#84f084",
+                      // marginRight: "10%",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-around",
+                      }}
+                    >
+                      <img
+                        style={{
+                          width: "25%",
+                          height: "46%",
+                          marginTop: "13%",
+                        }}
+                        src={PlayButton}
+                        alt="PlayButton"
+                      />
+                      <p style={{ marginTop: "9%" }}>Live</p>
+                    </div>
+                  </button>
+                  <p style={{ marginTop: "2.5%", marginLeft: "3%" }}>
+                    4 months ago
+                  </p>
+                  <p style={{ marginTop: "2.5%", marginLeft: "3%" }}>1 Step</p>
+                  <img
+                    style={{
+                      width: "2.5%",
+                      height: "22%",
+                      marginTop: "3.5%",
+                      marginLeft: "3%",
+                      marginRight: "3%",
+                    }}
+                    src={Plus}
+                    alt="Plus"
+                  />
+                </div>
+              </div>
+            </Card>
+          </Container>
+        </div>
+        <div>
+          <Container>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginTop: "3%",
+                marginBottom: "3%",
+                marginRight: "4.5%",
+              }}
+            >
+              <div style={{ display: "flex" }}>
+                <p>Showing 1 to 3 of 3 items</p>
+              </div>
+              <div style={{ display: "flex" }}>
+                <button
+                  style={{ marginRight: "8%", border: "none", height: "72%" }}
+                >
+                  Previous
+                </button>
+                <button
+                  style={{
+                    marginRight: "4%",
+                    border: "none",
+                    marginLeft: "-4%",
+                    height: "72%",
+                  }}
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+          </Container>
+        </div>
       </div>
     </div>
   );
