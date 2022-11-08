@@ -1,20 +1,21 @@
 import React from "react";
-import "./BusinessInfo.css";
+import "./styles/businessinfo.scss";
 
 import Button from "@mui/material/Button";
 
 function BusinessInfo() {
   return (
     <div
-      style={{
-        background: "#d5ecf23d",
-        height: "100%",
-        paddingLeft: "20px",
-        paddingRight: "20px",
-        paddingTop: "45px",
-      }}
+      className="main1"
+      // style={{
+      //   background: "#d5ecf23d",
+      //   height: "100%",
+      //   paddingLeft: "20px",
+      //   paddingRight: "20px",
+      //   paddingTop: "45px",
+      // }}
     >
-      <div style={{ display: "flex", justifyContent: "space-around" }}>
+      <div className="container-one">
         <div style={{ width: "48%" }}>
           <div
             className="card"
@@ -23,7 +24,7 @@ function BusinessInfo() {
             }}
           >
             <div
-              classNameName="card-header-cont"
+              // classNameName="card-header-cont"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -39,18 +40,15 @@ function BusinessInfo() {
               </div>
             </div>
             <div
-              style={{ height: "200px", padding: "20px 30px", height: "665px" }}
+              className="main-one"
+              // style={{ height: "200px", padding: "20px 30px", height: "665px" }}
             >
               <div style={{ display: "flex" }}>
                 <div className="box">+</div>
                 <div style={{ marginLeft: "5%" }}>
                   <p>Company Logo</p>
-                  <p style={{ color: "grey", fontSize: "small" }}>
-                    The proposed size is 350px * 180px
-                  </p>
-                  <p style={{ color: "grey", fontSize: "small" }}>
-                    no bigger than 2.5mb
-                  </p>
+                  <p className="para-one">The proposed size is 350px * 180px</p>
+                  <p className="para-two">no bigger than 2.5mb</p>
                   <button className="button">Change</button>
                   <button className="button" style={{ marginLeft: "5%" }}>
                     Remove
@@ -59,39 +57,34 @@ function BusinessInfo() {
               </div>
               <div>
                 <p>Company Name</p>
-                <input
-                  placeholder="OL"
-                  className="input"
-                  style={{
-                    width: "92%",
-                    height: "29px",
-                    border: "0px solid grey",
-                  }}
-                />
+                <input placeholder="OL" className="input-shadow" />
               </div>
               <div>
                 <p>Company Email</p>
                 <input
                   placeholder="company email"
-                  style={{
-                    width: "92%",
-                    height: "29px",
-                    border: "1px solid grey",
-                  }}
+                  className="input-box"
+                  // style={{
+                  //   width: "92%",
+                  //   height: "29px",
+                  //   border: "1px solid grey",
+                  // }}
                 />
               </div>
               <div>
                 <p>Company Phone</p>
                 <input
                   placeholder="78966678686"
-                  style={{ width: "92%", height: "29px" }}
+                  className="input-box"
+                  // style={{ width: "92%", height: "29px" }}
                 />
               </div>
               <div>
                 <p>Company Website</p>
                 <input
                   placeholder="Company Website"
-                  style={{ width: "92%", height: "29px" }}
+                  className="input-box"
+                  // style={{ width: "92%", height: "29px" }}
                 />
               </div>
               <div>
@@ -99,7 +92,8 @@ function BusinessInfo() {
                 <input
                   type="dropdown"
                   placeholder="Company Website"
-                  style={{ width: "92%", height: "29px" }}
+                  className="input-box"
+                  // style={{ width: "92%", height: "29px" }}
                 />
               </div>
               <div>
@@ -112,11 +106,11 @@ function BusinessInfo() {
             style={{
               width: "100%",
               marginBottom: "20px",
-              marginTop: "10%",
+              marginTop: "6%",
             }}
           >
             <div
-              classNameName="card-header-cont"
+              // classNameName="card-header-cont"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -181,11 +175,11 @@ function BusinessInfo() {
             style={{
               width: "100%",
               marginBottom: "20px",
-              height: "579px",
+              height: "523px",
             }}
           >
             <div
-              classNameName="card-header-cont"
+              // classNameName="card-header-cont"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -195,52 +189,32 @@ function BusinessInfo() {
                 paddingRight: "20px",
               }}
             >
-              <p>Company Address</p>
+              <p style={{ marginTop: "3%" }}>Company Address</p>
             </div>
             <div style={{ paddingLeft: "3%" }}>
               <p>Address</p>
-              <input
-                placeholder="OL"
-                className="input"
-                style={{ width: "92%", height: "29px" }}
-              />
+              <input placeholder="OL" className="input-box" />
               <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <div style={{ width: "65%" }}>
                   <p>City</p>
-                  <input
-                    placeholder="Lidcombe"
-                    className="input"
-                    style={{ width: "92%", height: "29px" }}
-                  />
+                  <input placeholder="Lidcombe" className="input-box" />
                 </div>
                 <div style={{ marginRight: "6%" }}>
                   <p>Zip Code</p>
-                  <input
-                    placeholder="2141"
-                    className="input"
-                    style={{ width: "92%", height: "29px" }}
-                  />
+                  <input placeholder="2141" className="input-box" />
                 </div>
               </div>
               <p>State / Prov / Region *</p>
-              <input
-                placeholder="NSW"
-                className="input"
-                style={{ width: "92%", height: "29px" }}
-              />
+              <input placeholder="NSW" className="input-box" />
               <div>
                 <p>Country</p>
-                <input
-                  placeholder="Australia"
-                  className="input"
-                  style={{ width: "92%", height: "29px" }}
-                />
+                <input placeholder="Australia" className="input-box" />
               </div>
               <div>
                 <p>Time Zone *</p>
                 <input
                   placeholder="GMT+11:00 Australia/sydney"
-                  style={{ width: "92%", height: "29px" }}
+                  className="input-box"
                 />
               </div>
               <div>
@@ -256,7 +230,7 @@ function BusinessInfo() {
             }}
           >
             <div
-              classNameName="card-header-cont"
+              // classNameName="card-header-cont"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -268,35 +242,65 @@ function BusinessInfo() {
             >
               <h2>General</h2>
             </div>
-            <div style={{ height: "267px", padding: "20px 30px" }}>
+            <div style={{ height: "344px", padding: "20px 30px" }}>
               <div style={{ display: "flex" }}>
                 <input type="checkbox" className="check" />
-                <p style={{ marginLeft: "3%", fontSize: "small" }}>
+                <p
+                  style={{
+                    marginLeft: "3%",
+                    fontSize: "small",
+                    marginTop: "3%",
+                  }}
+                >
                   Allow Duplicate Contact
                 </p>
               </div>
               <div style={{ display: "flex" }}>
                 <input type="checkbox" className="check" />
-                <p style={{ marginLeft: "3%", fontSize: "small" }}>
+                <p
+                  style={{
+                    marginLeft: "3%",
+                    fontSize: "small",
+                    marginTop: "3%",
+                  }}
+                >
                   Allow Duplicate Opportunity
                 </p>
               </div>
               <div style={{ display: "flex" }}>
                 <input type="checkbox" className="check" />
-                <p style={{ marginLeft: "3%", fontSize: "small" }}>
+                <p
+                  style={{
+                    marginLeft: "3%",
+                    fontSize: "small",
+                    marginTop: "3%",
+                  }}
+                >
                   Merge Facebook Contacts By Name{" "}
                 </p>
               </div>
               <div style={{ display: "flex" }}>
                 <input type="checkbox" className="check" />
-                <p style={{ marginLeft: "3%", fontSize: "small" }}>
+                <p
+                  style={{
+                    marginLeft: "3%",
+                    fontSize: "small",
+                    marginTop: "3%",
+                  }}
+                >
                   Disable Contact Timezone{" "}
                 </p>
               </div>
 
               <div style={{ display: "flex" }}>
                 <input type="checkbox" className="check" />
-                <p style={{ marginLeft: "3%", fontSize: "small" }}>
+                <p
+                  style={{
+                    marginLeft: "3%",
+                    fontSize: "small",
+                    marginTop: "3%",
+                  }}
+                >
                   {" "}
                   Mark Emails as Invalid due to Hard Bounce{" "}
                 </p>
@@ -304,7 +308,13 @@ function BusinessInfo() {
 
               <div style={{ display: "flex" }}>
                 <input type="checkbox" className="check" />
-                <p style={{ marginLeft: "3%", fontSize: "small" }}>
+                <p
+                  style={{
+                    marginLeft: "3%",
+                    fontSize: "small",
+                    marginTop: "3%",
+                  }}
+                >
                   Validate Phone numbers when first SMS is sent to a new contact{" "}
                 </p>
               </div>
@@ -318,7 +328,7 @@ function BusinessInfo() {
             }}
           >
             <div
-              classNameName="card-header-cont"
+              // classNameName="card-header-cont"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -330,14 +340,18 @@ function BusinessInfo() {
             >
               <h2>Enable / Disable Deprecated Features</h2>
             </div>
-            <div style={{ height: "175px", padding: "5px 30px" }}>
+            <div style={{ height: "187px", padding: "5px 30px" }}>
               <div style={{ display: "flex" }}>
                 <input type="checkbox" className="check" />
-                <p style={{ marginLeft: "3%" }}>Enable Campaigns</p>
+                <p style={{ marginLeft: "3%", marginTop: "3%" }}>
+                  Enable Campaigns
+                </p>
               </div>
               <div style={{ display: "flex" }}>
                 <input type="checkbox" className="check" />
-                <p style={{ marginLeft: "3%" }}>Enable Triggers</p>
+                <p style={{ marginLeft: "3%", marginTop: "3%" }}>
+                  Enable Triggers
+                </p>
               </div>
               <div>
                 <Button variant="contained" className="update">
@@ -351,10 +365,12 @@ function BusinessInfo() {
             style={{
               width: "100%",
               marginBottom: "20px",
+              height: "227px",
             }}
           >
             <div
-              classNameName="card-header-cont"
+              // classNameName="card-header-cont"
+
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -366,14 +382,20 @@ function BusinessInfo() {
             >
               <h2>Missed Call Text Back</h2>
             </div>
-            <div style={{ height: "120px", padding: "20px 30px" }}>
+            <div style={{ height: "136px", padding: "20px 30px" }}>
               <div style={{ display: "flex" }}>
                 <input
                   type="checkbox"
                   className="check"
                   style={{ width: "3%" }}
                 />
-                <p style={{ marginLeft: "3%", fontSize: "small" }}>
+                <p
+                  style={{
+                    marginLeft: "3%",
+                    fontSize: "small",
+                    marginTop: "3%",
+                  }}
+                >
                   Enable missed call text back
                 </p>
               </div>
