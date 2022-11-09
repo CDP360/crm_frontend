@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles/dashboard.scss";
 import DownArrow from "../../assests/downArrow.png";
 import Filter from "../../assests/filter.png";
 import Circle from "../../assests/circle.png";
@@ -8,496 +9,209 @@ import Sms from "../../assests/sms.png";
 
 function Dashboard() {
   return (
-    <div
-      style={{
-        padding: "15px",
-        overflow: "auto",
-        backgroundColor: "#f0f5fc",
-        paddingTop: "15px",
-      }}
-    >
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <div
-          style={{
-            width: "32.5%",
-            backgroundColor: "white",
-            paddingTop: "10px",
-            paddingBottom: "10px",
-            borderRadius: "3px",
-          }}
-        >
-          <div style={{ display: "flex", justifyContent: "space-around" }}>
+    <div className="main-dashboard-container">
+      <div className="firstrow-card-container">
+        <div className="firstrow-card-content">
+          <div className="firstrow-card-content-inside">
             <p>Opportunities</p>
-            <p style={{ color: "blue", cursor: "pointer" }}>
-              3 May, 2022 - 4 Nov, 2022
-            </p>
+            <p className="date">3 May, 2022 - 4 Nov, 2022</p>
           </div>
-          <hr style={{ border: "1px solid #f0f5fc" }} />
-          <div
-            style={{ textAlign: "center", fontSize: "50px", fontWeight: 200 }}
-          >
-            1
-          </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              padding: "20px",
-            }}
-          >
+          <hr className="underline" />
+          <p className="centertext">1</p>
+          <div className="firstrow-card-content-footer">
             <div>
-              <div style={{ color: "green" }}>Closed</div>
-              <div style={{ color: "yellow" }}>Open</div>
-              <div style={{ color: "red" }}>Lost</div>
+              <p className="closed">Closed</p>
+              <p className="open">Open</p>
+              <p className="lost">Lost</p>
             </div>
             <div>
-              <div>0</div>
-              <div>1</div>
-              <div>0</div>
+              <p className="footer-number">0</p>
+              <p className="footer-number">1</p>
+              <p className="footer-number">0</p>
             </div>
           </div>
         </div>
-        <div
-          style={{
-            width: "32.5%",
-            backgroundColor: "white",
-            paddingTop: "10px",
-            paddingBottom: "10px",
-            borderRadius: "3px",
-          }}
-        >
-          <div style={{ display: "flex", justifyContent: "space-around" }}>
+        <div className="firstrow-card-content">
+          <div className="firstrow-card-content-inside">
             <p>Pipeline Value</p>
-            <p style={{ color: "blue", cursor: "pointer" }}>
-              3 May, 2022 - 4 Nov, 2022
-            </p>
+            <p className="date">3 May, 2022 - 4 Nov, 2022</p>
           </div>
-          <hr style={{ border: "1px solid #f0f5fc" }} />
-          <div
-            style={{ textAlign: "center", fontSize: "50px", fontWeight: 200 }}
-          >
-            A$0.00
-          </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              padding: "20px",
-            }}
-          >
+          <hr className="underline" />
+          <p className="centertext">A$0.00</p>
+          <div className="firstrow-card-content-footer">
             <div>
-              <div style={{ color: "green" }}>Closed</div>
-              <div style={{ color: "yellow" }}>Open</div>
-              <div style={{ color: "red" }}>Lost</div>
+              <p className="closed">Closed</p>
+              <p className="open">Open</p>
+              <p className="lost">Lost</p>
             </div>
             <div>
-              <div>A$0.00</div>
-              <div>A$0.00</div>
-              <div>A$0.00</div>
+              <p className="footer-number">0</p>
+              <p className="footer-number">1</p>
+              <p className="footer-number">0</p>
             </div>
           </div>
         </div>
-        <div
-          style={{
-            width: "32.5%",
-            backgroundColor: "white",
-            paddingTop: "10px",
-            paddingBottom: "10px",
-            borderRadius: "3px",
-          }}
-        >
-          <div style={{ display: "flex", justifyContent: "space-around" }}>
+        <div className="firstrow-card-content">
+          <div className="firstrow-card-content-inside">
             <p>Conversion Rate</p>
-            <p style={{ color: "blue", cursor: "pointer" }}>
-              3 May, 2022 - 4 Nov, 2022
-            </p>
+            <p className="date">3 May, 2022 - 4 Nov, 2022</p>
           </div>
-          <hr style={{ border: "1px solid #f0f5fc" }} />
-          <div
-            style={{ textAlign: "center", fontSize: "50px", fontWeight: 200 }}
-          >
-            0.00%
-          </div>
+          <hr className="underline" />
+          <div className="centertext">0.00%</div>
         </div>
       </div>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <div
-          style={{
-            marginTop: "20px",
-            backgroundColor: "white",
-            width: "48%",
-            height: "600px",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              padding: "30px",
-            }}
-          >
+      <div className="secondrow-card-container">
+        <div className="first-card-container">
+          <div className="first-cardheader-container">
             <div>Funnel</div>
-            <div style={{ display: "flex",cursor:'pointer' }}>
-              <select style={{ borderColor: "white" }}>
-                <option
-                  value="YOUR PROMOTION Pipeline (1)"
-                  style={{ padding: "10px" }}
-                >
-                  YOUR PROMOTION Pipeline (1)
-                </option>
-              </select>
-              {/* <img src={DownArrow} style={{ width: "20px" }} /> */}
-            </div>
-            <div style={{ color: "blue", cursor: "pointer" }}>
-              3 May, 2022 - 4 Nov, 2022
-            </div>
+            <select className="promotion-select">
+              <option value="YOUR PROMOTION Pipeline (1)">
+                YOUR PROMOTION Pipeline (1)
+              </option>
+            </select>
+            {/* <img src={DownArrow} style={{ width: "20px" }} /> */}
+            <div className="date">3 May, 2022 - 4 Nov, 2022</div>
           </div>
-          <hr style={{ border: "1px solid #f0f5fc" }} />
-          <div>
-            <img
-              src={Filter}
-              style={{
-                width: "50%",
-                display: "block",
-                marginLeft: "auto",
-                marginRight: "auto",
-                padding: "10px",
-              }}
-            />
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-around",
-                width: "45%",
-                marginLeft: "30%",
-              }}
-            >
-              <div>
-                <div
-                  style={{
-                    width: "10px",
-                    height: "10px",
-                    backgroundColor: "blue",
-                    borderRadius: "100%",
-                    marginTop: "7.5px",
-                    marginRight: "1%",
-                  }}
-                ></div>
-                <div
-                  style={{
-                    width: "10px",
-                    height: "10px",
-                    backgroundColor: "green",
-                    borderRadius: "100%",
-                    marginTop: "7.5px",
-                    marginRight: "1%",
-                  }}
-                ></div>
-                <div
-                  style={{
-                    width: "10px",
-                    height: "10px",
-                    backgroundColor: "red",
-                    borderRadius: "100%",
-                    marginTop: "7.5px",
-                    marginRight: "1%",
-                  }}
-                ></div>
-                <div
-                  style={{
-                    width: "10px",
-                    height: "10px",
-                    backgroundColor: "yellow",
-                    borderRadius: "100%",
-                    marginTop: "7.5px",
-                    marginRight: "1%",
-                  }}
-                ></div>
-                <div
-                  style={{
-                    width: "10px",
-                    height: "10px",
-                    backgroundColor: "skyblue",
-                    borderRadius: "100%",
-                    marginTop: "7.5px",
-                    marginRight: "1%",
-                  }}
-                ></div>
+          <hr className="underline" />
+          <img className="center-image" src={Filter} />
+          <div className="footer-points-container">
+            <div>
+              <div className="points-dot-blue"></div>
+              <div className="points-dot-green"></div>
+              <div className="points-dot-red"></div>
+              <div className="points-dot-yellow"></div>
+              <div className="points-dot-skyblue"></div>
+            </div>
+            <div>
+              <div className="point-content">(1) New Leads - A$ 0.00</div>
+              <div className="point-content">
+                (0) Hot Leads - A$ 0.00 (0.00%)
               </div>
-              <div>
-                <div style={{ fontSize: "14px" }}>(1) New Leads - A$ 0.00</div>
-                <div style={{ fontSize: "14px" }}>
-                  (0) Hot Leads - A$ 0.00 (0.00%)
-                </div>
-                <div style={{ fontSize: "14px" }}>
-                  (0) Booking Requested - A$ 0.00 (0.00%)
-                </div>
-                <div style={{ fontSize: "14px" }}>
-                  (0) Booking Confirmed - A$ 0.00 (0.00%)
-                </div>
-                <div style={{ fontSize: "14px" }}>
-                  (0) Won - A$ 0.00 (0.00%)
-                </div>
+              <div className="point-content">
+                (0) Booking Requested - A$ 0.00 (0.00%)
               </div>
+              <div className="point-content">
+                (0) Booking Confirmed - A$ 0.00 (0.00%)
+              </div>
+              <div className="point-content">(0) Won - A$ 0.00 (0.00%)</div>
             </div>
           </div>
         </div>
-        <div
-          style={{ marginTop: "20px", backgroundColor: "white", width: "51%" }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              padding: "30px",
-            }}
-          >
+        <div className="second-card-container">
+          <div className="second-cardheader-container">
             <div>Stages Distribution</div>
-            <div style={{ display: "flex",cursor:'pointer' }}>
+            {/* <div style={{ display: "flex", cursor: "pointer" }}>
               <div>YOUR PROMOTION Pipeline (1)</div>
               <img src={DownArrow} style={{ width: "20px" }} />
-            </div>
-            <div style={{ color: "blue", cursor: "pointer" }}>
-              3 May, 2022 - 4 Nov, 2022
-            </div>
+            </div> */}
+            <select className="promotion-select">
+              <option value="YOUR PROMOTION Pipeline (1)">
+                YOUR PROMOTION Pipeline (1)
+              </option>
+            </select>
+            <div className="date">3 May, 2022 - 4 Nov, 2022</div>
           </div>
-          <hr style={{ border: "1px solid #f0f5fc" }} />
-          <div>
-            <img
-              src={Circle}
-              style={{
-                width: "50%",
-                display: "block",
-                marginLeft: "auto",
-                marginRight: "auto",
-                padding: "10px",
-              }}
-            />
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-around",
-                width: "42%",
-                marginLeft: "33%",
-              }}
-            >
-              <div>
-                <div
-                  style={{
-                    width: "10px",
-                    height: "10px",
-                    backgroundColor: "blue",
-                    borderRadius: "100%",
-                    marginTop: "8px",
-                    marginRight: "1%",
-                  }}
-                ></div>
-                <div
-                  style={{
-                    width: "10px",
-                    height: "10px",
-                    backgroundColor: "green",
-                    borderRadius: "100%",
-                    marginTop: "8px",
-                    marginRight: "1%",
-                  }}
-                ></div>
-                <div
-                  style={{
-                    width: "10px",
-                    height: "10px",
-                    backgroundColor: "red",
-                    borderRadius: "100%",
-                    marginTop: "8px",
-                    marginRight: "1%",
-                  }}
-                ></div>
-                <div
-                  style={{
-                    width: "10px",
-                    height: "10px",
-                    backgroundColor: "yellow",
-                    borderRadius: "100%",
-                    marginTop: "8px",
-                    marginRight: "1%",
-                  }}
-                ></div>
-                <div
-                  style={{
-                    width: "10px",
-                    height: "10px",
-                    backgroundColor: "skyblue",
-                    borderRadius: "100%",
-                    marginTop: "8px",
-                    marginRight: "1%",
-                  }}
-                ></div>
-                <div
-                  style={{
-                    width: "10px",
-                    height: "10px",
-                    backgroundColor: "orange",
-                    borderRadius: "100%",
-                    marginTop: "8px",
-                    marginRight: "1%",
-                  }}
-                ></div>
+          <hr className="underline" />
+          <img className="center-image" src={Circle} />
+          <div className="footer-points-container">
+            <div>
+              <div className="points-dot-blue"></div>
+              <div className="points-dot-green"></div>
+              <div className="points-dot-red"></div>
+              <div className="points-dot-yellow"></div>
+              <div className="points-dot-skyblue"></div>
+              <div className="points-dot-orange"></div>
+            </div>
+            <div>
+              <div className="point-content">(1) New Leads - A$ 0.00</div>
+              <div className="point-content">
+                (0) Hot Leads - A$ 0.00 (0.00%)
               </div>
-              <div>
-                <div style={{ fontSize: "14px" }}>(1) New Leads - A$ 0.00</div>
-                <div style={{ fontSize: "14px" }}>
-                  (0) Hot Leads - A$ 0.00 (0.00%)
-                </div>
-                <div style={{ fontSize: "14px" }}>
-                  (0) Booking Requested - A$ 0.00 (0.00%)
-                </div>
-                <div style={{ fontSize: "14px" }}>
-                  (0) Booking Confirmed - A$ 0.00 (0.00%)
-                </div>
-                <div style={{ fontSize: "14px" }}>
-                  (0) Won - A$ 0.00 (0.00%)
-                </div>
-                <div style={{ fontSize: "14px" }}>
-                  (0) Lost/abandoned - A$ 0.00 (0.00%)
-                </div>
+              <div className="point-content">
+                (0) Booking Requested - A$ 0.00 (0.00%)
+              </div>
+              <div className="point-content">
+                (0) Booking Confirmed - A$ 0.00 (0.00%)
+              </div>
+              <div className="point-content">(0) Won - A$ 0.00 (0.00%)</div>
+              <div className="point-content">
+                (0) Lost/abandoned - A$ 0.00 (0.00%)
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <div
-          style={{ marginTop: "20px", backgroundColor: "white", width: "48%" }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              padding: "30px",
-            }}
-          >
+      <div className="thirdrow-card-container">
+        <div className="firstcard-container">
+          <div className="firstcard-header-container">
             <div>Manual Actions</div>
-            <div style={{ display: "flex",cursor:'pointer' }}>
+            {/* <div style={{ display: "flex", cursor: "pointer" }}>
               <div>Select Campaign / Workflow</div>
               <img
                 src={DownArrow}
                 style={{ width: "15px", marginLeft: "5px", marginTop: "5px" }}
               />
-            </div>
-            <div style={{ display: "flex",cursor:'pointer' }}>
-              <select style={{ borderColor: "white" }}>
-                <option value="Select Assignee">Select Assignee</option>
-                <option value="All">All</option>
-                <option value="CDP360 sales">CDP360 sales</option>
-                <option value="D S">D S</option>
-                <option value="Etouchworld Support">Etouchworld Support</option>
-                <option value="Gabriel Santos">Gabriel Santos</option>
-                <option value="Nathiya Narmadha">Nathiya Narmadha</option>
-              </select>
-              {/* <img
+            </div> */}
+            <select className="promotion-select">
+              <option value="YOUR PROMOTION Pipeline (1)">
+                YOUR PROMOTION Pipeline (1)
+              </option>
+            </select>
+            <select className="promotion-select">
+              <option value="Select Assignee">Select Assignee</option>
+              <option value="All">All</option>
+              <option value="CDP360 sales">CDP360 sales</option>
+              <option value="D S">D S</option>
+              <option value="Etouchworld Support">Etouchworld Support</option>
+              <option value="Gabriel Santos">Gabriel Santos</option>
+              <option value="Nathiya Narmadha">Nathiya Narmadha</option>
+            </select>
+            {/* <img
               src={DownArrow}
               style={{ width: "15px", marginLeft: "5px", marginTop: "5px" }}
             /> */}
-            </div>
           </div>
-          <hr style={{ border: "1px solid #f0f5fc" }} />
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-around",
-              padding: "10px",
-            }}
-          >
-            <div
-              style={{
-                textAlign: "center",
-              }}
-            >
-              <div
-                style={{
-                  width: "125px",
-                  height: "125px",
-                  backgroundColor: "orange",
-                  borderRadius: "100%",
-                }}
-              ></div>
-              <img src={List} style={{ width: "20px", marginTop: "10px" }} />
-              <p style={{ marginTop: "auto" }}>Total Pending</p>
+          <hr className="underline" />
+          <div className="card-body">
+            <div className="circle-container">
+              <div className="first-circle"></div>
+              <img src={List} className="content-img" />
+              <p className="content-text">Total Pending</p>
             </div>
-            <div
-              style={{
-                textAlign: "center",
-              }}
-            >
-              <div
-                style={{
-                  width: "125px",
-                  height: "125px",
-                  backgroundColor: "#3c96f0",
-                  borderRadius: "100%",
-                }}
-              ></div>
-              <img src={Phone} style={{ width: "20px", marginTop: "10px" }} />
-              <p style={{ marginTop: "auto" }}>Phone</p>
+            <div className="circle-container">
+              <div className="second-circle"></div>
+              <img src={Phone} className="content-img" />
+              <p className="content-text">Phone</p>
             </div>
-            <div
-              style={{
-                textAlign: "center",
-              }}
-            >
-              <div
-                style={{
-                  width: "125px",
-                  height: "125px",
-                  backgroundColor: "#81d669",
-                  borderRadius: "100%",
-                }}
-              ></div>
-              <img src={Sms} style={{ width: "20px", marginTop: "10px" }} />
-              <p style={{ marginTop: "auto" }}>SMS</p>
+            <div className="circle-container">
+              <div className="third-circle"></div>
+              <img src={Sms} className="content-img" />
+              <p className="content-text">SMS</p>
             </div>
           </div>
           <div>
-            <p
-              style={{ marginTop: "auto", textAlign: "end", marginRight: "5%",cursor:'pointer' }}
-            >
-              Go to Manual Actions
-            </p>
+            <p className="footer-content">Go to Manual Actions</p>
           </div>
         </div>
-        <div
-          style={{ marginTop: "20px", backgroundColor: "white", width: "51%" }}
-        >
-          <div style={{ width: "25%" }}>
-            <p style={{ paddingLeft: "30px" }}>Tasks</p>
-            <hr style={{ border: "1px solid #f0f5fc" }} />
-            <div style={{ textAlign: "center" }}>
-              <img src={List} style={{ width: "20px" }} />
-              <p style={{ marginTop: "auto", fontSize: "12px" }}>
-                No tasks assigned to you.
-              </p>
+        <div className="secondcard-container">
+          <div className="secondcard-content">
+            <p className="content-text">Tasks</p>
+            <hr className="underline" />
+            <div className="subcontent-container">
+              <img src={List} className="subimage" />
+              <p className="subcontent">No tasks assigned to you.</p>
             </div>
           </div>
         </div>
       </div>
-      <div style={{ backgroundColor: "white" }}>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            paddingLeft: "5%",
-            paddingRight: "5%",
-            marginTop: "20px",
-          }}
-        >
+      <div className="forth-card-container">
+        <div className="forthcard-content">
           <p>Lead Source Report</p>
-          <p style={{ color: "blue", cursor: "pointer" }}>
-            3 May, 2022 - 4 Nov, 2022
-          </p>
+          <p className="date">3 May, 2022 - 4 Nov, 2022</p>
         </div>
-        <hr style={{ border: "1px solid #f0f5fc" }} />
-        <div style={{ display: "flex", justifyContent: "space-around",cursor:'pointer' }}>
+        <hr className="underline" />
+        <div className="table-header">
           <p>Source</p>
           <p>Total Leads</p>
           <p>Total Values</p>
@@ -506,14 +220,8 @@ function Dashboard() {
           <p>Lost</p>
           <p>Win %</p>
         </div>
-        <hr style={{ border: "1px solid #f0f5fc" }} />
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-around",
-            textAlign: "center",
-          }}
-        >
+        <hr className="underline" />
+        <div className="table-content">
           <p style={{ width: "4%" }}></p>
           <p>1</p>
           <p> A$0.00</p>

@@ -31,19 +31,19 @@ const Calendars = () => {
           }}
         >
           <h4 style={{ marginLeft: "2%" }}>Calendars</h4>
-          <p style={{ marginLeft: "1%", marginTop: "1.7%" }}>Calendars</p>
-          <p style={{ marginLeft: "1%", marginTop: "1.7%" }}>Appointments</p>
+          <p style={{ marginLeft: "1%", marginTop: "0.3%" }}>Calendars</p>
+          <p style={{ marginLeft: "1%", marginTop: "0.3%" }}>Appointments</p>
           <img
-            style={{ width: "3%", height: "1%", marginTop: "1%" }}
+            style={{ width: "3%", height: "1%" }}
             src={Line}
             alt="line"
           />
           <img
-            style={{ width: "1.8%", height: "1%", marginTop: "1.7%" }}
+            style={{ width: "1.8%", height: "1%", marginTop: "0.5%" }}
             src={Settings}
             alt="Settings"
           />
-          <p style={{ marginLeft: "1%", marginTop: "1.7%" }}>
+          <p style={{ marginLeft: "1%", marginTop: "0.3%" }}>
             Calendar settings
           </p>
         </div>
