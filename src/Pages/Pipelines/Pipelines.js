@@ -72,9 +72,9 @@ function Pipelines() {
           </Modal.Footer>
         </Modal>
       </div>
-      <div className="cardpipeline">
-        <div>
-          <p style={{ color: "grey", marginLeft: "2%", marginTop: "1%" }}>
+      <div className="cardpipeline" style={{ marginTop: "1%" }}>
+        <div style={{ display: "flex" }}>
+          <p style={{ marginLeft: "2%", marginTop: "1%", color: "grey" }}>
             Name
           </p>
         </div>
