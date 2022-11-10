@@ -5,16 +5,7 @@ import Button from "@mui/material/Button";
 
 function BusinessInfo() {
   return (
-    <div
-      className="main1"
-      // style={{
-      //   background: "#d5ecf23d",
-      //   height: "100%",
-      //   paddingLeft: "20px",
-      //   paddingRight: "20px",
-      //   paddingTop: "45px",
-      // }}
-    >
+    <div className="main1">
       <div className="container-one">
         <div style={{ width: "48%" }}>
           <div
@@ -24,7 +15,6 @@ function BusinessInfo() {
             }}
           >
             <div
-              // classNameName="card-header-cont"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -39,10 +29,7 @@ function BusinessInfo() {
                 <span>Location ID v56oIaomeyBeZkpcRIWi</span>
               </div>
             </div>
-            <div
-              className="main-one"
-              // style={{ height: "200px", padding: "20px 30px", height: "665px" }}
-            >
+            <div className="main-one">
               <div style={{ display: "flex" }}>
                 <div className="box">+</div>
                 <div style={{ marginLeft: "5%" }}>
@@ -61,31 +48,15 @@ function BusinessInfo() {
               </div>
               <div>
                 <p>Company Email</p>
-                <input
-                  placeholder="company email"
-                  className="input-box"
-                  // style={{
-                  //   width: "92%",
-                  //   height: "29px",
-                  //   border: "1px solid grey",
-                  // }}
-                />
+                <input placeholder="company email" className="input-box" />
               </div>
               <div>
                 <p>Company Phone</p>
-                <input
-                  placeholder="78966678686"
-                  className="input-box"
-                  // style={{ width: "92%", height: "29px" }}
-                />
+                <input placeholder="78966678686" className="input-box" />
               </div>
               <div>
                 <p>Company Website</p>
-                <input
-                  placeholder="Company Website"
-                  className="input-box"
-                  // style={{ width: "92%", height: "29px" }}
-                />
+                <input placeholder="Company Website" className="input-box" />
               </div>
               <div>
                 <p>Company Niche</p>
@@ -93,7 +64,6 @@ function BusinessInfo() {
                   type="dropdown"
                   placeholder="Company Website"
                   className="input-box"
-                  // style={{ width: "92%", height: "29px" }}
                 />
               </div>
               <div>
@@ -110,7 +80,6 @@ function BusinessInfo() {
             }}
           >
             <div
-              // classNameName="card-header-cont"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -179,7 +148,6 @@ function BusinessInfo() {
             }}
           >
             <div
-              // classNameName="card-header-cont"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -230,7 +198,6 @@ function BusinessInfo() {
             }}
           >
             <div
-              // classNameName="card-header-cont"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -328,7 +295,6 @@ function BusinessInfo() {
             }}
           >
             <div
-              // classNameName="card-header-cont"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -369,8 +335,6 @@ function BusinessInfo() {
             }}
           >
             <div
-              // classNameName="card-header-cont"
-
               style={{
                 display: "flex",
                 alignItems: "center",

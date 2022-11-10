@@ -8,6 +8,7 @@ import Reputation from "./Pages/Reputation/Reputation";
 import Calendars from "./Pages/Calender/Calendar";
 import BusinessInfo from "./Pages/Settings/BusinessInfo/BusinessInfo";
 import Sites from "./Pages/Sites/Sites";
+import Pipelines from "./Pages/Pipelines/Pipelines";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/calendar" element={<Calendars />} />
         <Route path="/sites" element={<Sites />} />
         <Route path="/settings/businessInfo" element={<BusinessInfo />} />
+        <Route path="/pipelines" element={<Pipelines />} />
         <Route path="/reputation" element={<Reputation />}>
           <Route path="/reputation" element={<OverView />} />
           <Route path="/reputation/request" element={<Request />} />

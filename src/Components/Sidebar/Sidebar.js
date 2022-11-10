@@ -149,7 +149,7 @@ function Sidebar() {
           <div className="settings-content">
             <p className="settings-name">MY BUSINESS</p>
             <p>Buisness Info</p>
-            <p>Pipelines</p>
+            <p onClick={() => navigate("pipelines")}>Pipelines</p>
             <p className="settings-name">BUSINESS SERVICES</p>
             <p>Calenders</p>
             <p>Phone Numbers</p>
