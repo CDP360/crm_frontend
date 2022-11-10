@@ -28,7 +28,7 @@ function OverView() {
           style={{
             backgroundColor: "#42c41d",
             border: "none",
-            padding: "15px",
+            padding: "10px",
             borderRadius: "8px",
             color: "white",
           }}
