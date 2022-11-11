@@ -12,13 +12,9 @@ function Pipelines() {
   const handleShow = () => setShow(true);
 
   return (
-    <div style={{ marginTop: "5%" }}>
-      <div style={{ display: "flex" }}>
-        <h1
-          style={{ fontSize: "larger", marginLeft: "2%", fontSize: "medium" }}
-        >
-          Pipelines
-        </h1>
+    <div className="main-container" style={{ height: "100vh" }}>
+      <div className="main-containerdiv">
+        <h1 className="main-containerheading">Pipelines</h1>
 
         <Button variant="contained" className="Create" onClick={handleShow}>
           Create new Pipeline
@@ -32,31 +28,31 @@ function Pipelines() {
           <Modal.Body>
             <input
               placeholder="Name"
-              style={{ width: "96%", height: "41px" }}
+              className="input-name"
+              // style={{ width: "96%", height: "41px" }}
             />
             <div>
-              <div style={{ display: "flex" }}>
+              <div className="modal-maindiv">
                 <p>stage name</p>
 
-                <p style={{ marginLeft: "77%" }}>Actions</p>
+                <p className="action-para">Actions</p>
               </div>
               <input placeholder="stage name" className="stage" />
               <div>
                 <p
-                  style={{ fontSize: "medium", color: "grey", marginTop: "2%" }}
+                  className="stage-para"
+                  // style={{ fontSize: "medium", color: "grey", marginTop: "2%" }}
                 >
                   Add stage
                 </p>
               </div>
-              <div style={{ display: "flex" }}>
-                <div style={{ display: "flex" }}>
+              <div className="form-input">
+                <div className="form-datainput">
                   <p>Visible in Funnel chart</p>
                   <Form.Check type="switch" id="custom-switch" />
                 </div>
               </div>
-              <div
-                style={{ display: "flex", marginTop: "-5%", marginLeft: "60%" }}
-              >
+              <div className="chart">
                 <p>Visible in Pie chart</p>
                 <Form.Check type="switch" id="custom-switch" />
               </div>
@@ -72,36 +68,22 @@ function Pipelines() {
           </Modal.Footer>
         </Modal>
       </div>
-      <div className="cardpipeline" style={{ marginTop: "1%" }}>
-        <div style={{ display: "flex" }}>
-          <p style={{ marginLeft: "2%", marginTop: "1%", color: "grey" }}>
-            Name
-          </p>
+      <div className="cardpipeline">
+        <div className="cardpipeline-firstContainer">
+          <p className="cardpipeline-paraone">Name</p>
         </div>
       </div>
-      <div className="cardpipeline" style={{ marginTop: "1%" }}>
-        <div style={{ display: "flex" }}>
-          <p style={{ marginLeft: "2%", marginTop: "1%" }}>
-            YOUR PROMOTION Pipeline
-          </p>
+      <div className="cardpipeline">
+        <div className="cardpipeline-firstContainer">
+          <p className="cardpipeline-paratwo">YOUR PROMOTION Pipeline</p>
           <img
             src="https://cdn.onlinewebfonts.com/svg/img_386644.png"
-            style={{
-              width: "2%",
-              marginTop: "1%",
-              height: "27px",
-              marginLeft: "69%",
-            }}
+            className="edit"
           />
 
           <img
             src="http://cdn.onlinewebfonts.com/svg/img_304350.png"
-            style={{
-              width: "2%",
-              marginLeft: "3%",
-              marginTop: "1%",
-              height: "27px",
-            }}
+            className="delete"
           />
         </div>
       </div>
@@ -110,11 +92,3 @@ function Pipelines() {
 }
 
 export default Pipelines;
-
-// import React from "react";
-
-// function Pipelines() {
-//   return <div style={{ marginTop: "5%" }}>Pipelines</div>;
-// }
-
-// export default Pipelines;
