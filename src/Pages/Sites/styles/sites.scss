@@ -2,9 +2,9 @@
 
 .main-container {
   width: 100%;
-  background: #f0f5fc;
+  background: $ash;
   margin-top: 4%;
-  .sites-header-container{
+  .sites-header-container {
     box-shadow: 2px 1px #adb5bd;
     background: white;
   }
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     width: 80%;
-    .sites-heading{
+    .sites-heading {
       font-size: 18px;
       font-weight: bold;
     }
@@ -37,7 +37,7 @@
   }
   .sites-body-option-searchbtn {
     width: 27%;
-    background: white;
+    background: $light;
     border-radius: 5px;
     margin-right: 7px;
     display: flex;
@@ -54,18 +54,18 @@
     // margin-top: 1%;
   }
   .sites-body-searchbtn-p {
-    color: gray;
+    color: $gray;
     margin-left: 5%;
     margin-bottom: auto;
     // margin-top: 1%;
   }
   .sites-body-createfolderbtn {
     width: 18%;
-    background: white;
+    background: $light;
     border-radius: 5px;
     margin-right: 7px;
     padding: 0px;
-    border-color: blue;
+    border-color: $blue;
     display: flex;
   }
   .sites-body-inner-createfolderbtn {
@@ -79,14 +79,14 @@
     margin-top: 1%;
   }
   .sites-body-inner-createfolderbtn-p {
-    color: gray;
+    color: $gray;
     margin-left: 5%;
     margin-top: 1%;
     margin-bottom: auto;
   }
   .sites-body-newfunnel {
     width: 12%;
-    background: green;
+    background: $green;
     border-radius: 5px;
     margin-right: 7px;
     border: none;
@@ -104,7 +104,7 @@
     margin-top: 3%;
   }
   .sites-body-inner-newfunnel-p {
-    color: white;
+    color: $light;
     margin-bottom: auto;
     margin-left: 10%;
     margin-top: 1%;
@@ -131,7 +131,7 @@
   }
   .sites-body-versionbtn {
     margin-left: 3%;
-    color: purple;
+    color: $purple;
     margin-top: 3%;
     height: 62%;
     border: none;
@@ -146,7 +146,7 @@
     height: 48%;
     width: 9%;
     margin-top: 2.5%;
-    background: #84f084;
+    background: $lightgreen;
   }
   .sites-body-card-inner-testbtn {
     display: flex;
@@ -196,5 +196,86 @@
     border: none;
     margin-left: -4%;
     height: 72%;
+  }
+}
+.website-main-container {
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  .website-main-para {
+    font-size: 24px;
+  }
+  .website-body {
+    display: flex;
+    justify-content: flex-end;
+    .website-searchbtn {
+      width: 25%;
+      height: 40px;
+      margin-right: 1%;
+      .website-inner-searchbtn {
+        display: flex;
+        // align-items: center;
+        .website-search-img {
+          width: 7%;
+          height: 2%;
+          margin-left: 2%;
+          margin-top: 2%;
+        }
+        .website-search-p {
+          margin-top: 1%;
+          margin-left: 5%;
+        }
+      }
+    }
+  }
+  .website-Createfolderbtn {
+    width: 15%;
+    height: 40px;
+    margin-right: 1%;
+    .website-inner-Createfolderbtn {
+      display: flex;
+      // align-items: center;
+
+      .website-Createfolderbtn-img {
+        width: 16%;
+        height: 1%;
+        margin-top: 2%;
+      }
+      .website-Createfolderbtn-p {
+        margin-top: 2%;
+        margin-left: 5%;
+      }
+    }
+  }
+  .website-NewWebsitesbtn {
+    width: 15%;
+    height: 40px;
+    .website-inner-NewWebsitesbtn {
+      display: flex;
+      // align-items: center;
+
+      .website-NewWebsitesbtn-img {
+        width: 9%;
+        height: 2%;
+        margin-top: 6%;
+      }
+      .website-NewWebsitesbtn-p {
+        margin-top: 2%;
+        margin-left: 5%;
+      }
+    }
+  }
+  .website-card {
+    margin-top: 1%;
+    .website-inner-card {
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .emptybox-img {
+        width: 10%;
+      }
+    }
   }
 }
