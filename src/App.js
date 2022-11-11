@@ -8,7 +8,11 @@ import Reputation from "./Pages/Reputation/Reputation";
 import Calendars from "./Pages/Calender/Calendar";
 import BusinessInfo from "./Pages/Settings/BusinessInfo/BusinessInfo";
 import Sites from "./Pages/Sites/Sites";
+import Funnels from "./Pages/Sites/Funnel";
 import Pipelines from "./Pages/Pipelines/Pipelines";
+import Websites from "./Pages/Sites/Websites";
+import Blog from "./Pages/Sites/Blog";
+import Wordpress from "./Pages/Sites/Wordpress";
 
 function App() {
   return (
@@ -17,7 +21,12 @@ function App() {
         <Route path="/" element={<Launchpad />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/calendar" element={<Calendars />} />
-        <Route path="/sites" element={<Sites />} />
+        <Route path="/sites" element={<Sites />}>
+          <Route path="/sites/" element={<Funnels />} />
+          <Route path="/sites/websites" element={<Websites />} />
+          <Route path="/sites/blog" element={<Blog />} />
+          <Route path="/sites/wordpress" element={<Wordpress />} />
+        </Route>
         <Route path="/settings/businessInfo" element={<BusinessInfo />} />
         <Route path="/pipelines" element={<Pipelines />} />
         <Route path="/reputation" element={<Reputation />}>

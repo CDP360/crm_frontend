@@ -10,7 +10,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 // import Spanner from "../../assests/spanner.png";
 // import PlayButton from "../../assests/play-button.png";
 // import Folder from "../../assests/folder.png";
-// import "./styles/sites.scss";
+import "./styles/sites.scss";
 
 const Sites = () => {
   const navigate = useNavigate();
@@ -21,9 +21,14 @@ const Sites = () => {
         <div className="sites-header">
           <p className="sites-heading">Sites</p>
           <p onClick={() => navigate("")}>Funnels</p>
-          <p onClick={() => navigate("/sites/websites")}>Websites</p>
-          <p>Blog</p>
-          <Dropdown>
+          <p
+            style={{ cursor: "pointer" }}
+            onClick={() => navigate("/sites/websites")}
+          >
+            Websites
+          </p>
+          <p onClick={() => navigate("/sites/blog")}>Blog</p>
+          <Dropdown onClick={() => navigate("/sites/wordpress")}>
             <Dropdown.Toggle
               variant="light"
               id="dropdown-basic"
