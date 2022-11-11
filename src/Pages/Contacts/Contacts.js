@@ -1,59 +1,56 @@
-import React from "react";
-import { Outlet, useNavigate } from "react-router-dom";
-import Settings from "../../assests/settings.png";
+ import React from 'react'
+ import { useNavigate, Outlet } from 'react-router-dom';
+ import Settings from "../../assests/settings.png";
 
-function Reputation() {
-  const navigate = useNavigate();
-  return (
-    <div>
-      <div
+
+ function Contacts() {
+    const navigate = useNavigate();
+   return (
+     <div style={{marginTop:'2%'}}>
+        <div
         style={{ backgroundColor: "white", position: "sticky", top: "60px" }}
       >
         <div
           style={{
             display: "flex",
             justifyContent: "space-around",
-            width: "40%",
+            width: "50%",
             marginTop: "auto",
           }}
         >
           <p style={{ fontWeight: 700, fontSize: "15px", cursor: "pointer" }}>
-            Reputation
+            Contacts
           </p>
           <p
             style={{ fontSize: "15px", cursor: "pointer" }}
             onClick={() => navigate("")}
           >
-            Overview
+            Smart Lists
           </p>
           <p
             style={{ fontSize: "15px", cursor: "pointer" }}
-            onClick={() => navigate("/reputation/request")}
           >
-            Requests
+            Bulk Actions
           </p>
           <p
             style={{ fontSize: "15px", cursor: "pointer" }}
-            onClick={() => navigate("/reputation/review")}
           >
-            Reviews{" "}
+            Restore
           </p>
           <p
             style={{ fontSize: "15px", cursor: "pointer" }}
-            onClick={() => navigate("/reputation/listing")}
           >
-            Listings
-            <span
-              style={{
-                border: "1px solid black",
-                backgroundColor: "yellow",
-                borderRadius: "5px",
-                fontSize: "12px",
-                padding: "1px",
-              }}
-            >
-              New
-            </span>
+            Tasks
+          </p>
+          <p
+            style={{ fontSize: "15px", cursor: "pointer" }}
+          >
+            Company
+          </p>
+          <p
+            style={{ fontSize: "15px", cursor: "pointer" }}
+          >
+            Manage Smart Lists
           </p>
           <div style={{ borderLeft: "1px solid gray", height: "20px" }}></div>
           <img
@@ -63,8 +60,8 @@ function Reputation() {
         </div>
       </div>
       <Outlet />
-    </div>
-  );
-}
-
-export default Reputation;
+     </div>
+   )
+ }
+ 
+ export default Contacts

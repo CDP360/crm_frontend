@@ -73,7 +73,7 @@ function Sidebar() {
               <img src={Dashboard} className="sidebar-img" />
               <p className="sidebar-name">Dashboard</p>
             </div>
-            <div className="sidebar-option">
+            <div className="sidebar-option" onClick={()=>navigate('conversation')}>
               <img src={Conversation} className="sidebar-img" />
               <p className="sidebar-name">Conversation</p>
             </div>
@@ -84,7 +84,7 @@ function Sidebar() {
               <img src={Calender} className="sidebar-img" />
               <p className="sidebar-name">Calender</p>
             </div>
-            <div className="sidebar-option">
+            <div className="sidebar-option" onClick={()=>navigate('contacts')}>
               <img src={Contact} className="sidebar-img" />
               <p className="sidebar-name">Contact</p>
             </div>

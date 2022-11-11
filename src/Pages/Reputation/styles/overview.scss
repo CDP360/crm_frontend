@@ -1,0 +1,124 @@
+@import "./variables";
+
+.overview-main-container{
+    padding: 15px;
+    overflow: auto;
+    background-color: $background;
+    margin-top: 10px;
+    .button-container{
+        background-color: $light;
+        padding: 15px;
+        text-align: end;
+        .button-card{
+            background-color:#42c41d ;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            color: $light;
+        }
+    }
+    .firstrow-card-container{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        .firstcard-container{
+            background-color: $light;
+            width: 49%;
+            .firstcard-header{
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+                .header-content{
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+                .leftside-header{
+                    display: flex;
+                    .leftside-content{
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+                    .leftside-img{
+                        width: 30px;
+                        height: 30px;
+                        margin-top: 3%;
+                    }
+                }
+            }
+            .underline{
+                border: 1px solid #f0f5fc;
+            }
+            .firstcard-body-container{
+                text-align: center;
+                margin-top: 10%;
+                margin-bottom: 5%;
+                .center-image{
+                    width: 10%;
+                }
+                .center-text{
+                    font-size: 50px;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+                .center-content{
+                    color: #a7a8a7;
+                    margin-top: auto;
+                }
+                .footer-content{
+                    display: flex;
+                    justify-content: center;
+                    .footer-image{
+                        width: 20px;
+                        height: 20px;
+                        margin-top: 1%;
+                    }
+                    .footer-text{
+                        margin-top: auto;
+                        color: #22a122;
+                        font-size: 20px;
+                    }
+                }
+                .star-rating{
+                    width: 2%;
+                }
+            }
+            .secondcard-body-container{
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                .body-content{
+                    text-align: center;
+                    .center-image{
+                        width: 50%;
+                    }
+                    .center-text{
+                        font-size: 30px;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+                    .footer-content{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 10px;
+                        .footer-image{
+                            width: 20px;
+                            height: 20px;
+                            margin-top: 3%;
+                        }
+                        .footer-text{
+                            margin-top: auto;
+                            color: #22a122;
+                            font-size: 20px;
+                        }
+                        .footer-textred{
+                            margin-top: auto;
+                            color: red;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&display=swap");
+
+.point > a > p:hover {
+  color: skyblue;
+  border-radius: 2px;
+
+  cursor: pointer;
+}
+
+.header > a > p:hover {
+  color: skyblue;
+  border-radius: 2px;
+
+  cursor: pointer;
+}
