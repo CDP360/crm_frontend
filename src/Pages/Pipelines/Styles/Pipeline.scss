@@ -1,9 +1,16 @@
 @import "./variable.scss";
 
-// .main {
-//   margin-top: "5%";
-// }
-
+.main-container {
+  margin-top: 5%;
+  .main-containerdiv {
+    display: flex;
+  }
+  .main-containerheading {
+    font-size: larger;
+    margin-left: 2%;
+    font-size: medium;
+  }
+}
 .cardpipeline {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -13,6 +20,30 @@
   margin-left: 3%;
   margin-top: 2%;
   height: 50px;
+  .cardpipeline-firstContainer {
+    display: flex;
+  }
+  .cardpipeline-paraone {
+    margin-left: 2%;
+    margin-top: 1%;
+    color: grey;
+  }
+  .cardpipeline-paratwo {
+    margin-left: 2%;
+    margin-top: 1%;
+  }
+  .edit {
+    width: 2%;
+    margin-top: 1%;
+    height: 27px;
+    margin-left: 69%;
+  }
+  .delete {
+    width: 2%;
+    margin-left: 3%;
+    margin-top: 1%;
+    height: 27px;
+  }
 }
 
 .Create {
@@ -40,4 +71,32 @@
 
 .form-switch .form-check-input {
   margin-left: 3% !important;
+}
+
+.input-name {
+  width: 96%;
+  height: 41px;
+}
+.modal-maindiv {
+  display: flex;
+}
+.action-para {
+  margin-left: 77%;
+}
+.stage-para {
+  font-size: medium;
+  color: grey;
+  margin-top: 2%;
+}
+
+.form-input {
+  display: flex;
+  .form-datainput {
+    display: flex;
+  }
+}
+.chart {
+  display: flex;
+  margin-top: -5%;
+  margin-left: 60%;
 }
