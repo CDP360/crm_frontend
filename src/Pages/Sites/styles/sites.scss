@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     width: 80%;
+    // position: fixed;
     .sites-heading {
       font-size: 18px;
       font-weight: bold;
@@ -28,6 +29,11 @@
 
   .sites-body {
     padding-left: 5%;
+    .funnel-text {
+      font-weight: 400;
+      font-size: 20px;
+      margin-top: 2%;
+    }
   }
   .sites-body-option {
     height: 100%;
@@ -394,7 +400,78 @@
         color: $light;
         background: $green;
         border-radius: 5px;
-        .wordpress-btn-holder {
+        // .wordpress-btn-holder {
+        // }
+      }
+    }
+  }
+}
+// --------------------------
+.dashboardmember-card {
+  padding: 0% 2% 5% 2%;
+  // .dashboard-spinner{}
+  .dashboardmember-card-body {
+    .dashboardmember-img-holder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .dashboardmember-dashboardbanner-img {
+        border-radius: 0.5rem;
+        width: 100%;
+        height: 350px;
+        // position: relative;
+      }
+      .dashboardmember-dashboardbanner-p {
+        position: absolute;
+        letter-spacing: 0.05em;
+        font-size: 3rem;
+        text-align: center;
+        color: $light;
+        font-weight: 700;
+      }
+    }
+    .dashboardmember-gird {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 2%;
+      flex-wrap: wrap;
+      .dashboardmember-gird-col-1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: inherit;
+        width: 30%;
+        background: $light;
+        margin-left: 15%;
+        border-radius: 5px;
+        border-color: #e2e8f0;
+        margin-bottom: 5%;
+        .dashboardmember-gird-col-1-text {
+          margin-top: 2%;
+        }
+        .dashboardmember-gird-col-img-holder {
+          .dashboardmember-gird-col-1-email-img {
+            width: 4rem;
+            height: 4rem;
+          }
+        }
+      }
+      .dashboardmember-gird-col-2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: inherit;
+        width: 30%;
+        background: $light;
+        margin-right: 15%;
+        border-radius: 5px;
+        border-color: #e2e8f0;
+        margin-bottom: 5%;
+        .dashboardmember-gird-col-img-holder {
+          .dashboardmember-gird-col-1-email-img {
+            width: 4rem;
+            height: 4rem;
+          }
         }
       }
     }

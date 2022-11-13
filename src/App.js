@@ -13,6 +13,7 @@ import Pipelines from "./Pages/Pipelines/Pipelines";
 import Websites from "./Pages/Sites/Websites";
 import Blog from "./Pages/Sites/Blog";
 import Wordpress from "./Pages/Sites/Wordpress";
+import Dashboardmembership from "./Pages/Sites/Membership/Dashboardmembership";
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
           <Route path="/sites/websites" element={<Websites />} />
           <Route path="/sites/blog" element={<Blog />} />
           <Route path="/sites/wordpress" element={<Wordpress />} />
+          <Route
+            path="/sites/dashboardmembership"
+            element={<Dashboardmembership />}
+          />
         </Route>
         <Route path="/settings/businessInfo" element={<BusinessInfo />} />
         <Route path="/pipelines" element={<Pipelines />} />

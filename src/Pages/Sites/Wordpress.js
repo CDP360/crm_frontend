@@ -14,12 +14,6 @@ const Wordpress = () => {
             </div>
           </button>
         </div>
-        {/* <button className="wordpress-btn">
-          <div className="wordpress-btn-holder">
-            <p>Get Started</p>
-            <p>$14.99/Month</p>
-          </div>
-        </button> */}
       </div>
     </div>
   );

@@ -41,7 +41,7 @@ const Sites = () => {
               <Dropdown.Item href="#/action-1">Dashboard</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-          <Dropdown>
+          <Dropdown onClick={() => navigate("/sites/dashboardmembership")}>
             <Dropdown.Toggle
               variant="light"
               id="dropdown-basic"
