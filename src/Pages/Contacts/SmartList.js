@@ -12,20 +12,26 @@ import AddTag from "../../assests/addTag.png";
 import RemoveTag from "../../assests/removeTag.png";
 import Modal from "react-bootstrap/Modal";
 import Phone from "../../assests/phone.png";
+import Info from "../../assests/info.png";
+// import SmartListTable from './SmartListTable';
 
 export default function SmartList() {
-  const [show, setShow] = useState(false);
+  const [addContact, setAddContact] = useState(false);
+  const [pipeline, setPipeline] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const addContactClose = () => setAddContact(false);
+  const addContactShow = () => setAddContact(true);
+
+  const pipelineClose = () => setPipeline(false);
+  const pipelineShow = () => setPipeline(true);
   return (
     <div className="smartlist-maincontainer">
       <p>All</p>
       <hr />
       <div className="header-content-container">
         <div className="leftside-header-container">
-          <img className="leftside-image" onClick={handleShow} src={Plus} />
-          <img className="leftside-image" src={Funnel} />
+          <img className="leftside-image" onClick={addContactShow} src={Plus} />
+          <img className="leftside-image" onClick={pipelineShow} src={Funnel} />
           <img className="leftside-image" src={Android} />
           <img className="leftside-image" src={Message} />
           <img className="leftside-image" src={Mail} />
@@ -84,8 +90,10 @@ export default function SmartList() {
           </button>
         </div>
       </div>
-      <div style={{ backgroundColor: "#bfd4f2" }}></div>
-      <Modal show={show} onHide={handleClose} animation={false}>
+      <div style={{ backgroundColor: "#bfd4f2" }}>
+        {/* <SmartListTable/> */}
+      </div>
+      <Modal show={addContact} onHide={addContactClose} animation={false}>
         <Modal.Header closeButton>
           <Modal.Title>Contact</Modal.Title>
         </Modal.Header>
@@ -179,13 +187,31 @@ export default function SmartList() {
               </div>
             </div>
             <div className="bottom-container">
-              <button className="close-btn" onClick={handleClose}>
+              <button className="close-btn" onClick={addContactClose}>
                 Close
               </button>
-              <button className="save-btn" onClick={handleClose}>
+              <button className="save-btn" onClick={addContactClose}>
                 Save
               </button>
             </div>
+          </div>
+        </Modal.Body>
+      </Modal>
+      <Modal show={pipeline} onHide={pipelineClose} animation={false}>
+        <Modal.Header closeButton>
+          <Modal.Title>
+            <div className="pipeline-header-container">
+              <img className="info-image" src={Info} />
+              <p className="info-name">Info</p>
+            </div>
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>Select one or more contact to start this operation</p>
+          <div className="pipeline-body-btn-container">
+            <button className="pipeline-btn" onClick={pipelineClose}>
+              Ok
+            </button>
           </div>
         </Modal.Body>
       </Modal>
