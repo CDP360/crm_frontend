@@ -7,7 +7,7 @@
     box-shadow: 2px 1px #adb5bd;
     background: white;
     position: sticky;
-  top: 50px;
+    top: 50px;
   }
   .sites-header {
     display: flex;
@@ -480,5 +480,51 @@
         }
       }
     }
+  }
+}
+// ---------------------------------
+
+.productmembership-main-container {
+  margin-top: 4%;
+  background: $ash;
+  padding: 3%;
+
+  .productmembership-card {
+    display: flex;
+    justify-content: space-between;
+    .productmembership-text-holder {
+      .productmembership-text-yourproduct {
+        font-weight: 600;
+        color: $lightgray;
+        font-size: 1.5rem;
+      }
+    }
+    .productmembership-createproduct-btn {
+      width: 14%;
+      height: 34px;
+      border: none;
+      background: $lightblue;
+      border-radius: 5px;
+      color: $light;
+      .productmembership-createproductbtn-holder {
+        display: flex;
+        justify-content: space-evenly;
+        // align-items: center;
+        .productmembership-plus-img {
+          width: 8%;
+          height: 1%;
+          margin-top: 7%;
+        }
+        .productmembership-btn-text {
+          margin-top: 2%;
+        }
+      }
+    }
+  }
+  .productmembership-getstarted-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $lightgray;
+    margin-top: 2%;
   }
 }

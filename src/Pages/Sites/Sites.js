@@ -13,7 +13,6 @@ import Dropdown from "react-bootstrap/Dropdown";
 import "./styles/sites.scss";
 import Settings from "../../assests/settings.png";
 
-
 const Sites = () => {
   const navigate = useNavigate();
 
@@ -43,7 +42,7 @@ const Sites = () => {
               <Dropdown.Item href="#/action-1">Dashboard</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-          <Dropdown onClick={() => navigate("/sites/dashboardmembership")}>
+          <Dropdown>
             <Dropdown.Toggle
               variant="light"
               id="dropdown-basic"
@@ -53,8 +52,18 @@ const Sites = () => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Dashboard</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Products</Dropdown.Item>
+              <Dropdown.Item
+                href="#/action-1"
+                onClick={() => navigate("/sites/dashboardmembership")}
+              >
+                Dashboard
+              </Dropdown.Item>
+              <Dropdown.Item
+                // href="#/action-2"
+                onClick={() => navigate("/sites/productsmembership")}
+              >
+                Products
+              </Dropdown.Item>
               <Dropdown.Item href="#/action-3">Offers</Dropdown.Item>
               <Dropdown.Item href="#/action-3">Analytics</Dropdown.Item>
               <Dropdown.Item href="#/action-3">Settings</Dropdown.Item>

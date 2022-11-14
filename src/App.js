@@ -15,6 +15,7 @@ import Blog from "./Pages/Sites/Blog";
 import Wordpress from "./Pages/Sites/Wordpress";
 import Dashboardmembership from "./Pages/Sites/Membership/Dashboardmembership";
 import Review from "./Pages/Reputation/Review";
+// import Review from "./Pages/Reputation/Review";
 import Conversation from "./Pages/Conversation/Conversation";
 import Listing from "./Pages/Reputation/Listing";
 import Contacts from "./Pages/Contacts/Contacts";
@@ -22,6 +23,7 @@ import Phonenumber from "./Pages/Phonenumbers/Phonenumber";
 import Customvalues from "./Pages/Settings/customvalues/Customvalues";
 import Profile from "./Pages/Settings/Profile/Profile";
 import SmartList from "./Pages/Contacts/SmartList";
+import Productsmembership from "./Pages/Sites/Membership/Productsmembership";
 
 function App() {
   return (
@@ -42,6 +44,10 @@ function App() {
           <Route
             path="/sites/dashboardmembership"
             element={<Dashboardmembership />}
+          />
+          <Route
+            path="/sites/productsmembership"
+            element={<Productsmembership />}
           />
         </Route>
         <Route path="/settings/businessInfo" element={<BusinessInfo />} />
