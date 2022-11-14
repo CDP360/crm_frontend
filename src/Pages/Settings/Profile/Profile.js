@@ -292,7 +292,14 @@ function Dashboard() {
               </Button>
             </div>
           </Card>
-          <Card style={{ marginLeft: "6%", height: "71px", width: "85%" }}>
+          <Card
+            style={{
+              marginLeft: "6%",
+              height: "71px",
+              width: "85%",
+              marginTop: "3%",
+            }}
+          >
             <div style={{ display: "flex" }}>
               <img
                 src="https://findicons.com/files/icons/2795/office_2013_hd/2000/outlook.png"
