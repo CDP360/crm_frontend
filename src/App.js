@@ -13,6 +13,7 @@ import Pipelines from "./Pages/Pipelines/Pipelines";
 import Websites from "./Pages/Sites/Websites";
 import Blog from "./Pages/Sites/Blog";
 import Wordpress from "./Pages/Sites/Wordpress";
+import Dashboardmembership from "./Pages/Sites/Membership/Dashboardmembership";
 import Review from "./Pages/Reputation/Review";
 import Conversation from "./Pages/Conversation/Conversation";
 import Listing from "./Pages/Reputation/Listing";
@@ -20,6 +21,7 @@ import Contacts from "./Pages/Contacts/Contacts";
 import Phonenumber from "./Pages/Phonenumbers/Phonenumber";
 import Customvalues from "./Pages/Settings/customvalues/Customvalues";
 import Profile from "./Pages/Settings/Profile/Profile";
+import SmartList from "./Pages/Contacts/SmartList";
 
 function App() {
   return (
@@ -29,12 +31,18 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/conversation" element={<Conversation />} />
         <Route path="/calendar" element={<Calendars />} />
-        <Route path="/contacts" element={<Contacts />}></Route>
+        <Route path="/contacts" element={<Contacts />}>
+          <Route path="/contacts" element={<SmartList />} />
+        </Route>
         <Route path="/sites" element={<Sites />}>
           <Route path="/sites/" element={<Funnels />} />
           <Route path="/sites/websites" element={<Websites />} />
           <Route path="/sites/blog" element={<Blog />} />
           <Route path="/sites/wordpress" element={<Wordpress />} />
+          <Route
+            path="/sites/dashboardmembership"
+            element={<Dashboardmembership />}
+          />
         </Route>
         <Route path="/settings/businessInfo" element={<BusinessInfo />} />
         <Route path="/pipelines" element={<Pipelines />} />

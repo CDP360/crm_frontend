@@ -1,67 +1,30 @@
- import React from 'react'
- import { useNavigate, Outlet } from 'react-router-dom';
- import Settings from "../../assests/settings.png";
+import React from "react";
+import { useNavigate, Outlet } from "react-router-dom";
+import Settings from "../../assests/settings.png";
+import "./styles/contacts.scss";
 
-
- function Contacts() {
-    const navigate = useNavigate();
-   return (
-     <div style={{marginTop:'2%'}}>
-        <div
-        style={{ backgroundColor: "white", position: "sticky", top: "60px" }}
-      >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-around",
-            width: "50%",
-            marginTop: "auto",
-          }}
-        >
-          <p style={{ fontWeight: 700, fontSize: "15px", cursor: "pointer" }}>
-            Contacts
-          </p>
-          <p
-            style={{ fontSize: "15px", cursor: "pointer" }}
-            onClick={() => navigate("")}
-          >
+function Contacts() {
+  const navigate = useNavigate();
+  return (
+    <div>
+      <div className="contacts-main-container">
+        <div className="contacts-header-container">
+          <p className="header-name">Contacts</p>
+          <p className="header-subname" onClick={() => navigate("")}>
             Smart Lists
           </p>
-          <p
-            style={{ fontSize: "15px", cursor: "pointer" }}
-          >
-            Bulk Actions
-          </p>
-          <p
-            style={{ fontSize: "15px", cursor: "pointer" }}
-          >
-            Restore
-          </p>
-          <p
-            style={{ fontSize: "15px", cursor: "pointer" }}
-          >
-            Tasks
-          </p>
-          <p
-            style={{ fontSize: "15px", cursor: "pointer" }}
-          >
-            Company
-          </p>
-          <p
-            style={{ fontSize: "15px", cursor: "pointer" }}
-          >
-            Manage Smart Lists
-          </p>
-          <div style={{ borderLeft: "1px solid gray", height: "20px" }}></div>
-          <img
-            src={Settings}
-            style={{ width: "20px", height: "20px", cursor: "pointer" }}
-          />
+          <p className="header-subname">Bulk Actions</p>
+          <p className="header-subname">Restore</p>
+          <p className="header-subname">Tasks</p>
+          <p className="header-subname">Company</p>
+          <p className="header-subname">Manage Smart Lists</p>
+          <div className="underline"></div>
+          <img className="setting-img" src={Settings} />
         </div>
       </div>
       <Outlet />
-     </div>
-   )
- }
- 
- export default Contacts
+    </div>
+  );
+}
+
+export default Contacts;

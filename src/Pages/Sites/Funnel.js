@@ -14,7 +14,7 @@ const Funnels = () => {
   return (
     <div className="sites-body">
       <div>
-        <p>Funnels</p>
+        <p className="funnel-text">Funnels</p>
       </div>
       <div>
         <div className="sites-body-option">
