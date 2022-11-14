@@ -1,0 +1,32 @@
+@import "./variables";
+
+.contacts-main-container{
+    background-color: white;
+    position: sticky;
+    top: 60px;
+    margin-top: 1.2%;
+    .contacts-header-container{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        margin-top: auto;
+        .header-name{
+            font-weight: 700;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .header-subname{
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .underline{
+            border-left: 1px solid gray;
+            height: 20px;
+        }
+        .setting-img{
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+    }
+}
