@@ -11,6 +11,8 @@ import Dropdown from "react-bootstrap/Dropdown";
 // import PlayButton from "../../assests/play-button.png";
 // import Folder from "../../assests/folder.png";
 import "./styles/sites.scss";
+import Settings from "../../assests/settings.png";
+
 
 const Sites = () => {
   const navigate = useNavigate();
@@ -91,6 +93,11 @@ const Sites = () => {
           <p>Chat Widget</p>
           <p>Media</p>
           <p>URL Redirection</p>
+          <div style={{ borderLeft: "1px solid gray", height: "20px" }}></div>
+          <img
+            src={Settings}
+            style={{ width: "20px", height: "20px", cursor: "pointer" }}
+          />
         </div>
       </div>
       {/* <div className="sites-body">
