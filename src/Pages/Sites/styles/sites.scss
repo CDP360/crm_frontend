@@ -3,16 +3,17 @@
 .main-container {
   width: 100%;
   background: $ash;
-  margin-top: 4%;
   .sites-header-container {
     box-shadow: 2px 1px #adb5bd;
     background: white;
+    position: sticky;
+  top: 50px;
   }
   .sites-header {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    // position: fixed;
+    margin-top: -6%;
     .sites-heading {
       font-size: 18px;
       font-weight: bold;
@@ -29,10 +30,11 @@
 
   .sites-body {
     padding-left: 5%;
+    margin-top: 3%;
     .funnel-text {
       font-weight: 400;
       font-size: 20px;
-      margin-top: 2%;
+      // margin-top: 2%;
     }
   }
   .sites-body-option {
@@ -209,6 +211,7 @@
   padding-right: 3%;
   padding-top: 1%;
   padding-bottom: 3%;
+  margin-top: 2%;
   .website-main-para {
     font-size: 24px;
   }
@@ -301,6 +304,8 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 5%;
+  // height: 100vh;
+  // overflow: auto;
   .blog-card {
     display: flex;
     flex-direction: column;

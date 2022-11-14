@@ -1,0 +1,193 @@
+@import "./variables";
+
+.smartlist-maincontainer {
+  padding: 2%;
+  background-color: $background;
+  height: 90vh;
+  .header-content-container {
+    display: flex;
+    justify-content: space-between;
+    .leftside-header-container {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      .leftside-image {
+        background-color: $light;
+        padding: 10px;
+        width: 10%;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+    .rightside-header-container {
+      display: flex;
+      width: 50%;
+      .dropdown-container {
+        display: flex;
+        .dropdown-name {
+          margin-left: 5%;
+        }
+      }
+      .rightside-input-container {
+        display: flex;
+        margin-left: 2%;
+        border: 1px solid $background;
+        background-color: $light;
+        border-radius: 5px;
+        .input-search-image {
+          width: 10%;
+          background-color: $light;
+          padding: 10px;
+        }
+        .input-field {
+          border: none;
+          padding: 5px;
+          width: 80%;
+        }
+      }
+      .button-container {
+        display: flex;
+        justify-content: space-around;
+        background-color: $light;
+        margin-left: 2%;
+        border: 1px solid $background;
+        padding: 1%;
+        .button-image {
+          width: 15%;
+          margin-top: 2%;
+        }
+      }
+    }
+  }
+}
+.plus-main-container {
+  padding: 3%;
+  .personal-logo-container {
+    display: flex;
+    .leftside-profile-box {
+      padding: 10%;
+      background-color: $gray;
+    }
+    .rightside-content {
+      margin-left: 10%;
+      .rightside-button-container {
+        display: flex;
+        justify-content: space-between;
+        .change-button {
+          padding: 8px;
+          width: 100px;
+          background-color: $light;
+          border: 2px solid $blue;
+          color: $blue;
+          border-radius: 10px;
+        }
+        .delete-button {
+          padding: 8px;
+          width: 100px;
+          background-color: $gray;
+          border: none;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  .firstlastname-container {
+    display: flex;
+    margin-top: 5%;
+    .first-content {
+      margin-bottom: auto;
+      font-weight: bold;
+    }
+    .first-field {
+      width: 179%;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid $gray;
+    }
+    .last-container {
+      margin-left: 25%;
+      .first-content {
+        margin-bottom: auto;
+        font-weight: bold;
+      }
+      .first-field {
+        width: 179%;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid $gray;
+      }
+    }
+  }
+  .email-input-container {
+    margin-top: 2%;
+    .text-heading {
+      margin-bottom: auto;
+      font-weight: bold;
+    }
+    .text-inputfield {
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid $gray;
+    }
+    .dropdown-field {
+      width: 100%;
+      padding: 5px;
+    }
+  }
+  .channel-container {
+    border: 1px solid $gray;
+    margin-top: 2%;
+    padding: 2%;
+    .channel-header-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    h6 {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid $gray;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+    }
+
+    h6 span {
+      background: $light;
+      padding: 0 10px;
+    }
+    .bottom-field {
+      display: flex;
+      justify-content: space-between;
+      .left-bottom {
+        display: flex;
+        .bottom-image {
+          width: 3%;
+          height: 60%;
+        }
+        .bottom-text {
+          margin-left: 2%;
+        }
+      }
+    }
+  }
+  .bottom-container {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    .close-btn {
+      padding: 1%;
+      width: 150px;
+      background-color: $light;
+      border: 1px solid $gray;
+      border-radius: 10px;
+    }
+    .save-btn {
+      padding: 1%;
+      width: 150px;
+      color: $light;
+      background-color: $green;
+      border: 1px solid $gray;
+      border-radius: 10px;
+    }
+  }
+}

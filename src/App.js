@@ -18,6 +18,7 @@ import Review from './Pages/Reputation/Review';
 import Conversation from "./Pages/Conversation/Conversation";
 import Listing from './Pages/Reputation/Listing';
 import Contacts from './Pages/Contacts/Contacts';
+import SmartList from "./Pages/Contacts/SmartList";
 
 function App() {
   return (
@@ -27,7 +28,9 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/conversation" element={<Conversation />} />
         <Route path="/calendar" element={<Calendars />} />
-        <Route path="/contacts" element={<Contacts />} ></Route>
+        <Route path="/contacts" element={<Contacts />} >
+        <Route path="/contacts" element={<SmartList />} />
+        </Route>
         <Route path="/sites" element={<Sites />}>
           <Route path="/sites/" element={<Funnels />} />
           <Route path="/sites/websites" element={<Websites />} />
