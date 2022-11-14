@@ -154,22 +154,24 @@ function Sidebar() {
           </div>
           <div className="settings-content">
             <p className="settings-name">MY BUSINESS</p>
-            <p>Buisness Info</p>
+            <p onClick={() => navigate("settings/businessInfo")}>
+              Buisness Info
+            </p>
             <p onClick={() => navigate("pipelines")}>Pipelines</p>
             <p className="settings-name">BUSINESS SERVICES</p>
-            <p>Calenders</p>
+            <p onClick={() => navigate("calendars")}>Calenders</p>
             <p onClick={() => navigate("Phonenumbers")}>Phone Numbers</p>
             <p>Reoutation Management</p>
             <p onClick={() => navigate("Profile")}>Profile</p>
             <p className="settings-name">OTHER SETTINGS</p>
             <p>Custom Fields</p>
             <p onClick={() => navigate("customvalues")}>Custom Values</p>
-            <p>Domains</p>
-            <p>Media</p>
-            <p>URL Redirects</p>
-            <p>Integrations</p>
-            <p>Email Services</p>
-            <p>Tags</p>
+            <p onClick={() => navigate("Domain")}>Domains</p>
+            <p onClick={() => navigate("media")}>Media</p>
+            <p onClick={() => navigate("url")}>URL Redirects</p>
+            <p onClick={() => navigate("integration")}>Integrations</p>
+            <p onClick={() => navigate("email")}>Email Services</p>
+            <p onClick={() => navigate("Tags")}>Tags</p>
           </div>
         </>
       )}
