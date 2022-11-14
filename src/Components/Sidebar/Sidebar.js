@@ -73,7 +73,10 @@ function Sidebar() {
               <img src={Dashboard} className="sidebar-img" />
               <p className="sidebar-name">Dashboard</p>
             </div>
-            <div className="sidebar-option" onClick={()=>navigate('conversation')}>
+            <div
+              className="sidebar-option"
+              onClick={() => navigate("conversation")}
+            >
               <img src={Conversation} className="sidebar-img" />
               <p className="sidebar-name">Conversation</p>
             </div>
@@ -84,7 +87,10 @@ function Sidebar() {
               <img src={Calender} className="sidebar-img" />
               <p className="sidebar-name">Calender</p>
             </div>
-            <div className="sidebar-option" onClick={()=>navigate('contacts')}>
+            <div
+              className="sidebar-option"
+              onClick={() => navigate("contacts")}
+            >
               <img src={Contact} className="sidebar-img" />
               <p className="sidebar-name">Contact</p>
             </div>
@@ -152,12 +158,12 @@ function Sidebar() {
             <p onClick={() => navigate("pipelines")}>Pipelines</p>
             <p className="settings-name">BUSINESS SERVICES</p>
             <p>Calenders</p>
-            <p>Phone Numbers</p>
+            <p onClick={() => navigate("Phonenumbers")}>Phone Numbers</p>
             <p>Reoutation Management</p>
-            <p>Profile</p>
+            <p onClick={() => navigate("Profile")}>Profile</p>
             <p className="settings-name">OTHER SETTINGS</p>
             <p>Custom Fields</p>
-            <p>Custom Values</p>
+            <p onClick={() => navigate("customvalues")}>Custom Values</p>
             <p>Domains</p>
             <p>Media</p>
             <p>URL Redirects</p>

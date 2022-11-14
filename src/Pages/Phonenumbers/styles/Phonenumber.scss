@@ -1,0 +1,24 @@
+@import url("./varaible.scss");
+
+.main-contain {
+  background-color: #f0f5fc;
+  height: 100vh;
+}
+
+.phone-card {
+  margin-top: 5% !important;
+  margin-left: 2% !important;
+  width: 95% !important;
+}
+
+.number {
+  width: 14%;
+  height: 40px;
+  background-color: #37ca37;
+  margin-left: 70% !important;
+}
+.progress-bar {
+  height: 10px;
+  width: 95%;
+  margin-left: 3%;
+}

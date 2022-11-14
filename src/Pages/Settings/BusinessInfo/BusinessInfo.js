@@ -12,6 +12,9 @@ function BusinessInfo() {
             className="card"
             style={{
               width: "100%",
+              // backgroundColor: "white",
+              position: "sticky",
+              top: "60px",
             }}
           >
             <div
@@ -145,6 +148,8 @@ function BusinessInfo() {
               width: "100%",
               marginBottom: "20px",
               height: "523px",
+              position: "sticky",
+              top: "60px",
             }}
           >
             <div
@@ -195,6 +200,8 @@ function BusinessInfo() {
             style={{
               width: "100%",
               marginBottom: "20px",
+              position: "sticky",
+              // top: "60px",
             }}
           >
             <div
@@ -204,6 +211,7 @@ function BusinessInfo() {
                 justifyContent: "space-between",
                 borderBottom: "2px solid #f2f7fa",
                 paddingLeft: "20px",
+                position: "sticky",
                 paddingRight: "20px",
               }}
             >
