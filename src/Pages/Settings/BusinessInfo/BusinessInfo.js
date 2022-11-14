@@ -9,12 +9,11 @@ function BusinessInfo() {
       <div className="container-one">
         <div style={{ width: "48%" }}>
           <div
-            className="card"
+            // className="card"
             style={{
               width: "100%",
+              backgroundColor: "white",
               // backgroundColor: "white",
-              position: "sticky",
-              top: "60px",
             }}
           >
             <div
@@ -75,9 +74,10 @@ function BusinessInfo() {
             </div>
           </div>
           <div
-            className="card"
+            // className="card"
             style={{
               width: "100%",
+              backgroundColor: "white",
               marginBottom: "20px",
               marginTop: "6%",
             }}
@@ -143,13 +143,12 @@ function BusinessInfo() {
         </div>
         <div style={{ width: "48%" }}>
           <div
-            className="card"
+            // className="card"
             style={{
               width: "100%",
+              backgroundColor: "white",
               marginBottom: "20px",
               height: "523px",
-              position: "sticky",
-              top: "60px",
             }}
           >
             <div
@@ -196,11 +195,11 @@ function BusinessInfo() {
             </div>
           </div>
           <div
-            className="card"
+            // className="card"
             style={{
               width: "100%",
               marginBottom: "20px",
-              position: "sticky",
+              backgroundColor: "white",
               // top: "60px",
             }}
           >
@@ -211,7 +210,7 @@ function BusinessInfo() {
                 justifyContent: "space-between",
                 borderBottom: "2px solid #f2f7fa",
                 paddingLeft: "20px",
-                position: "sticky",
+
                 paddingRight: "20px",
               }}
             >

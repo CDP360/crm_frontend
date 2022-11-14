@@ -23,6 +23,14 @@ import Phonenumber from "./Pages/Phonenumbers/Phonenumber";
 import Customvalues from "./Pages/Settings/customvalues/Customvalues";
 import Profile from "./Pages/Settings/Profile/Profile";
 import SmartList from "./Pages/Contacts/SmartList";
+import Calendar from "./Pages/Settings/Calender/Calendar";
+import Domains from "./Pages/Settings/Domains/Domains";
+import Media from "./Pages/Settings/Media/Media";
+// import Calendar from "./Pages/Settings/Calender/Calendar";
+import Url from "./Pages/Settings/Url/Url";
+import Emailservice from "./Pages/Settings/Emailservice/Emailservice";
+import Integration from "./Pages/Settings/Integrations/Integration";
+import Tags from "./Pages/Settings/Tags/Tags";
 import Productsmembership from "./Pages/Sites/Membership/Productsmembership";
 import Offersmembership from "./Pages/Sites/Membership/Offersmembership";
 
@@ -60,6 +68,13 @@ function App() {
         <Route path="/Phonenumbers" element={<Phonenumber />} />
         <Route path="/customvalues" element={<Customvalues />} />
         <Route path="/Profile" element={<Profile />} />
+        <Route path="/calendars" element={<Calendar />} />
+        <Route path="/Domain" element={<Domains />} />
+        <Route path="/media" element={<Media />} />
+        <Route path="/url" element={<Url />} />
+        <Route path="/email" element={<Emailservice />} />
+        <Route path="/integration" element={<Integration />} />
+        <Route path="/Tags" element={<Tags />} />
         <Route path="/reputation" element={<Reputation />}>
           <Route path="/reputation" element={<OverView />} />
           <Route path="/reputation/request" element={<Request />} />
