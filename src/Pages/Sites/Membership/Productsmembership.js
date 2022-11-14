@@ -16,11 +16,9 @@ const Productsmembership = () => {
           </div>
         </button>
       </div>
-      {/* <div> */}
       <p className="productmembership-getstarted-text">
         Get started by creating a new product!{" "}
       </p>
-      {/* </div> */}
     </div>
   );
 };

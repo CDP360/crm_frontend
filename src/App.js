@@ -24,6 +24,7 @@ import Customvalues from "./Pages/Settings/customvalues/Customvalues";
 import Profile from "./Pages/Settings/Profile/Profile";
 import SmartList from "./Pages/Contacts/SmartList";
 import Productsmembership from "./Pages/Sites/Membership/Productsmembership";
+import Offersmembership from "./Pages/Sites/Membership/Offersmembership";
 
 function App() {
   return (
@@ -48,6 +49,10 @@ function App() {
           <Route
             path="/sites/productsmembership"
             element={<Productsmembership />}
+          />
+          <Route
+            path="/sites/offersmembership"
+            element={<Offersmembership />}
           />
         </Route>
         <Route path="/settings/businessInfo" element={<BusinessInfo />} />
