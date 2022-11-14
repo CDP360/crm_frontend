@@ -15,6 +15,7 @@ import Blog from "./Pages/Sites/Blog";
 import Wordpress from "./Pages/Sites/Wordpress";
 import Dashboardmembership from "./Pages/Sites/Membership/Dashboardmembership";
 import Review from "./Pages/Reputation/Review";
+// import Review from "./Pages/Reputation/Review";
 import Conversation from "./Pages/Conversation/Conversation";
 import Listing from "./Pages/Reputation/Listing";
 import Contacts from "./Pages/Contacts/Contacts";
@@ -30,6 +31,7 @@ import Url from "./Pages/Settings/Url/Url";
 import Emailservice from "./Pages/Settings/Emailservice/Emailservice";
 import Integration from "./Pages/Settings/Integrations/Integration";
 import Tags from "./Pages/Settings/Tags/Tags";
+import Productsmembership from "./Pages/Sites/Membership/Productsmembership";
 
 function App() {
   return (
@@ -50,6 +52,10 @@ function App() {
           <Route
             path="/sites/dashboardmembership"
             element={<Dashboardmembership />}
+          />
+          <Route
+            path="/sites/productsmembership"
+            element={<Productsmembership />}
           />
         </Route>
         <Route path="/settings/businessInfo" element={<BusinessInfo />} />
