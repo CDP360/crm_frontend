@@ -1,15 +1,6 @@
 import React from "react";
 import { Outlet, useNavigate } from "react-router-dom";
-
-// import Container from "react-bootstrap/Container";
 import Dropdown from "react-bootstrap/Dropdown";
-// import Search from "../../assests/search.png";
-// import Plus from "../../assests/plus.png";
-// import Card from "react-bootstrap/Card";
-// import Funnel from "../../assests/funnel.png";
-// import Spanner from "../../assests/spanner.png";
-// import PlayButton from "../../assests/play-button.png";
-// import Folder from "../../assests/folder.png";
 import "./styles/sites.scss";
 import Settings from "../../assests/settings.png";
 

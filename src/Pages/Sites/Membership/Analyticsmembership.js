@@ -1,5 +1,6 @@
 import React from "react";
 import BarChart from "../../../assests/bar-chart-fill.svg";
+import Clipboard from "../../../assests/clipboard-check.svg";
 
 const Analyticsmembership = () => {
   return (
@@ -33,14 +34,14 @@ const Analyticsmembership = () => {
             <div className="Analyticsmembership-barchart-holder">
               <img
                 className="Analyticsmembership-barchart"
-                src={BarChart}
-                alt=""
+                src={Clipboard}
+                alt="Clipboard"
               />
             </div>
             <div className="Analyticsmembership-card-p-holder">
-              <p className="Analyticsmembership-card-text-1">Course Progress</p>
+              <p className="Analyticsmembership-card-text-1">Assessments</p>
               <p className="Analyticsmembership-card-text-2">
-                Track progress of your learners
+                View assessments results
               </p>
             </div>
           </div>
