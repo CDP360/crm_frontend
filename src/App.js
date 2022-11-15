@@ -40,6 +40,7 @@ import ManageSmartList from "./Pages/Contacts/ManageSmartList";
 import Company from "./Pages/Contacts/Company";
 import Analyticsmembership from "./Pages/Sites/Membership/Analyticsmembership";
 import Settingsmembership from "./Pages/Sites/Membership/Settingsmembership";
+import Buildersurvey from "./Pages/Sites/Surveys/Buildersurvey";
 
 function App() {
   return (
@@ -78,6 +79,7 @@ function App() {
           />
           <Route path="/sites/settings" element={<Settingsmembership />} />
           <Route path="/sites/Analytics" element={<Analyticsmembership />} />
+          <Route path="/sites/Builder" element={<Buildersurvey />} />
         </Route>
         <Route path="/settings/businessInfo" element={<BusinessInfo />} />
         <Route path="/pipelines" element={<Pipelines />} />
