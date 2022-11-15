@@ -161,7 +161,9 @@ function Sidebar() {
             <p className="settings-name">BUSINESS SERVICES</p>
             <p onClick={() => navigate("calendars")}>Calenders</p>
             <p onClick={() => navigate("Phonenumbers")}>Phone Numbers</p>
-            <p>Reoutation Management</p>
+            <p onClick={() => navigate("Reputationmanagement")}>
+              Reputation Management
+            </p>
             <p onClick={() => navigate("Profile")}>Profile</p>
             <p className="settings-name">OTHER SETTINGS</p>
             <p>Custom Fields</p>
