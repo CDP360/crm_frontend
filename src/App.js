@@ -33,10 +33,12 @@ import Integration from "./Pages/Settings/Integrations/Integration";
 import Tags from "./Pages/Settings/Tags/Tags";
 import Productsmembership from "./Pages/Sites/Membership/Productsmembership";
 import Offersmembership from "./Pages/Sites/Membership/Offersmembership";
-import BulkActions from './Pages/Contacts/BulkActions';
-import Restore from './Pages/Contacts/Restore';
+import BulkActions from "./Pages/Contacts/BulkActions";
+import Restore from "./Pages/Contacts/Restore";
 import ManageSmartList from "./Pages/Contacts/ManageSmartList";
 import Company from "./Pages/Contacts/Company";
+import Analyticsmembership from "./Pages/Sites/Membership/Analyticsmembership";
+import Settingsmembership from "./Pages/Sites/Membership/Settingsmembership";
 
 function App() {
   return (
@@ -50,7 +52,10 @@ function App() {
           <Route path="/contacts" element={<SmartList />} />
           <Route path="/contacts/bulkactions" element={<BulkActions />} />
           <Route path="/contacts/restore" element={<Restore />} />
-          <Route path="/contacts/managesmartlist" element={<ManageSmartList />} />
+          <Route
+            path="/contacts/managesmartlist"
+            element={<ManageSmartList />}
+          />
           <Route path="/contacts/company" element={<Company />} />
         </Route>
         <Route path="/sites" element={<Sites />}>
@@ -70,6 +75,8 @@ function App() {
             path="/sites/offersmembership"
             element={<Offersmembership />}
           />
+          <Route path="/sites/settings" element={<Settingsmembership />} />
+          <Route path="/sites/Analytics" element={<Analyticsmembership />} />
         </Route>
         <Route path="/settings/businessInfo" element={<BusinessInfo />} />
         <Route path="/pipelines" element={<Pipelines />} />

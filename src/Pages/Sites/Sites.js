@@ -75,8 +75,18 @@ const Sites = () => {
               >
                 Offers
               </Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Analytics</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Settings</Dropdown.Item>
+              <Dropdown.Item
+                // href="#/action-3"
+                onClick={() => navigate("/sites/Analytics")}
+              >
+                Analytics
+              </Dropdown.Item>
+              <Dropdown.Item
+                // href="#/action-3"
+                onClick={() => navigate("/sites/settings")}
+              >
+                Settings
+              </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           <Dropdown>
