@@ -32,6 +32,7 @@ import Emailservice from "./Pages/Settings/Emailservice/Emailservice";
 import Integration from "./Pages/Settings/Integrations/Integration";
 import Tags from "./Pages/Settings/Tags/Tags";
 import Productsmembership from "./Pages/Sites/Membership/Productsmembership";
+import Reputationmanagement from "./Pages/Settings/Reputation/Reputationmanagement";
 
 function App() {
   return (
@@ -68,6 +69,10 @@ function App() {
         <Route path="/media" element={<Media />} />
         <Route path="/url" element={<Url />} />
         <Route path="/email" element={<Emailservice />} />
+        <Route
+          path="/Reputationmanagement"
+          element={<Reputationmanagement />}
+        />
         <Route path="/integration" element={<Integration />} />
         <Route path="/Tags" element={<Tags />} />
         <Route path="/reputation" element={<Reputation />}>
