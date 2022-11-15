@@ -33,6 +33,11 @@ import Integration from "./Pages/Settings/Integrations/Integration";
 import Tags from "./Pages/Settings/Tags/Tags";
 import Productsmembership from "./Pages/Sites/Membership/Productsmembership";
 import Reputationmanagement from "./Pages/Settings/Reputation/Reputationmanagement";
+import Offersmembership from "./Pages/Sites/Membership/Offersmembership";
+import BulkActions from "./Pages/Contacts/BulkActions";
+import Restore from "./Pages/Contacts/Restore";
+import ManageSmartList from "./Pages/Contacts/ManageSmartList";
+import Company from "./Pages/Contacts/Company";
 
 function App() {
   return (
@@ -44,6 +49,13 @@ function App() {
         <Route path="/calendar" element={<Calendars />} />
         <Route path="/contacts" element={<Contacts />}>
           <Route path="/contacts" element={<SmartList />} />
+          <Route path="/contacts/bulkactions" element={<BulkActions />} />
+          <Route path="/contacts/restore" element={<Restore />} />
+          <Route
+            path="/contacts/managesmartlist"
+            element={<ManageSmartList />}
+          />
+          <Route path="/contacts/company" element={<Company />} />
         </Route>
         <Route path="/sites" element={<Sites />}>
           <Route path="/sites/" element={<Funnels />} />
@@ -57,6 +69,10 @@ function App() {
           <Route
             path="/sites/productsmembership"
             element={<Productsmembership />}
+          />
+          <Route
+            path="/sites/offersmembership"
+            element={<Offersmembership />}
           />
         </Route>
         <Route path="/settings/businessInfo" element={<BusinessInfo />} />

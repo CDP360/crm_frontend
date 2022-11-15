@@ -28,7 +28,12 @@ const Sites = () => {
           >
             Websites
           </p>
-          <p onClick={() => navigate("/sites/blog")}>Blog</p>
+          <p
+            onClick={() => navigate("/sites/blog")}
+            style={{ cursor: "pointer" }}
+          >
+            Blog
+          </p>
           <Dropdown onClick={() => navigate("/sites/wordpress")}>
             <Dropdown.Toggle
               variant="light"
@@ -64,7 +69,12 @@ const Sites = () => {
               >
                 Products
               </Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Offers</Dropdown.Item>
+              <Dropdown.Item
+                // href="#/action-3"
+                onClick={() => navigate("/sites/offersmembership")}
+              >
+                Offers
+              </Dropdown.Item>
               <Dropdown.Item href="#/action-3">Analytics</Dropdown.Item>
               <Dropdown.Item href="#/action-3">Settings</Dropdown.Item>
             </Dropdown.Menu>

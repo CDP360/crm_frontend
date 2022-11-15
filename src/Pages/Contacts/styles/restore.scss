@@ -1,0 +1,20 @@
+@import "./variables";
+
+.restore-main-container{
+    background-color: $background;
+    height: 84vh;
+    padding: 2%;
+    .restore-header{
+        font-size: 20px;
+    }
+    .restore-body-container{
+        background-color: $light;
+        padding: 2%;
+        text-align: center;
+        .body-content{
+            font-weight: bold;
+            font-size: 14px;
+            margin-top: 2%;
+        }
+    }
+}

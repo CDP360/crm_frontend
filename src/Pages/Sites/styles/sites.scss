@@ -528,3 +528,112 @@
     margin-top: 2%;
   }
 }
+
+// ------------------------------------------
+
+.offersmembership-main-container {
+  margin-top: 4%;
+  background: $ash;
+  padding: 3%;
+
+  .offersmembership-card {
+    display: flex;
+    justify-content: space-between;
+    .offersmembership-text-holder {
+      .offersmembership-text-yourproduct {
+        font-weight: 600;
+        color: $lightgray;
+        font-size: 1.5rem;
+      }
+    }
+    .offersmembership-createproduct-btn {
+      width: 14%;
+      height: 34px;
+      border: none;
+      background: $lightblue;
+      border-radius: 5px;
+      color: $light;
+      .offersmembership-createproductbtn-holder {
+        display: flex;
+        justify-content: space-evenly;
+        .offersmembership-plus-img {
+          width: 8%;
+          height: 1%;
+          margin-top: 7%;
+        }
+        .offersmembership-btn-text {
+          margin-top: 2%;
+        }
+      }
+    }
+  }
+  .offersmembership-cards-body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    .offersmembership-main-card {
+      background: $light;
+      width: 30%;
+      .offersmembership-cards-body-holder {
+        display: flex;
+
+        // padding: 1%;
+        // align-items: center;
+        .offersmembership-cards-img-holder {
+          width: 15%;
+          height: 60px;
+          margin-top: 6%;
+          margin-bottom: 3%;
+          margin-left: 6%;
+          background: $lightblue;
+          border-radius: 5px;
+          .offersmembership-cards-img {
+            width: 87%;
+            height: 47%;
+            margin-left: 5%;
+            margin-top: 24%;
+          }
+        }
+        .offersmembership-cards-text-holder {
+          margin-left: 5%;
+          margin-top: 3%;
+          .offersmembership-card-text-p {
+            margin-top: 17%;
+            color: $lightgray;
+            font-size: 1rem;
+          }
+        }
+      }
+      .offersmembership-cards-text-lastseen {
+        margin-left: 6%;
+        color: $lightgray;
+        font-size: 0.75rem;
+        font-weight: 500;
+      }
+      .offersmembership-div {
+        background: $bluegray;
+        height: 30px;
+      }
+    }
+  }
+  .offersmembership-table-main {
+    background: $light;
+    padding: 4%;
+    .offersmembership-table-nav {
+      display: flex;
+      .offersmembership-table-published-nav {
+        margin-right: 4%;
+      }
+    }
+    .offersmembership-table-div {
+      margin-left: 5%;
+      color: $lightgray;
+      background: $ash;
+
+      .offersmembership-heading {
+        color: $lightgray;
+        font-size: 14px;
+      }
+    }
+  }
+}

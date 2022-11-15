@@ -1,0 +1,26 @@
+@import "./variables";
+
+.manage-main-container{
+    background-color: $background;
+    height: 84vh;
+    padding: 2%;
+    .manage-heading{
+        font-size: 30px;
+    }
+    .manage-body-container{
+        display: flex;
+        width: 35%;
+        justify-content: space-between;
+        .glopal-img{
+            width: 4%;
+            height: 4%;
+            margin-top: 1%;
+        }
+        .other-img{
+            width: 4%;
+            height: 4%;
+            margin-left: 5%;
+            margin-top: 1%;
+        }
+    }
+}

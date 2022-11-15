@@ -191,3 +191,26 @@
     }
   }
 }
+.pipeline-header-container{
+  display: flex;
+  .info-image{
+    width:5%;
+    height: 5%;
+    margin-top: 1%;
+  }
+  .info-name{
+    margin-left: 2%;
+  }
+}
+.pipeline-body-btn-container{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2%;
+  .pipeline-btn{
+    padding: 1%;
+    width: 10%;
+    border: none;
+    background-color: $blue;
+    border-radius: 10px;
+  }
+}

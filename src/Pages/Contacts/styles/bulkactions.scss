@@ -1,0 +1,35 @@
+@import "./variables";
+
+.bulkactions-main-container{
+    background-color: $background;
+    height: 84vh;
+    padding: 2%;
+    .bulkactions-body-container{
+        background-color: $light;
+        .bulkactions-header{
+            padding: 2%;
+            display: flex;
+            justify-content: flex-end;
+            .bulkactions-dropdown{
+                margin-right: 3%;
+                .dropdown-content{
+                    height: 200px;
+                    overflow-x: auto;
+                }
+            }
+            .bulkactions-date{
+                margin-right: 3%;
+                margin-top: 0.5%;
+                color: $darkblue;
+            }
+        }
+        .underline{
+            border: 2px solid $background;
+        }
+        .bulkactions-content{
+            display: flex;
+            justify-content: space-around;
+            padding: 2%;
+        }
+    }
+}

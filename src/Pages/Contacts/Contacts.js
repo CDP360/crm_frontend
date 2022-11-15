@@ -13,11 +13,11 @@ function Contacts() {
           <p className="header-subname" onClick={() => navigate("")}>
             Smart Lists
           </p>
-          <p className="header-subname">Bulk Actions</p>
-          <p className="header-subname">Restore</p>
+          <p className="header-subname" onClick={()=>navigate('/contacts/bulkactions')}>Bulk Actions</p>
+          <p className="header-subname" onClick={()=>navigate('/contacts/restore')}>Restore</p>
           <p className="header-subname">Tasks</p>
-          <p className="header-subname">Company</p>
-          <p className="header-subname">Manage Smart Lists</p>
+          <p className="header-subname" onClick={()=>navigate('/contacts/company')}>Company</p>
+          <p className="header-subname" onClick={()=>navigate('/contacts/managesmartlist')}>Manage Smart Lists</p>
           <div className="underline"></div>
           <img className="setting-img" src={Settings} />
         </div>
