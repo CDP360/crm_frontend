@@ -38,6 +38,7 @@ import BulkActions from "./Pages/Contacts/BulkActions";
 import Restore from "./Pages/Contacts/Restore";
 import ManageSmartList from "./Pages/Contacts/ManageSmartList";
 import Company from "./Pages/Contacts/Company";
+import Customfields from "./Pages/Settings/Customfields/Customfields";
 
 function App() {
   return (
@@ -89,6 +90,7 @@ function App() {
           path="/Reputationmanagement"
           element={<Reputationmanagement />}
         />
+        <Route path="/customfields" element={<Customfields />} />
         <Route path="/integration" element={<Integration />} />
         <Route path="/Tags" element={<Tags />} />
         <Route path="/reputation" element={<Reputation />}>
