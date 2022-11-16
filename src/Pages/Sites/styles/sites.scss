@@ -14,15 +14,23 @@
     justify-content: space-between;
     width: 80%;
     margin-top: -6%;
+    margin-left: 1%;
     .sites-heading {
-      font-size: 18px;
-      font-weight: bold;
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+    .sites-options {
+      font-weight: 500;
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
     }
   }
   .sites-dropdown {
     background: white;
     border: none;
-    margin-top: -4%;
+    margin-top: -1%;
+    font-weight: 500;
+    font-size: 0.875rem;
   }
   .dropdown-toggle::after {
     color: "green" !important;
@@ -619,6 +627,7 @@
   .offersmembership-table-main {
     background: $light;
     padding: 4%;
+    margin-top: 3%;
     .offersmembership-table-nav {
       display: flex;
       .offersmembership-table-published-nav {
@@ -634,6 +643,168 @@
         color: $lightgray;
         font-size: 14px;
       }
+    }
+  }
+}
+// ------------------------------------
+.Analyticsmembership-main-container {
+  margin-top: 1%;
+  padding: 3%;
+  padding-bottom: 5%;
+  .Analyticsmembership-analytics-p-holder {
+    .Analyticsmembership-analytics-p {
+      font-size: 1.5rem;
+      color: $lightgray;
+      font-weight: 600;
+    }
+  }
+  .Analyticsmembership-main-card-holder {
+    display: flex;
+    background: $light;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+    .Analyticsmembership-main-card {
+      margin-top: 3%;
+      cursor: pointer;
+      border-width: 1px;
+      width: 45%;
+      // height: 6rem;
+      border-radius: 0.25rem;
+      border: 1px solid $blackgray;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%);
+      .Analyticsmembership-card-1 {
+        display: flex;
+        align-items: center;
+        .Analyticsmembership-barchart-holder {
+          border-radius: 5px;
+          border: 1px solid black;
+          height: 30px;
+          padding-left: 0.45rem;
+          margin-left: 3%;
+          width: 5.5%;
+          margin-top: 2%;
+          .Analyticsmembership-barchart {
+            margin-left: -10%;
+          }
+        }
+        .Analyticsmembership-card-p-holder {
+          margin-left: 5%;
+          margin-top: 4%;
+          .Analyticsmembership-card-text-1 {
+            font-weight: 600;
+            color: $lightblack;
+            font-size: 14px;
+          }
+          .Analyticsmembership-card-text-2 {
+            color: #718096;
+            margin-top: -5%;
+          }
+        }
+      }
+      .Analyticsmembership-view-text-holder {
+        display: flex;
+        justify-content: flex-end;
+        border-top: 1px solid $blackgray;
+
+        .Analyticsmembership-view-text {
+          color: $lightblue;
+          margin-top: 2%;
+          margin-right: 2%;
+        }
+      }
+    }
+  }
+}
+// ----------------------------
+.settingsmembership-main-container {
+  margin-top: 4%;
+  padding: 0% 2% 2% 2%;
+  .settingsmembership-settings-text-holder {
+    .settingsmembership-settings-text {
+      font-size: 1.5rem;
+      color: $lightgray;
+      font-weight: 600;
+    }
+  }
+  .settingsmembership-main-card-holder {
+    display: flex;
+    flex-wrap: wrap;
+    background: $light;
+    padding: 2%;
+    margin-top: 4%;
+    justify-content: space-between;
+    .settingsmembership-card-holder {
+      width: 27.33%;
+      cursor: pointer;
+
+      .settingsmembership-card {
+        display: flex;
+        // border: 1px solid black;
+        align-items: center;
+        .settingsmembership-card-img-holder {
+          width: 20%;
+          background: $ash;
+          height: 3.5rem;
+          border-radius: 8px;
+          .settingsmembership-card-img {
+            // width: 100%;
+            height: 1.5rem;
+            margin-top: 26%;
+            margin-left: 30%;
+          }
+        }
+        .settingsmembership-card-text-holder {
+          width: 17rem;
+          margin-left: 5%;
+          .settingsmembership-card-details-p {
+            font-weight: 600;
+            color: $blacksgray;
+            font-size: 14px;
+            margin-top: 22%;
+          }
+          .settingsmembership-card-p {
+            color: #718096;
+            font-weight: 400;
+            font-size: 14px;
+            margin-top: -3%;
+          }
+        }
+      }
+    }
+  }
+}
+// --------------------------buildersurvey-----------------
+.buildersurvey-main-container {
+  margin-top: 8%;
+  padding-bottom: 20%;
+  .buildersurvey-body {
+    display: flex;
+    justify-content: space-between;
+    .buildersurvey-builder-text {
+      font-size: 1.25rem;
+      color: #2a3135;
+      padding-left: 2%;
+      font-weight: 400;
+    }
+    .buildersurvey-btn {
+      font-size: 0.875rem;
+      border-radius: 0.3125rem;
+      border: none;
+      background-color: #37ca37;
+      color: $light;
+      cursor: pointer;
+      font-weight: 700;
+      margin-right: 2%;
+    }
+  }
+  .buildersurvey-text-holder {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    .buildersurvey-survey-p {
+      color: #607179 !important;
+      font-size: 0.875rem;
+      font-weight: 400;
     }
   }
 }

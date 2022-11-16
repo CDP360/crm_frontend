@@ -39,6 +39,9 @@ import Restore from "./Pages/Contacts/Restore";
 import ManageSmartList from "./Pages/Contacts/ManageSmartList";
 import Company from "./Pages/Contacts/Company";
 import Customfields from "./Pages/Settings/Customfields/Customfields";
+import Analyticsmembership from "./Pages/Sites/Membership/Analyticsmembership";
+import Settingsmembership from "./Pages/Sites/Membership/Settingsmembership";
+import Buildersurvey from "./Pages/Sites/Surveys/Buildersurvey";
 
 function App() {
   return (
@@ -75,6 +78,9 @@ function App() {
             path="/sites/offersmembership"
             element={<Offersmembership />}
           />
+          <Route path="/sites/settings" element={<Settingsmembership />} />
+          <Route path="/sites/Analytics" element={<Analyticsmembership />} />
+          <Route path="/sites/Builder" element={<Buildersurvey />} />
         </Route>
         <Route path="/settings/businessInfo" element={<BusinessInfo />} />
         <Route path="/pipelines" element={<Pipelines />} />

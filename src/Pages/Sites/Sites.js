@@ -1,15 +1,6 @@
 import React from "react";
 import { Outlet, useNavigate } from "react-router-dom";
-
-// import Container from "react-bootstrap/Container";
 import Dropdown from "react-bootstrap/Dropdown";
-// import Search from "../../assests/search.png";
-// import Plus from "../../assests/plus.png";
-// import Card from "react-bootstrap/Card";
-// import Funnel from "../../assests/funnel.png";
-// import Spanner from "../../assests/spanner.png";
-// import PlayButton from "../../assests/play-button.png";
-// import Folder from "../../assests/folder.png";
 import "./styles/sites.scss";
 import Settings from "../../assests/settings.png";
 
@@ -20,15 +11,19 @@ const Sites = () => {
     <div className="main-container">
       <div className="sites-header-container">
         <div className="sites-header">
-          <p className="sites-heading">Sites</p>
-          <p onClick={() => navigate("")}>Funnels</p>
+          <div className="sites-heading">Sites</div>
+          <p className="sites-options" onClick={() => navigate("")}>
+            Funnels
+          </p>
           <p
+            className="sites-options"
             style={{ cursor: "pointer" }}
             onClick={() => navigate("/sites/websites")}
           >
             Websites
           </p>
           <p
+            className="sites-options"
             onClick={() => navigate("/sites/blog")}
             style={{ cursor: "pointer" }}
           >
@@ -37,20 +32,20 @@ const Sites = () => {
           <Dropdown onClick={() => navigate("/sites/wordpress")}>
             <Dropdown.Toggle
               variant="light"
-              id="dropdown-basic"
+              // id="dropdown-basic"
               className="sites-dropdown"
             >
               WordPress
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Dashboard</Dropdown.Item>
+              <Dropdown.Item>Dashboard</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           <Dropdown>
             <Dropdown.Toggle
               variant="light"
-              id="dropdown-basic"
+              // id="dropdown-basic"
               className="sites-dropdown"
             >
               Membership
@@ -58,25 +53,26 @@ const Sites = () => {
 
             <Dropdown.Menu>
               <Dropdown.Item
-                href="#/action-1"
                 onClick={() => navigate("/sites/dashboardmembership")}
               >
                 Dashboard
               </Dropdown.Item>
               <Dropdown.Item
-                // href="#/action-2"
                 onClick={() => navigate("/sites/productsmembership")}
               >
                 Products
               </Dropdown.Item>
               <Dropdown.Item
-                // href="#/action-3"
                 onClick={() => navigate("/sites/offersmembership")}
               >
                 Offers
               </Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Analytics</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Settings</Dropdown.Item>
+              <Dropdown.Item onClick={() => navigate("/sites/Analytics")}>
+                Analytics
+              </Dropdown.Item>
+              <Dropdown.Item onClick={() => navigate("/sites/settings")}>
+                Settings
+              </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           <Dropdown>
@@ -89,9 +85,9 @@ const Sites = () => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Builders</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Analyze</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Submissions</Dropdown.Item>
+              <Dropdown.Item>Builders</Dropdown.Item>
+              <Dropdown.Item>Analyze</Dropdown.Item>
+              <Dropdown.Item>Submissions</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           <Dropdown>
@@ -104,14 +100,31 @@ const Sites = () => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Builders</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Analyze</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Submissions</Dropdown.Item>
+              <Dropdown.Item onClick={() => navigate("/sites/Builder")}>
+                Builders
+              </Dropdown.Item>
+              <Dropdown.Item>Analyze</Dropdown.Item>
+              <Dropdown.Item>Submissions</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-          <p>Chat Widget</p>
-          <p>Media</p>
-          <p>URL Redirection</p>
+          <p
+            className="sites-options"
+            // style={{ marginTop: "0.35%" }}
+          >
+            Chat Widget
+          </p>
+          <p
+            className="sites-options"
+            // style={{ marginTop: "0.35%" }}
+          >
+            Media
+          </p>
+          <p
+            className="sites-options"
+            // style={{ marginTop: "0.35%" }}
+          >
+            URL Redirection
+          </p>
           <div style={{ borderLeft: "1px solid gray", height: "20px" }}></div>
           <img
             src={Settings}
