@@ -42,6 +42,11 @@ import Customfields from "./Pages/Settings/Customfields/Customfields";
 import Analyticsmembership from "./Pages/Sites/Membership/Analyticsmembership";
 import Settingsmembership from "./Pages/Sites/Membership/Settingsmembership";
 import Buildersurvey from "./Pages/Sites/Surveys/Buildersurvey";
+import Analyze from "./Pages/Sites/Surveys/Analyzesurvey";
+import Submission from "./Pages/Sites/Surveys/Submissionsurvey";
+import Builderform from "./Pages/Sites/Form/Builderform";
+import Analyzeform from "./Pages/Sites/Form/Analyzeform";
+import Submissionform from "./Pages/Sites/Form/Submissionform";
 
 function App() {
   return (
@@ -81,6 +86,11 @@ function App() {
           <Route path="/sites/settings" element={<Settingsmembership />} />
           <Route path="/sites/Analytics" element={<Analyticsmembership />} />
           <Route path="/sites/Builder" element={<Buildersurvey />} />
+          <Route path="/sites/analyze" element={<Analyze />} />
+          <Route path="/sites/submission" element={<Submission />} />
+          <Route path="/sites/Builderform" element={<Builderform />} />
+          <Route path="/sites/Analyzeform" element={<Analyzeform />} />
+          <Route path="/sites/Submissionform" element={<Submissionform />} />
         </Route>
         <Route path="/settings/businessInfo" element={<BusinessInfo />} />
         <Route path="/pipelines" element={<Pipelines />} />

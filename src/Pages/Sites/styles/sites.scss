@@ -808,3 +808,270 @@
     }
   }
 }
+// -------------------------------Analyze survey-------------------------------
+.analyzesurvey-main-container {
+  margin-top: 8%;
+  padding-bottom: 20%;
+  .analyzesurvey-body {
+    display: flex;
+    justify-content: space-between;
+    .analyzesurvey-builder-text {
+      font-size: 1.25rem;
+      color: #2a3135;
+      padding-left: 2%;
+      font-weight: 400;
+    }
+    .analyzesurvey-calendar-main-holder {
+      display: flex;
+      // background: $light;
+      // margin-right: 5%;
+      .analyzesurvey-calendar-img-holder {
+        // height: 2.5rem;
+        // background: $light;
+        margin-top: 3.5%;
+        margin-left: 5%;
+        .analyzesurvey-calendar-img {
+        }
+      }
+      .analyzesurvey-calendar-input-holder {
+        .analyzesurvey-calendar-input {
+          border: none;
+          color: #607179 !important;
+          // height: 1rem;
+          margin-top: 0.75rem;
+          margin-left: 1rem;
+        }
+      }
+      .analyzesurvey-calendar-input-holder::placeholder {
+        color: #6c757d !important;
+        font-size: 0.85rem;
+      }
+      .analyzesurvey-btn {
+        font-size: 0.875rem;
+        border-radius: 0.3125rem;
+        border: none;
+        background-color: $lightblue;
+        color: $light;
+        cursor: pointer;
+        font-weight: 700;
+        margin-right: 2%;
+        width: 2.5rem;
+        .analyzesurvey-refresh-img {
+          margin-bottom: 0.25rem;
+        }
+      }
+    }
+  }
+  .analyzesurvey-text-holder {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    .analyzesurvey-survey-p {
+      color: #607179 !important;
+      font-size: 0.875rem;
+      font-weight: 400;
+    }
+  }
+}
+// -------------------------------------submission survey--------------------
+.submissionsurvey-main-container {
+  margin-top: 8%;
+  padding-bottom: 20%;
+  .submissionsurvey-body {
+    display: flex;
+    justify-content: space-between;
+    .submissionsurvey-builder-text {
+      font-size: 1.25rem;
+      color: #2a3135;
+      padding-left: 2%;
+      font-weight: 400;
+    }
+    .submissionsurvey-calendar-main-holder {
+      display: flex;
+      // background: $light;
+      // margin-right: 5%;
+      .submissionsurvey-calendar-img-holder {
+        // height: 2.5rem;
+        // background: $light;
+        margin-top: 3.5%;
+        margin-left: 5%;
+        .submissionsurvey-calendar-img {
+        }
+      }
+      .submissionsurvey-calendar-input-holder {
+        .submissionsurvey-calendar-input {
+          border: none;
+          color: #607179 !important;
+          // height: 1rem;
+          margin-top: 0.75rem;
+          margin-left: 1rem;
+        }
+      }
+      .submissionsurvey-calendar-input-holder::placeholder {
+        color: #6c757d !important;
+        font-size: 0.85rem;
+      }
+      .submissionsurvey-btn {
+        font-size: 0.875rem;
+        border-radius: 0.3125rem;
+        border: none;
+        background-color: $lightblue;
+        color: $light;
+        cursor: pointer;
+        font-weight: 700;
+        margin-right: 2%;
+        width: 2.5rem;
+        .submissionsurvey-refresh-img {
+          margin-bottom: 0.25rem;
+        }
+      }
+    }
+  }
+  .submissionsurvey-text-holder {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    .submissionsurvey-survey-p {
+      color: #607179 !important;
+      font-size: 0.875rem;
+      font-weight: 400;
+    }
+  }
+}
+// ---------------------------------------Analyze form----------------------------
+.analyzeform-main-container {
+  margin-top: 8%;
+  padding-bottom: 20%;
+  .analyzeform-body {
+    display: flex;
+    justify-content: space-between;
+    .analyzeform-builder-text {
+      font-size: 1.25rem;
+      color: #2a3135;
+      padding-left: 2%;
+      font-weight: 400;
+    }
+    .analyzeform-calendar-main-holder {
+      display: flex;
+      // background: $light;
+      // margin-right: 5%;
+      .analyzeform-calendar-img-holder {
+        // height: 2.5rem;
+        // background: $light;
+        margin-top: 3.5%;
+        margin-left: 5%;
+        .analyzeform-calendar-img {
+        }
+      }
+      .analyzeform-calendar-input-holder {
+        .analyzeform-calendar-input {
+          border: none;
+          color: #607179 !important;
+          // height: 1rem;
+          margin-top: 0.75rem;
+          margin-left: 1rem;
+        }
+      }
+      .analyzeform-calendar-input-holder::placeholder {
+        color: #6c757d !important;
+        font-size: 0.85rem;
+      }
+      .analyzeform-btn {
+        font-size: 0.875rem;
+        border-radius: 0.3125rem;
+        border: none;
+        background-color: $lightblue;
+        color: $light;
+        cursor: pointer;
+        font-weight: 700;
+        margin-right: 2%;
+        width: 2.5rem;
+        .analyzeform-refresh-img {
+          margin-bottom: 0.25rem;
+        }
+      }
+    }
+  }
+  .analyzeform-text-holder {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    .analyzeform-survey-p {
+      color: #607179 !important;
+      font-size: 0.875rem;
+      font-weight: 400;
+    }
+  }
+}
+// -----------------------------------Submission form---------------------------------
+.submissionform-main-container {
+  margin-top: 8%;
+  padding-bottom: 20%;
+  .submissionform-body {
+    display: flex;
+    justify-content: space-between;
+    .submissionform-builder-text {
+      font-size: 1.25rem;
+      color: #2a3135;
+      padding-left: 2%;
+      font-weight: 400;
+    }
+    .submissionform-calendar-main-holder {
+      display: flex;
+      // background: $light;
+      // margin-right: 5%;
+      .submissionform-calendar-img-holder {
+        // height: 2.5rem;
+        // background: $light;
+        margin-top: 3.5%;
+        margin-left: 5%;
+        .submissionform-calendar-img {
+        }
+      }
+      .submissionform-calendar-input-holder {
+        .submissionform-calendar-input {
+          border: none;
+          color: #607179 !important;
+          // height: 1rem;
+          margin-top: 0.75rem;
+          margin-left: 1rem;
+        }
+      }
+      .submissionform-calendar-input-holder::placeholder {
+        color: #6c757d !important;
+        font-size: 0.85rem;
+      }
+      .submissionform-btn {
+        font-size: 0.875rem;
+        border-radius: 0.3125rem;
+        border: none;
+        background-color: $lightblue;
+        color: $light;
+        cursor: pointer;
+        font-weight: 700;
+        margin-right: 2%;
+        width: 2.5rem;
+        .submissionform-refresh-img {
+          margin-bottom: 0.25rem;
+        }
+      }
+    }
+  }
+  .submissionform-card-body {
+    display: flex;
+    .submissionform-left {
+      width: 30%;
+      padding: 1.5rem;
+      .submissionform-select {
+        // width: 20rem;
+        width: 100%;
+        border: none;
+        height: 2.5rem;
+        border-radius: 5px;
+      }
+    }
+    .submissionform-right {
+      width: 70%;
+    }
+  }
+}
