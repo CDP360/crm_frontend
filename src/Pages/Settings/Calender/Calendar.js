@@ -108,7 +108,7 @@ function Calendar() {
           </p>
           <div style={{ display: "flex" }}>
             <input type="checkbox" />
-            <p style={{ marginLeft: "2%", marginLeft: "3%" }}>24 Time Format</p>
+            <p style={{ marginTop: "2%", marginLeft: "3%" }}>24 Time Format</p>
           </div>
           <p style={{ color: "grey", fontSize: "smaller" }}>
             Use 24h format instead of AM/PM in the Appointment Widget. You can

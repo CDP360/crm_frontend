@@ -6,7 +6,7 @@ function Integration() {
   const [data, setData] = useState(true);
 
   return (
-    <div style={{ backgroundColor: "#f0f5fc", height: "120vh" }}>
+    <div style={{ backgroundColor: "white" }}>
       <div
         style={{
           position: "sticky",
@@ -20,6 +20,7 @@ function Integration() {
             justifyContent: "space-around",
             width: "15%",
             marginTop: "auto",
+            marginLeft: "2%",
           }}
         >
           <p style={{ fontWeight: 700, fontSize: "15px", cursor: "pointer" }}>
@@ -62,8 +63,12 @@ function Integration() {
       {data ? (
         <>
           {" "}
-          <div>
-            <div style={{ display: "flex" }}>
+          <div
+            style={{
+              backgroundColor: "#f0f5fc",
+            }}
+          >
+            <div style={{ display: "flex", padding: "2%" }}>
               <div
                 style={{
                   backgroundColor: "white",
@@ -184,7 +189,7 @@ function Integration() {
                 </Button>
               </div>
             </div>
-            <div style={{ display: "flex", marginTop: "5%" }}>
+            <div style={{ display: "flex", marginTop: "5%", marginLeft: "3%" }}>
               <div
                 style={{
                   backgroundColor: "white",
@@ -218,7 +223,7 @@ function Integration() {
               <div
                 style={{
                   backgroundColor: "white",
-                  width: "24%",
+                  width: "22%",
                   height: "350px",
                   marginLeft: "3%",
                 }}

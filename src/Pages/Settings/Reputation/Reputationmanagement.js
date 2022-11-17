@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import Card from "react-bootstrap/Card";
 
 function Reputationmanagement() {
   return (
@@ -215,6 +216,107 @@ function Reputationmanagement() {
               src="https://tse2.mm.bing.net/th?id=OIP.WZ8sLXwxOlidvPEJY_b8PQHaIL&pid=Api&P=0"
               style={{ width: "40%", marginLeft: "56%", marginTop: "-53%" }}
             />
+          </div>
+        </div>
+      </div>
+      <div
+        style={{
+          backgroundColor: "white",
+          padding: "1%",
+          width: "100%",
+          height: "900px",
+          marginTop: "3%",
+        }}
+      >
+        <div style={{ display: "flex", marginTop: "2%" }}>
+          <Form.Check type="switch" id="custom-switch" />
+          <p style={{ marginLeft: "2%" }}>Customize Review Widget</p>
+        </div>
+        <hr />
+        <div>
+          <p style={{ fontWeight: "bold", marginLeft: "3%" }}>
+            Review Widget Display{" "}
+          </p>
+          <p style={{ marginLeft: "3%" }}>Header Title</p>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Control
+              type="text"
+              placeholder="Customer Testimonials"
+              style={{ width: "40%", marginLeft: "3%" }}
+            />
+          </Form.Group>
+          <p style={{ marginLeft: "3%" }}>Title color</p>
+          <div
+            style={{
+              backgroundColor: "#f0f5fc",
+              width: "20%",
+              height: "40px",
+              marginLeft: "3%",
+            }}
+          >
+            <p style={{ marginLeft: "6%", padding: "3%", marginLeft: "3%" }}>
+              #2a3135
+            </p>
+          </div>
+          <p style={{ marginLeft: "3%" }}>Rating Color</p>
+          <div
+            style={{
+              backgroundColor: "#f0f5fc",
+              width: "20%",
+              height: "40px",
+              marginLeft: "3%",
+            }}
+          >
+            <p style={{ marginLeft: "6%", padding: "3%", marginLeft: "3%" }}>
+              #ffbc00
+            </p>
+          </div>
+          <p style={{ marginLeft: "3%" }}>Background Color</p>
+          <div
+            style={{
+              backgroundColor: "#f0f5fc",
+              width: "20%",
+              height: "40px",
+              marginLeft: "3%",
+            }}
+          >
+            <p style={{ marginLeft: "6%", padding: "3%", marginLeft: "3%" }}>
+              #2a3135
+            </p>
+          </div>
+          <p style={{ marginLeft: "3%" }}> Disable Powered By</p>
+          <div
+            style={{
+              backgroundColor: "#f0f5fc",
+              width: "20%",
+              height: "40px",
+              marginLeft: "3%",
+            }}
+          >
+            <Form.Check type="switch" id="custom-switch" />
+            <div style={{ marginTop: "15%" }}>
+              <hr style={{ width: "528px" }} />
+            </div>
+            <p
+              style={{
+                fontSize: "large",
+                fontWeight: "bolder",
+                color: "grey",
+                marginLeft: "3%",
+              }}
+            >
+              code
+            </p>
+            <p style={{ fontSize: "small", marginLeft: "3%" }}>
+              Add the below code in your website.
+            </p>
+            <div>
+              <Card style={{ width: "100%", height: "200px" }}>
+                <Card.Body>
+                  <p>script type= "script" in a code of javascript</p>
+                </Card.Body>
+              </Card>
+            </div>
           </div>
         </div>
       </div>

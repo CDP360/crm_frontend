@@ -166,7 +166,7 @@ function Sidebar() {
             </p>
             <p onClick={() => navigate("Profile")}>Profile</p>
             <p className="settings-name">OTHER SETTINGS</p>
-            <p>Custom Fields</p>
+            <p onClick={() => navigate("customfields")}>Custom Fields</p>
             <p onClick={() => navigate("customvalues")}>Custom Values</p>
             <p onClick={() => navigate("Domain")}>Domains</p>
             <p onClick={() => navigate("media")}>Media</p>
