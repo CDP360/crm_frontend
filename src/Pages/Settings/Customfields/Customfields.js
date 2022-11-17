@@ -13,7 +13,7 @@ function Customfields() {
   const [data, setData] = useState(true);
   const [show, setShow] = useState(false);
   const [step, setStep] = useState(0);
-  const [Addfields, setAddfields] = useState(true);
+  const [Addfields, setAddfields] = useState(false);
 
   const handleClose = () => {
     setShow(false);
@@ -340,6 +340,7 @@ function Customfields() {
                     body
                     style={{ width: "29%", height: "60px" }}
                     onClick={() => setStep(0)}
+                    className={`${step === 0 ? "active" : ""}`}
                   >
                     singleline
                   </Card>
@@ -347,49 +348,69 @@ function Customfields() {
                     body
                     style={{ width: "29%", height: "60px", marginLeft: "2%" }}
                     onClick={() => setStep(1)}
+                    className={`${step === 1 ? "active" : ""}`}
                   >
                     multiline
                   </Card>
                   <Card
                     body
                     style={{ width: "29%", height: "60px", marginLeft: "2%" }}
+                    onClick={() => setStep(2)}
+                    className={`${step === 2 ? "active" : ""}`}
                   >
-                    {" "}
                     Textboxlist
                   </Card>
                 </div>
                 <p style={{ color: "grey" }}>Values</p>
                 <div style={{ display: "flex" }}>
-                  <Card body style={{ width: "29%", height: "60px" }}>
+                  <Card
+                    body
+                    style={{ width: "29%", height: "60px" }}
+                    onClick={() => setStep(3)}
+                    className={`${step === 3 ? "active" : ""}`}
+                  >
                     number
                   </Card>
                   <Card
                     body
                     style={{ width: "29%", height: "60px", marginLeft: "2%" }}
+                    onClick={() => setStep(4)}
+                    className={`${step === 4 ? "active" : ""}`}
                   >
                     Phone
                   </Card>
                   <Card
                     body
                     style={{ width: "29%", height: "60px", marginLeft: "2%" }}
+                    onClick={() => setStep(5)}
+                    className={`${step === 5 ? "active" : ""}`}
                   >
                     monetary
                   </Card>
                 </div>
                 <p style={{ color: "grey" }}>Choosing Options</p>
                 <div style={{ display: "flex" }}>
-                  <Card body style={{ width: "29%", height: "75px" }}>
+                  <Card
+                    body
+                    style={{ width: "29%", height: "75px" }}
+                    onClick={() => setStep(6)}
+                    className={`${step === 6 ? "active" : ""}`}
+                  >
                     <p>Dropdown(single)</p>
                   </Card>
                   <Card
                     body
                     style={{ width: "29%", height: "75px", marginLeft: "2%" }}
+                    onClick={() => setStep(7)}
+                    className={`${step === 7 ? "active" : ""}`}
                   >
                     <p>Dropdown(multiple)</p>
                   </Card>
                   <Card
                     body
                     style={{ width: "29%", height: "75px", marginLeft: "2%" }}
+                    onClick={() => setStep(8)}
+                    className={`${step === 8 ? "active" : ""}`}
                   >
                     <p style={{ fontSize: "smaller", marginTop: "2%" }}>
                       Radioselect
@@ -397,12 +418,19 @@ function Customfields() {
                   </Card>
                 </div>
                 <div style={{ display: "flex", marginTop: "3%" }}>
-                  <Card body style={{ width: "29%", height: "60px" }}>
+                  <Card
+                    body
+                    style={{ width: "29%", height: "60px" }}
+                    onClick={() => setStep(9)}
+                    className={`${step === 9 ? "active" : ""}`}
+                  >
                     <p>checkbox</p>
                   </Card>
                   <Card
                     body
                     style={{ width: "29%", height: "60px", marginLeft: "3%" }}
+                    onClick={() => setStep(10)}
+                    className={`${step === 10 ? "active" : ""}`}
                   >
                     <p>Datepicker</p>
                   </Card>
@@ -410,11 +438,18 @@ function Customfields() {
                 <p style={{ color: "grey" }}>Others</p>
                 <div style={{ display: "flex" }}>
                   <Card body style={{ width: "29%", height: "60px" }}>
-                    <p>fileupload</p>
+                    <p
+                      onClick={() => setStep(11)}
+                      className={`${step === 11 ? "active" : ""}`}
+                    >
+                      fileupload
+                    </p>
                   </Card>
                   <Card
                     body
                     style={{ width: "29%", height: "60px", marginLeft: "2%" }}
+                    onClick={() => setStep(12)}
+                    className={`${step === 12 ? "active" : ""}`}
                   >
                     <p>signature</p>
                   </Card>
@@ -442,20 +477,174 @@ function Customfields() {
                         controlId="exampleForm.ControlTextarea1"
                         style={{ width: "95%", height: "69px" }}
                       >
-                        <Form.Control as="textarea" rows={3} />
+                        <Form.Control
+                          as="textarea"
+                          rows={3}
+                          style={{ height: "51px" }}
+                        />
                       </Form.Group>
                     </Card>
+                  </div>
+                  <div
+                    className="groove"
+                    hidden={step !== 2}
+                    style={{ height: "140px" }}
+                  >
+                    <div style={{ display: "flex", marginTop: "6%" }}>
+                      <p style={{ marginLeft: "10%" }}>Box1</p>
+                      <input placeholder="test1" style={{ marginLeft: "2%" }} />
+                    </div>
+                    <div style={{ display: "flex", marginTop: "2%" }}>
+                      <p style={{ marginLeft: "10%" }}>Box2</p>
+                      <input placeholder="test2" style={{ marginLeft: "2%" }} />
+                    </div>
+                  </div>
+                  <div hidden={step !== 3}>
+                    <p>preview</p>
+                    <div className="groove">
+                      <p>Numeric</p>
+                      <Form.Group
+                        className="mb-3"
+                        controlId="exampleForm.ControlInput1"
+                      >
+                        <Form.Control
+                          type="text"
+                          style={{ marginLeft: "9%", width: "80%" }}
+                        />
+                      </Form.Group>
+                    </div>
+                  </div>
+                  <div hidden={step !== 4}>
+                    <p>preview</p>
+                    <div className="groove">
+                      <p>PhoneNumber</p>
+                      <Form.Group
+                        className="mb-3"
+                        controlId="exampleForm.ControlInput1"
+                      >
+                        <Form.Control
+                          type="text"
+                          placeholder="+ 1-(555) 987-6543"
+                          style={{ marginLeft: "9%", width: "80%" }}
+                        />
+                      </Form.Group>
+                    </div>
+                  </div>
+                  <div hidden={step !== 5}>
+                    <p>preview</p>
+                    <div className="groove">
+                      <p>Amount</p>
+                      <Form.Group
+                        className="mb-3"
+                        controlId="exampleForm.ControlInput1"
+                      >
+                        <Form.Control
+                          type="text"
+                          placeholder="$0.00"
+                          style={{ marginLeft: "9%", width: "80%" }}
+                        />
+                      </Form.Group>
+                    </div>
+                  </div>
+                  <div hidden={step !== 6}>
+                    <p>preview</p>
+                    <div className="groove">
+                      <p>select</p>
+                      <Form.Group
+                        className="mb-3"
+                        controlId="exampleForm.ControlInput1"
+                      >
+                        <Form.Control
+                          type="text"
+                          placeholder="option1"
+                          style={{ marginLeft: "9%", width: "80%" }}
+                        />
+                      </Form.Group>
+                    </div>
+                  </div>
+                  <div hidden={step !== 7}>
+                    <p>preview</p>
+                    <div className="groove">
+                      <p>select</p>
+                      <Form.Group
+                        className="mb-3"
+                        controlId="exampleForm.ControlInput1"
+                      >
+                        <Form.Control
+                          type="text"
+                          placeholder="select"
+                          style={{ marginLeft: "9%", width: "80%" }}
+                        />
+                      </Form.Group>
+                    </div>
+                  </div>
+                  <div hidden={step !== 8}>
+                    <p>preview</p>
+                    <div className="groove">
+                      <div style={{ display: "flex" }}>
+                        <input type="checkbox" style={{ marginLeft: "5%" }} />
+                        <p style={{ marginTop: "3%", marginLeft: "3%" }}>
+                          Radio
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div hidden={step !== 9}>
+                    <p>preview</p>
+                    <div className="groove">
+                      <div style={{ display: "flex" }}>
+                        <input type="checkbox" style={{ marginLeft: "5%" }} />
+                        <p style={{ marginTop: "3%", marginLeft: "3%" }}>
+                          Checkbox
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div hidden={step !== 10}>
+                    <p>preview</p>
+                    <div className="groove">
+                      <Form.Group
+                        className="mb-3"
+                        controlId="exampleForm.ControlInput1"
+                      >
+                        <Form.Control
+                          type="text"
+                          style={{
+                            marginLeft: "9%",
+                            width: "80%",
+                            marginTop: "3%",
+                          }}
+                        />
+                      </Form.Group>
+                    </div>
+                  </div>
+                  <div hidden={step !== 11}>
+                    <p>preview</p>
+                    <div className="groove" style={{ height: "120px" }}>
+                      <p>File</p>
+                      <div style={{ display: "flex" }}>
+                        <button>choose file</button>
+                        <p>No file choosen</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div hidden={step !== 12}>
+                    <p>preview</p>
+                    <div className="groove" style={{ height: "120px" }}>
+                      <p>signature</p>
+                      <div style={{ display: "flex" }}>
+                        <button>choose file</button>
+                        <p>No file choosen</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
             <Button variant="primary" onClick={handleClose}>
-              Save Changes
+              Next
             </Button>
           </Modal.Footer>
         </Modal>

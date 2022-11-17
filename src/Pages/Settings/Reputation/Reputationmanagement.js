@@ -1,9 +1,15 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import Card from "react-bootstrap/Card";
+import { useState } from "react";
+import Modal from "react-bootstrap/Modal";
 
 function Reputationmanagement() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  const [step, setStep] = useState(0);
   return (
     <div
       style={{
@@ -21,7 +27,11 @@ function Reputationmanagement() {
           padding: "1%",
         }}
       >
-        <Button variant="success" style={{ marginLeft: "84%" }}>
+        <Button
+          variant="success"
+          style={{ marginLeft: "84%" }}
+          onClick={handleShow}
+        >
           Send review request
         </Button>
       </div>
@@ -91,130 +101,87 @@ function Reputationmanagement() {
           </div>
         </div>
       </div>
+
       <div
         style={{
           backgroundColor: "white",
-          padding: "1%",
           width: "100%",
-          height: "600px",
-          marginTop: "3%",
+          height: "700px",
+          marginTop: "5%",
         }}
       >
-        <div style={{ display: "flex", marginTop: "2%" }}>
+        <div
+          style={{
+            display: "flex",
+            padding: "1%",
+            borderBottom: "1px solid grey",
+          }}
+        >
           <Form.Check type="switch" id="custom-switch" />
           <p style={{ marginLeft: "2%" }}>Customize Review SMS</p>
         </div>
-        <hr />
-        <div style={{ display: "flex" }}>
-          <div style={{ display: "flex" }}>
-            <p style={{ marginLeft: "2%" }}> RequestwithImage</p>
-
-            <div style={{ display: "flex", marginLeft: "350px" }}>
-              <p>image</p>
-
-              <Form.Check
-                type="switch"
-                id="custom-switch"
-                style={{ marginLeft: "-2%" }}
-              />
-            </div>
-          </div>
-        </div>
-        <div>
+        <div style={{ display: "flex", marginTop: "2%" }}>
           <div
             style={{
-              backgroundColor: "#bcdaf8",
-              width: "20%",
-              height: "150px",
-
-              marginLeft: "1%",
+              width: "50%",
+              borderRight: "1px solid grey",
             }}
           >
-            <Button
-              variant="outline-primary"
-              style={{ marginTop: "45%", width: "99%" }}
-            >
-              Add images
-            </Button>
+            <div>
+              <div style={{ display: "flex", marginLeft: "11%" }}>
+                <p style={{ color: "grey" }}>Request with image</p>
+                <div style={{ display: "flex", marginLeft: "47%" }}>
+                  <p style={{ color: "grey" }}>image</p>
+                  <Form.Check
+                    type="switch"
+                    id="custom-switch"
+                    style={{ marginLeft: "-10%" }}
+                  />
+                </div>
+              </div>
+              <div
+                style={{
+                  backgroundColor: "#f0f5fc",
+                  marginLeft: "10%",
+                  width: "35%",
+                  height: "200px",
+                }}
+              >
+                <Button
+                  variant="outline-primary"
+                  style={{ width: "100%", marginTop: "70%" }}
+                >
+                  Add image
+                </Button>
+              </div>
+              <p style={{ color: "grey", marginLeft: "10%", marginTop: "5%" }}>
+                SMS to user
+              </p>
+              <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlTextarea1"
+                style={{ marginLeft: "10%" }}
+              >
+                <Form.Label>Message</Form.Label>
+                <Form.Control
+                  as="textarea"
+                  rows={3}
+                  placeholder="message"
+                  style={{ height: "150px", width: "90%" }}
+                />
+              </Form.Group>
+              <Button
+                variant="success"
+                style={{ marginLeft: "10%", width: "20%" }}
+              >
+                Save
+              </Button>
+            </div>
           </div>
-          <p style={{ color: "grey", fontSize: "small", marginLeft: "1%" }}>
-            SMS sent to User
-          </p>
-          <p style={{ fontSize: "large", marginLeft: "1%" }}>Message</p>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-            <Form.Control
-              as="textarea"
-              rows={3}
-              placeholder="messages"
-              style={{ width: "50%", marginLeft: "1%", height: "100px" }}
-            />
-          </Form.Group>
-          <Button variant="success" style={{ width: "20%", marginLeft: "1%" }}>
-            Save
-          </Button>
-        </div>
-        <div style={{ marginLeft: "14%", marginTop: "2%" }}>
-          <img
-            src="https://tse2.mm.bing.net/th?id=OIP.WZ8sLXwxOlidvPEJY_b8PQHaIL&pid=Api&P=0"
-            style={{ width: "40%", marginLeft: "56%", marginTop: "-45%" }}
-          />
-        </div>
-      </div>
-      <div
-        style={{
-          backgroundColor: "white",
-          padding: "1%",
-          width: "100%",
-          height: "600px",
-          marginTop: "3%",
-        }}
-      >
-        <div style={{ display: "flex", marginTop: "2%" }}>
-          <Form.Check type="switch" id="custom-switch" />
-          <p style={{ marginLeft: "2%" }}>Customize Review Email</p>
-        </div>
-        <hr />
-        <div>
-          <div style={{ marginLeft: "1%" }}>
-            <p>Email Sent to the User</p>
-            <p>Subject</p>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Control
-                type="text"
-                placeholder="Your Feedback Means A Lot"
-                style={{ width: "40%" }}
-              />
-            </Form.Group>
-            <p>Heading</p>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Control
-                type="text"
-                placeholder="Thank you for your business!"
-                style={{ width: "40%" }}
-              />
-            </Form.Group>
-            <p>Message</p>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Control
-                type="text"
-                placeholder="Would you be so kind as to recommend us?"
-                style={{ height: "100px", width: "40%" }}
-              />
-            </Form.Group>
-            <p>Positive Answer</p>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Control
-                type="text"
-                placeholder="Yes"
-                style={{ width: "40%" }}
-              />
-            </Form.Group>
-          </div>
-
           <div style={{ marginLeft: "14%", marginTop: "2%" }}>
             <img
               src="https://tse2.mm.bing.net/th?id=OIP.WZ8sLXwxOlidvPEJY_b8PQHaIL&pid=Api&P=0"
-              style={{ width: "40%", marginLeft: "56%", marginTop: "-53%" }}
+              style={{ width: "80%" }}
             />
           </div>
         </div>
@@ -222,103 +189,291 @@ function Reputationmanagement() {
       <div
         style={{
           backgroundColor: "white",
-          padding: "1%",
+          width: "100%",
+          height: "700px",
+          marginTop: "5%",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            padding: "1%",
+            borderBottom: "1px solid black",
+          }}
+        >
+          <Form.Check type="switch" id="custom-switch" />
+          <p style={{ marginLeft: "4%" }}>Customize Review Email</p>
+        </div>
+        <div style={{ display: "flex" }}>
+          <div
+            style={{
+              width: "50%",
+              marginLeft: "4%",
+              marginTop: "3%",
+              borderRight: "1px solid black",
+            }}
+          >
+            <p>Email Sent to the User</p>
+
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlInput1"
+              style={{ marginLeft: "10%" }}
+            >
+              <Form.Label>Subject</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Your Feedback Means A Lot"
+                style={{ width: "90%" }}
+              />
+            </Form.Group>
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlInput1"
+              style={{ marginLeft: "10%" }}
+            >
+              <Form.Label>Heading</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Thank you for your business!"
+                style={{ width: "90%" }}
+              />
+            </Form.Group>
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlInput1"
+              style={{ marginLeft: "10%" }}
+            >
+              <Form.Label>Subject</Form.Label>
+              <Form.Control
+                as="textarea"
+                rows={3}
+                placeholder="Would you be so kind as to recommend us?"
+                style={{ width: "90%" }}
+              />
+            </Form.Group>
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlInput1"
+              style={{ marginLeft: "10%" }}
+            >
+              <Form.Label>Positive Answer</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="yes"
+                style={{ width: "50%" }}
+              />
+            </Form.Group>
+            <Button
+              variant="success"
+              style={{ width: "30%", marginLeft: "10%" }}
+            >
+              Save
+            </Button>
+          </div>
+          <div>
+            <div
+              style={{
+                marginLeft: "14%",
+                marginTop: "2%",
+              }}
+            >
+              <img
+                src="https://tse2.mm.bing.net/th?id=OIP.WZ8sLXwxOlidvPEJY_b8PQHaIL&pid=Api&P=0"
+                style={{ width: "100%" }}
+                hidden={step !== 0}
+              />
+              <img
+                src="https://tse1.mm.bing.net/th?id=OIP.kiMzq9RyjHX-cx-v4iVXmQHaFE&pid=Api&P=0"
+                style={{ width: "100%", marginTop: "36%" }}
+                hidden={step !== 1}
+              />
+              <img
+                src="https://tse2.mm.bing.net/th?id=OIP.gHi2KuyAG3qkl3azNcjO-gHaEu&pid=Api&P=0"
+                style={{ width: "100%", marginTop: "36%" }}
+                hidden={step !== 2}
+              />
+              <div>
+                <hr />
+                <div
+                  style={{ display: "flex", justifyContent: "space-between" }}
+                >
+                  <p style={{ cursor: "pointer" }} onClick={() => setStep(0)}>
+                    Mobile
+                  </p>
+                  <p style={{ cursor: "pointer" }} onClick={() => setStep(1)}>
+                    Tablet
+                  </p>
+                  <p style={{ cursor: "pointer" }} onClick={() => setStep(2)}>
+                    web
+                  </p>
+                </div>
+                <hr style={{ marginTop: "2%" }} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        style={{
+          backgroundColor: "white",
           width: "100%",
           height: "900px",
           marginTop: "3%",
         }}
       >
-        <div style={{ display: "flex", marginTop: "2%" }}>
-          <Form.Check type="switch" id="custom-switch" />
-          <p style={{ marginLeft: "2%" }}>Customize Review Widget</p>
+        <div style={{ padding: "2%" }}>
+          <p>Customize Review Widget</p>
         </div>
         <hr />
-        <div>
-          <p style={{ fontWeight: "bold", marginLeft: "3%" }}>
-            Review Widget Display{" "}
-          </p>
-          <p style={{ marginLeft: "3%" }}>Header Title</p>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-            <Form.Control
-              type="text"
-              placeholder="Customer Testimonials"
-              style={{ width: "40%", marginLeft: "3%" }}
-            />
-          </Form.Group>
-          <p style={{ marginLeft: "3%" }}>Title color</p>
-          <div
-            style={{
-              backgroundColor: "#f0f5fc",
-              width: "20%",
-              height: "40px",
-              marginLeft: "3%",
-            }}
-          >
-            <p style={{ marginLeft: "6%", padding: "3%", marginLeft: "3%" }}>
-              #2a3135
-            </p>
-          </div>
-          <p style={{ marginLeft: "3%" }}>Rating Color</p>
-          <div
-            style={{
-              backgroundColor: "#f0f5fc",
-              width: "20%",
-              height: "40px",
-              marginLeft: "3%",
-            }}
-          >
-            <p style={{ marginLeft: "6%", padding: "3%", marginLeft: "3%" }}>
-              #ffbc00
-            </p>
-          </div>
-          <p style={{ marginLeft: "3%" }}>Background Color</p>
-          <div
-            style={{
-              backgroundColor: "#f0f5fc",
-              width: "20%",
-              height: "40px",
-              marginLeft: "3%",
-            }}
-          >
-            <p style={{ marginLeft: "6%", padding: "3%", marginLeft: "3%" }}>
-              #2a3135
-            </p>
-          </div>
-          <p style={{ marginLeft: "3%" }}> Disable Powered By</p>
-          <div
-            style={{
-              backgroundColor: "#f0f5fc",
-              width: "20%",
-              height: "40px",
-              marginLeft: "3%",
-            }}
-          >
-            <Form.Check type="switch" id="custom-switch" />
-            <div style={{ marginTop: "15%" }}>
-              <hr style={{ width: "528px" }} />
-            </div>
-            <p
+        <div style={{ marginLeft: "4%", display: "flex" }}>
+          <div style={{ width: "50%", borderRight: "1px solid black" }}>
+            <p>Review Widget Display</p>
+            <p>Header Title</p>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Control
+                type="email"
+                placeholder="Customer Testimonials"
+                style={{ width: "70%" }}
+              />
+            </Form.Group>
+
+            <p style={{ marginLeft: "3%" }}>Title color</p>
+            <div
               style={{
-                fontSize: "large",
-                fontWeight: "bolder",
-                color: "grey",
+                backgroundColor: "#f0f5fc",
+                width: "20%",
+                height: "40px",
                 marginLeft: "3%",
               }}
             >
-              code
-            </p>
-            <p style={{ fontSize: "small", marginLeft: "3%" }}>
-              Add the below code in your website.
-            </p>
-            <div>
-              <Card style={{ width: "100%", height: "200px" }}>
-                <Card.Body>
-                  <p>script type= "script" in a code of javascript</p>
-                </Card.Body>
-              </Card>
+              <p style={{ marginLeft: "6%", padding: "3%", marginLeft: "3%" }}>
+                #2a3135
+              </p>
+            </div>
+            <p style={{ marginLeft: "3%" }}>Rating Color</p>
+            <div
+              style={{
+                backgroundColor: "#f0f5fc",
+                width: "20%",
+                height: "40px",
+                marginLeft: "3%",
+              }}
+            >
+              <p style={{ marginLeft: "6%", padding: "3%", marginLeft: "3%" }}>
+                #ffbc00
+              </p>
+            </div>
+            <p style={{ marginLeft: "3%" }}>Background Color</p>
+            <div
+              style={{
+                backgroundColor: "#f0f5fc",
+                width: "20%",
+                height: "40px",
+                marginLeft: "3%",
+              }}
+            >
+              <p style={{ marginLeft: "6%", padding: "3%", marginLeft: "3%" }}>
+                #2a3135
+              </p>
+            </div>
+            <p style={{ marginLeft: "3%" }}> Disable Powered By</p>
+            <div
+              style={{
+                backgroundColor: "#f0f5fc",
+                width: "20%",
+                height: "40px",
+                marginLeft: "3%",
+              }}
+            >
+              <Form.Check
+                type="switch"
+                id="custom-switch"
+                style={{ padding: "7%" }}
+              />
+              <p style={{ fontSize: "large", color: "grey" }}>code</p>
+              <p style={{ color: "grey", fontSize: "small" }}>
+                Add the below code in your website.
+              </p>
+              <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlTextarea1"
+              >
+                <Form.Control
+                  as="textarea"
+                  rows={3}
+                  placeholder="script"
+                  style={{ width: "300px" }}
+                />
+              </Form.Group>
+            </div>
+            <div></div>
+          </div>
+          <div>
+            <div
+              style={{
+                marginLeft: "14%",
+                marginTop: "2%",
+              }}
+            >
+              <img
+                src="https://tse2.mm.bing.net/th?id=OIP.WZ8sLXwxOlidvPEJY_b8PQHaIL&pid=Api&P=0"
+                style={{ width: "100%" }}
+                hidden={step !== 0}
+              />
+              <img
+                src="https://tse1.mm.bing.net/th?id=OIP.kiMzq9RyjHX-cx-v4iVXmQHaFE&pid=Api&P=0"
+                style={{ width: "100%", marginTop: "36%" }}
+                hidden={step !== 1}
+              />
+              <img
+                src="https://tse2.mm.bing.net/th?id=OIP.gHi2KuyAG3qkl3azNcjO-gHaEu&pid=Api&P=0"
+                style={{ width: "100%", marginTop: "36%" }}
+                hidden={step !== 2}
+              />
+              <div>
+                <hr />
+                <div
+                  style={{ display: "flex", justifyContent: "space-between" }}
+                >
+                  <p style={{ cursor: "pointer" }} onClick={() => setStep(0)}>
+                    Mobile
+                  </p>
+                  <p style={{ cursor: "pointer" }} onClick={() => setStep(1)}>
+                    Tablet
+                  </p>
+                  <p style={{ cursor: "pointer" }} onClick={() => setStep(2)}>
+                    web
+                  </p>
+                </div>
+                <hr style={{ marginTop: "2%" }} />
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title> Client Check In</Modal.Title>
+          </Modal.Header>
+          <Modal.Body style={{ width: "77%", marginLeft: "7%" }}>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Customer Name</Form.Label>
+              <Form.Control type="text" placeholder="Customer name" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Customer email or phone</Form.Label>
+              <Form.Control type="text" placeholder="Email or Phone" />
+            </Form.Group>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="outline-light" style={{ color: "grey" }}>
+              Send a review lite
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </div>
     </div>
   );
