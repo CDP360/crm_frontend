@@ -85,9 +85,15 @@ const Sites = () => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item>Builders</Dropdown.Item>
-              <Dropdown.Item>Analyze</Dropdown.Item>
-              <Dropdown.Item>Submissions</Dropdown.Item>
+              <Dropdown.Item onClick={() => navigate("/sites/Builderform")}>
+                Builders
+              </Dropdown.Item>
+              <Dropdown.Item onClick={() => navigate("/sites/Analyzeform")}>
+                Analyze
+              </Dropdown.Item>
+              <Dropdown.Item onClick={() => navigate("/sites/Submissionform")}>
+                Submissions
+              </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           <Dropdown>
@@ -103,8 +109,12 @@ const Sites = () => {
               <Dropdown.Item onClick={() => navigate("/sites/Builder")}>
                 Builders
               </Dropdown.Item>
-              <Dropdown.Item>Analyze</Dropdown.Item>
-              <Dropdown.Item>Submissions</Dropdown.Item>
+              <Dropdown.Item onClick={() => navigate("/sites/analyze")}>
+                Analyze
+              </Dropdown.Item>
+              <Dropdown.Item onClick={() => navigate("/sites/submission")}>
+                Submissions
+              </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           <p
