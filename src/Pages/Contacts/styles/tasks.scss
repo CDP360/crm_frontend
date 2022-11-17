@@ -1,0 +1,254 @@
+@import "./variables";
+
+.task-main-container {
+    background-color: $background;
+    height: 84vh;
+    padding: 2%;
+    .task-header-container {
+      display: flex;
+      justify-content: space-between;
+      .header-button-container {
+        display: flex;
+        justify-content: space-around;
+        width: 140px;
+        padding: 0.5%;
+        background-color: $green;
+        color: $light;
+        border: none;
+        border-radius: 10px;
+        .button-plus-image {
+          width: 12%;
+          margin-top: 3%;
+          margin-left: 5%;
+        }
+        .button-name {
+          margin-bottom: auto;
+          margin-right: 5%;
+        }
+      }
+    }
+    .searchinput-row-container{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3%;
+    .search-input-container {
+        display: flex;
+        height: 40px;
+        .search-img-container {
+          background-color: $light;
+          border: 1px solid $gray;
+          border-right: none;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          .search-img {
+            width: 30px;
+            margin-top: 20%;
+            padding: 15%;
+          }
+        }
+        .input-text {
+          padding: 0.7%;
+          border: 1px solid $gray;
+          border-left: none;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+        .input-text:focus {
+          outline: none;
+        }
+      }
+      .search-leftside-container{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        .dropdown-container{
+          margin-right: 5%;
+          .droppage-container{
+            padding-right: 10px;
+            padding-left: 10px;
+            .clearname{
+              text-align: end;
+              color: blue;
+            }
+            .search-input-container {
+              display: flex;
+              height: 40px;
+              .search-img-container {
+                background-color: $light;
+                border: 1px solid $gray;
+                border-right: none;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                .search-img {
+                  width: 30px;
+                  margin-top: 20%;
+                  padding: 15%;
+                }
+              }
+              .input-text {
+                padding: 0.7%;
+                border: 1px solid $gray;
+                border-left: none;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+              }
+              .input-text:focus {
+                outline: none;
+              }
+            }
+            .dropdown-boxfull-container{
+              margin-top: 2%;
+              overflow: auto;
+              height: 20vh;
+              .dropdown-boxcontent{
+                display: flex;
+                padding: 2px;
+                margin-left: 5%;
+                margin-top: 2%;
+                .checkbox-drop{
+                  width:9%;
+                }
+                .single-letter{
+                  margin-top: -1px;
+                  margin-bottom: auto;
+                  margin-left: 5%;
+                  font-size: 16px;
+                  background-color: red;
+                  width: 26px;
+                  height: 25px;
+                  text-align: center;
+                  border-radius: 100%;
+                }
+                .letter-fullname{
+                  margin-top: -1px;
+                  margin-bottom: auto;
+                  margin-left: 5%;
+                  font-size: 16px;
+                }
+              }
+            }
+            .dropdown-btn-container{
+              margin-top: 5%;
+              text-align: end;
+              .drop-cancelbtn{
+                margin-right: 5%;
+                background-color: white;
+                border: 1px solid lightgray;
+                border-radius: 5px;
+                width: 80px;
+              }
+              .drop-applybtn{
+                background-color: blue;
+                color: white;
+                border-radius: 5px;
+                border: none;
+                width: 80px;
+              }
+            }
+          }
+          .jointname{
+            color: blue;
+          }
+        }
+        .reload-img{
+          width: 8%;
+          height: 50%;
+          margin-top: 5px;
+          margin-bottom: auto;
+          background-color: skyblue;
+          border-radius: 10px;
+          margin-right: 8%;
+        }
+      }
+    }
+      .body-header-name {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1%;
+        background-color: $light;
+        padding: 1%;
+        font-weight: bold;
+        .firsthead-container{
+          display: flex;
+          .header-box{
+            margin-bottom: auto;
+            margin-top: 7px;
+          }
+          .header-firstname{
+            margin-left: 15%;
+            width: 200px;
+          }
+        }
+      }
+      .body-container {
+        width: 100%;
+        background-color: $light;
+        border: 1px solid $lightgray;
+        border-radius: 5px;
+        text-align: end;
+        padding: 2%;
+        .previous-btn{
+          margin-right: 2%;
+          width: 80px;
+          padding: 5px;
+          border-radius: 5px;
+          background-color: white;
+          border: 1px solid lightgray;
+        }
+        .nxt-btn{
+          width: 80px;
+          padding: 5px;
+          border-radius: 5px;
+          background-color: skyblue;
+          color: white;
+          border: none;
+        }
+      }
+}
+.modal-inputtext{
+  margin-bottom: auto;
+  font-weight: bold;
+  margin-top: 2%;
+}
+.modal-inputfield{
+  width: 100%;
+  padding: 1%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 1%;
+}
+.modal-textarea{
+  width: 100%;
+  padding: 1%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 1%;
+  height: 20vh;
+}
+.modal-datefield{
+  width: 100%;
+  padding: 1%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1%;
+}
+.modal-btn-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+  .cancel-btn{
+    width: 100px;
+    padding: 1%;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 6px;
+  }
+  .save-btn{
+    width: 100px;
+    padding: 1%;
+    border: 1px solid lightgray;
+    background-color: green;
+    border-radius: 6px;
+    color: white;
+  }
+}

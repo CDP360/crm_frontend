@@ -194,7 +194,7 @@ function Dashboard() {
             <p className="footer-content">Go to Manual Actions</p>
           </div>
         </div>
-        <div className="secondcard-container">
+        <div className="secondcards-container">
           <div className="secondcard-content">
             <p className="content-text">Tasks</p>
             <hr className="underline" />

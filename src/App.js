@@ -47,6 +47,8 @@ import Submission from "./Pages/Sites/Surveys/Submissionsurvey";
 import Builderform from "./Pages/Sites/Form/Builderform";
 import Analyzeform from "./Pages/Sites/Form/Analyzeform";
 import Submissionform from "./Pages/Sites/Form/Submissionform";
+import Tasks from './Pages/Contacts/Tasks';
+import ContactPersonal from './Pages/Contacts/ContactPersonal';
 
 function App() {
   return (
@@ -60,6 +62,8 @@ function App() {
           <Route path="/contacts" element={<SmartList />} />
           <Route path="/contacts/bulkactions" element={<BulkActions />} />
           <Route path="/contacts/restore" element={<Restore />} />
+          <Route path="/contacts/task" element={<Tasks />} />
+          <Route path="/contacts/contactpersonal" element={<ContactPersonal />} />
           <Route
             path="/contacts/managesmartlist"
             element={<ManageSmartList />}
