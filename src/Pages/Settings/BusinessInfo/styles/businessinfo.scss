@@ -123,3 +123,81 @@
   height: 29px;
   border: 1px solid $grey;
 }
+
+.main-div1 {
+  width: 100%;
+  background-color: white;
+}
+.main-carddiv1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #f2f7fa;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.card-div2 {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 20px;
+  margin-top: 6%;
+}
+.card-div3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #f2f7fa;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main-carddiv2 {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 20px;
+  height: 523px;
+}
+.card-div4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #f2f7fa;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main-carddiv3 {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: white;
+}
+.card-div4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #f2f7fa;
+  padding-left: 20px;
+
+  padding-right: 20px;
+}
+
+.check-para {
+  margin-left: 3%;
+  font-size: small;
+  margin-top: 3%;
+}
+.main-div5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #f2f7fa;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card-div5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #f2f7fa;
+  padding-left: 20px;
+  padding-right: 20px;
+}

@@ -6,3 +6,108 @@
 .groove {
   border-style: groove;
 }
+.div-custom1 {
+  background-color: #f0f5fc;
+  height: 100vh;
+  overflow: auto;
+  position: sticky;
+  top: 50px;
+}
+.card-slot1 {
+  padding: 2%;
+  margin-top: 2%;
+}
+.card-slot2 {
+  width: 100%;
+  height: 720px;
+}
+.forms-control1 {
+  width: 23%;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.div-custom2 {
+  background-color: skyblue;
+  width: 100%;
+  margin-top: 1%;
+}
+
+.modal-one {
+  margin-left: 30%;
+  color: grey;
+}
+
+.input-one {
+  width: 50%;
+  border-right: 2px solid black;
+}
+.cardData {
+  width: 29%;
+  height: 60px;
+  margin-left: 2%;
+  cursor: pointer;
+}
+
+.cardData2 {
+  width: 29%;
+  height: 60px;
+  cursor: pointer;
+}
+.cardDatathree {
+  width: 29%;
+  height: 75px;
+  cursor: pointer;
+}
+
+.cardData4 {
+  width: 29%;
+  height: 75px;
+  margin-left: 2%;
+  cursor: pointer;
+}
+.radio-para {
+  font-size: smaller;
+  margin-top: 2%;
+}
+.cardata {
+  width: 29%;
+  height: 60px;
+  cursor: pointer;
+}
+.cards {
+  display: flex;
+  margin-top: 3%;
+  cursor: pointer;
+}
+.preview {
+  width: 95%;
+  height: 100px;
+}
+.group1 {
+  width: 95%;
+  height: 69px;
+}
+.Box1 {
+  display: flex;
+  margin-top: 6%;
+}
+.controlinput1 {
+  margin-left: 9%;
+  width: 80%;
+}
+.preview-div {
+  display: flex;
+}
+.preview-check {
+  margin-left: 5%;
+}
+.radio-para {
+  margin-top: 3%;
+  margin-left: 3%;
+}
+.control-text {
+  margin-left: 9%;
+  width: 80%;
+  margin-top: 3%;
+}

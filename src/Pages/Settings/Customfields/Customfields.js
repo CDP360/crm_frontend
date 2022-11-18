@@ -36,15 +36,16 @@ function Customfields() {
   };
   return (
     <div
-      style={{
-        backgroundColor: "#f0f5fc",
-        height: "100vh",
-        overflow: "auto",
-        position: "sticky",
-        top: "50px",
-      }}
+      className="div-custom1"
+      // style={{
+      //   backgroundColor: "#f0f5fc",
+      //   height: "100vh",
+      //   overflow: "auto",
+      //   position: "sticky",
+      //   top: "50px",
+      // }}
     >
-      <div style={{ padding: "2%", marginTop: "2%" }}>
+      <div className="card-slot1">
         <Card body style={{ width: "100%" }}>
           {" "}
           <Button
@@ -64,7 +65,7 @@ function Customfields() {
         </Card>
       </div>{" "}
       <div style={{ padding: "3%" }}>
-        <Card style={{ width: "100%", height: "720px" }}>
+        <Card className="card-slot2">
           <Card.Header>
             <Nav variant="tabs" defaultActiveKey="#first">
               <Nav.Item>
@@ -94,7 +95,8 @@ function Customfields() {
                 <Form.Control
                   type="email"
                   placeholder="Search"
-                  style={{ width: "23%", marginTop: "2%", marginLeft: "2%" }}
+                  className="forms-control1"
+                  // style={{ width: "23%", marginTop: "2%", marginLeft: "2%" }}
                 />
               </Form.Group>
               {fields ? (
@@ -277,11 +279,12 @@ function Customfields() {
           ) : (
             <>
               <div
-                style={{
-                  backgroundColor: "skyblue",
-                  width: "100%",
-                  marginTop: "1%",
-                }}
+                className="div-custom2"
+                // style={{
+                //   backgroundColor: "skyblue",
+                //   width: "100%",
+                //   marginTop: "1%",
+                // }}
               >
                 <p>
                   You can view deleted Custom Fields on the Audit Logs page here
@@ -294,7 +297,7 @@ function Customfields() {
       <div>
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title style={{ marginLeft: "30%", color: "grey" }}>
+            <Modal.Title className="modal-one">
               New Custom Field Folder
             </Modal.Title>
           </Modal.Header>
@@ -331,32 +334,32 @@ function Customfields() {
           </Modal.Header>
           <Modal.Body>
             <div style={{ display: "flex" }}>
-              <div style={{ width: "50%", borderRight: "2px solid black" }}>
+              <div className="input-one">
                 <p style={{ color: "grey" }} onClick={() => setStep(0)}>
                   Text input
                 </p>
                 <div style={{ display: "flex" }}>
                   <Card
                     body
-                    style={{ width: "29%", height: "60px" }}
+                    // style={{ width: "29%", height: "60px" }}
                     onClick={() => setStep(0)}
-                    className={`${step === 0 ? "active" : ""}`}
+                    className={`cardData2 ${step === 0 ? "active" : ""}`}
                   >
                     singleline
                   </Card>
                   <Card
                     body
-                    style={{ width: "29%", height: "60px", marginLeft: "2%" }}
+                    // style={{ width: "29%", height: "60px", marginLeft: "2%" }}
                     onClick={() => setStep(1)}
-                    className={`${step === 1 ? "active" : ""}`}
+                    className={`cardData ${step === 1 ? "active" : ""}`}
                   >
                     multiline
                   </Card>
                   <Card
                     body
-                    style={{ width: "29%", height: "60px", marginLeft: "2%" }}
+                    // style={{ width: "29%", height: "60px", marginLeft: "2%" }}
                     onClick={() => setStep(2)}
-                    className={`${step === 2 ? "active" : ""}`}
+                    className={` cardData ${step === 2 ? "active" : ""}`}
                   >
                     Textboxlist
                   </Card>
@@ -365,25 +368,25 @@ function Customfields() {
                 <div style={{ display: "flex" }}>
                   <Card
                     body
-                    style={{ width: "29%", height: "60px" }}
+                    // style={{ width: "29%", height: "60px" }}
                     onClick={() => setStep(3)}
-                    className={`${step === 3 ? "active" : ""}`}
+                    className={`cardData2 ${step === 3 ? "active" : ""}`}
                   >
                     number
                   </Card>
                   <Card
                     body
-                    style={{ width: "29%", height: "60px", marginLeft: "2%" }}
+                    // style={{ width: "29%", height: "60px", marginLeft: "2%" }}
                     onClick={() => setStep(4)}
-                    className={`${step === 4 ? "active" : ""}`}
+                    className={`cardData ${step === 4 ? "active" : ""}`}
                   >
                     Phone
                   </Card>
                   <Card
                     body
-                    style={{ width: "29%", height: "60px", marginLeft: "2%" }}
+                    // style={{ width: "29%", height: "60px", marginLeft: "2%" }}
                     onClick={() => setStep(5)}
-                    className={`${step === 5 ? "active" : ""}`}
+                    className={`cardData ${step === 5 ? "active" : ""}`}
                   >
                     monetary
                   </Card>
@@ -392,64 +395,61 @@ function Customfields() {
                 <div style={{ display: "flex" }}>
                   <Card
                     body
-                    style={{ width: "29%", height: "75px" }}
+                    // style={{ width: "29%", height: "75px" }}
                     onClick={() => setStep(6)}
-                    className={`${step === 6 ? "active" : ""}`}
+                    className={`cardDatathree ${step === 6 ? "active" : ""}`}
                   >
                     <p>Dropdown(single)</p>
                   </Card>
                   <Card
                     body
-                    style={{ width: "29%", height: "75px", marginLeft: "2%" }}
+                    // style={{ width: "29%", height: "75px", marginLeft: "2%" }}
                     onClick={() => setStep(7)}
-                    className={`${step === 7 ? "active" : ""}`}
+                    className={`cardData4 ${step === 7 ? "active" : ""}`}
                   >
                     <p>Dropdown(multiple)</p>
                   </Card>
                   <Card
                     body
-                    style={{ width: "29%", height: "75px", marginLeft: "2%" }}
+                    // style={{ width: "29%", height: "75px", marginLeft: "2%" }}
                     onClick={() => setStep(8)}
-                    className={`${step === 8 ? "active" : ""}`}
+                    className={`cardData4 ${step === 8 ? "active" : ""}`}
                   >
-                    <p style={{ fontSize: "smaller", marginTop: "2%" }}>
-                      Radioselect
-                    </p>
+                    <p className="radio-para">Radioselect</p>
                   </Card>
                 </div>
-                <div style={{ display: "flex", marginTop: "3%" }}>
+                <div className=" cards">
                   <Card
                     body
-                    style={{ width: "29%", height: "60px" }}
+                    // style={{ width: "29%", height: "60px" }}
                     onClick={() => setStep(9)}
-                    className={`${step === 9 ? "active" : ""}`}
+                    className={`cardata ${step === 9 ? "active" : ""}`}
                   >
                     <p>checkbox</p>
                   </Card>
                   <Card
                     body
-                    style={{ width: "29%", height: "60px", marginLeft: "3%" }}
+                    // style={{ width: "29%", height: "60px", marginLeft: "3%" }}
                     onClick={() => setStep(10)}
-                    className={`${step === 10 ? "active" : ""}`}
+                    className={`cardData ${step === 10 ? "active" : ""}`}
                   >
                     <p>Datepicker</p>
                   </Card>
                 </div>
                 <p style={{ color: "grey" }}>Others</p>
                 <div style={{ display: "flex" }}>
-                  <Card body style={{ width: "29%", height: "60px" }}>
-                    <p
-                      onClick={() => setStep(11)}
-                      className={`${step === 11 ? "active" : ""}`}
-                    >
-                      fileupload
-                    </p>
+                  <Card
+                    body
+                    // style={{ width: "29%", height: "60px" }}
+                    className={`cardData ${step === 11 ? "active" : ""}`}
+                  >
+                    <p onClick={() => setStep(11)}>fileupload</p>
                   </Card>
                   <Card
                     body
-                    style={{ width: "29%", height: "60px", marginLeft: "2%" }}
+                    // style={{ width: "29%", height: "60px", marginLeft: "2%" }}
                     onClick={() => setStep(12)}
-                    className={`${step === 12 ? "active" : ""}`}
+                    className={`cardData ${step === 12 ? "active" : ""}`}
                   >
                     <p>signature</p>
                   </Card>
@@ -471,11 +471,12 @@ function Customfields() {
 
                   <div hidden={step !== 1}>
                     <p>Preview</p>
-                    <Card body style={{ width: "95%", height: "100px" }}>
+                    <Card className="preview" body>
                       <Form.Group
-                        className="mb-3"
+                        className="mb-3 group1"
                         controlId="exampleForm.ControlTextarea1"
-                        style={{ width: "95%", height: "69px" }}
+
+                        // style={{ width: "95%", height: "69px" }}
                       >
                         <Form.Control
                           as="textarea"
@@ -490,7 +491,7 @@ function Customfields() {
                     hidden={step !== 2}
                     style={{ height: "140px" }}
                   >
-                    <div style={{ display: "flex", marginTop: "6%" }}>
+                    <div className="Box1">
                       <p style={{ marginLeft: "10%" }}>Box1</p>
                       <input placeholder="test1" style={{ marginLeft: "2%" }} />
                     </div>
@@ -509,7 +510,8 @@ function Customfields() {
                       >
                         <Form.Control
                           type="text"
-                          style={{ marginLeft: "9%", width: "80%" }}
+                          className="controlinput1"
+                          // style={{ marginLeft: "9%", width: "80%" }}
                         />
                       </Form.Group>
                     </div>
@@ -525,7 +527,8 @@ function Customfields() {
                         <Form.Control
                           type="text"
                           placeholder="+ 1-(555) 987-6543"
-                          style={{ marginLeft: "9%", width: "80%" }}
+                          className="controlinput1"
+                          // style={{ marginLeft: "9%", width: "80%" }}
                         />
                       </Form.Group>
                     </div>
@@ -541,7 +544,8 @@ function Customfields() {
                         <Form.Control
                           type="text"
                           placeholder="$0.00"
-                          style={{ marginLeft: "9%", width: "80%" }}
+                          className="controlinput1"
+                          // style={{ marginLeft: "9%", width: "80%" }}
                         />
                       </Form.Group>
                     </div>
@@ -557,7 +561,8 @@ function Customfields() {
                         <Form.Control
                           type="text"
                           placeholder="option1"
-                          style={{ marginLeft: "9%", width: "80%" }}
+                          className="controlinput1"
+                          // style={{ marginLeft: "9%", width: "80%" }}
                         />
                       </Form.Group>
                     </div>
@@ -573,7 +578,8 @@ function Customfields() {
                         <Form.Control
                           type="text"
                           placeholder="select"
-                          style={{ marginLeft: "9%", width: "80%" }}
+                          className="controlinput1"
+                          // style={{ marginLeft: "9%", width: "80%" }}
                         />
                       </Form.Group>
                     </div>
@@ -581,22 +587,18 @@ function Customfields() {
                   <div hidden={step !== 8}>
                     <p>preview</p>
                     <div className="groove">
-                      <div style={{ display: "flex" }}>
-                        <input type="checkbox" style={{ marginLeft: "5%" }} />
-                        <p style={{ marginTop: "3%", marginLeft: "3%" }}>
-                          Radio
-                        </p>
+                      <div className="preview-div">
+                        <input type="checkbox" className="preview-check" />
+                        <p className="radio-para">Radio</p>
                       </div>
                     </div>
                   </div>
                   <div hidden={step !== 9}>
                     <p>preview</p>
                     <div className="groove">
-                      <div style={{ display: "flex" }}>
-                        <input type="checkbox" style={{ marginLeft: "5%" }} />
-                        <p style={{ marginTop: "3%", marginLeft: "3%" }}>
-                          Checkbox
-                        </p>
+                      <div className="preview-div">
+                        <input type="checkbox" className="preview-check" />
+                        <p className="radio-para">Checkbox</p>
                       </div>
                     </div>
                   </div>
@@ -609,11 +611,12 @@ function Customfields() {
                       >
                         <Form.Control
                           type="text"
-                          style={{
-                            marginLeft: "9%",
-                            width: "80%",
-                            marginTop: "3%",
-                          }}
+                          className="control-text"
+                          // style={{
+                          //   marginLeft: "9%",
+                          //   width: "80%",
+                          //   marginTop: "3%",
+                          // }}
                         />
                       </Form.Group>
                     </div>
@@ -622,7 +625,7 @@ function Customfields() {
                     <p>preview</p>
                     <div className="groove" style={{ height: "120px" }}>
                       <p>File</p>
-                      <div style={{ display: "flex" }}>
+                      <div className="preview-div">
                         <button>choose file</button>
                         <p>No file choosen</p>
                       </div>
@@ -632,7 +635,7 @@ function Customfields() {
                     <p>preview</p>
                     <div className="groove" style={{ height: "120px" }}>
                       <p>signature</p>
-                      <div style={{ display: "flex" }}>
+                      <div className="preview-div">
                         <button>choose file</button>
                         <p>No file choosen</p>
                       </div>

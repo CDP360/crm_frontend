@@ -8,24 +8,8 @@ function BusinessInfo() {
     <div className="main1">
       <div className="container-one">
         <div style={{ width: "48%" }}>
-          <div
-            // className="card"
-            style={{
-              width: "100%",
-              backgroundColor: "white",
-              // backgroundColor: "white",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                borderBottom: "2px solid #f2f7fa",
-                paddingLeft: "20px",
-                paddingRight: "20px",
-              }}
-            >
+          <div className="main-div1">
+            <div className="main-carddiv1">
               <h2>Company Data</h2>
               <div>
                 <span>Location ID v56oIaomeyBeZkpcRIWi</span>
@@ -73,25 +57,8 @@ function BusinessInfo() {
               </div>
             </div>
           </div>
-          <div
-            // className="card"
-            style={{
-              width: "100%",
-              backgroundColor: "white",
-              marginBottom: "20px",
-              marginTop: "6%",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                borderBottom: "2px solid #f2f7fa",
-                paddingLeft: "20px",
-                paddingRight: "20px",
-              }}
-            >
+          <div className="card-div2">
+            <div className="card-div3">
               <h2>Call & Voicemail Settings</h2>
             </div>
             <div style={{ height: "491px", padding: "20px 30px" }}>
@@ -142,25 +109,8 @@ function BusinessInfo() {
           </div>
         </div>
         <div style={{ width: "48%" }}>
-          <div
-            // className="card"
-            style={{
-              width: "100%",
-              backgroundColor: "white",
-              marginBottom: "20px",
-              height: "523px",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                borderBottom: "2px solid #f2f7fa",
-                paddingLeft: "20px",
-                paddingRight: "20px",
-              }}
-            >
+          <div className="main-carddiv2">
+            <div className="card-div4">
               <p style={{ marginTop: "3%" }}>Company Address</p>
             </div>
             <div style={{ paddingLeft: "3%" }}>
@@ -194,87 +144,31 @@ function BusinessInfo() {
               </div>
             </div>
           </div>
-          <div
-            // className="card"
-            style={{
-              width: "100%",
-              marginBottom: "20px",
-              backgroundColor: "white",
-              // top: "60px",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                borderBottom: "2px solid #f2f7fa",
-                paddingLeft: "20px",
-
-                paddingRight: "20px",
-              }}
-            >
+          <div className="main-carddiv3">
+            <div className="card-div4">
               <h2>General</h2>
             </div>
             <div style={{ height: "344px", padding: "20px 30px" }}>
               <div style={{ display: "flex" }}>
                 <input type="checkbox" className="check" />
-                <p
-                  style={{
-                    marginLeft: "3%",
-                    fontSize: "small",
-                    marginTop: "3%",
-                  }}
-                >
-                  Allow Duplicate Contact
-                </p>
+                <p className="check-para">Allow Duplicate Contact</p>
               </div>
               <div style={{ display: "flex" }}>
                 <input type="checkbox" className="check" />
-                <p
-                  style={{
-                    marginLeft: "3%",
-                    fontSize: "small",
-                    marginTop: "3%",
-                  }}
-                >
-                  Allow Duplicate Opportunity
-                </p>
+                <p className="check-para">Allow Duplicate Opportunity</p>
               </div>
               <div style={{ display: "flex" }}>
                 <input type="checkbox" className="check" />
-                <p
-                  style={{
-                    marginLeft: "3%",
-                    fontSize: "small",
-                    marginTop: "3%",
-                  }}
-                >
-                  Merge Facebook Contacts By Name{" "}
-                </p>
+                <p className="check-para">Merge Facebook Contacts By Name </p>
               </div>
               <div style={{ display: "flex" }}>
                 <input type="checkbox" className="check" />
-                <p
-                  style={{
-                    marginLeft: "3%",
-                    fontSize: "small",
-                    marginTop: "3%",
-                  }}
-                >
-                  Disable Contact Timezone{" "}
-                </p>
+                <p className="check-para">Disable Contact Timezone </p>
               </div>
 
               <div style={{ display: "flex" }}>
                 <input type="checkbox" className="check" />
-                <p
-                  style={{
-                    marginLeft: "3%",
-                    fontSize: "small",
-                    marginTop: "3%",
-                  }}
-                >
+                <p className="check-para">
                   {" "}
                   Mark Emails as Invalid due to Hard Bounce{" "}
                 </p>
@@ -282,13 +176,7 @@ function BusinessInfo() {
 
               <div style={{ display: "flex" }}>
                 <input type="checkbox" className="check" />
-                <p
-                  style={{
-                    marginLeft: "3%",
-                    fontSize: "small",
-                    marginTop: "3%",
-                  }}
-                >
+                <p className="check-para">
                   Validate Phone numbers when first SMS is sent to a new contact{" "}
                 </p>
               </div>
@@ -301,16 +189,7 @@ function BusinessInfo() {
               marginBottom: "20px",
             }}
           >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                borderBottom: "2px solid #f2f7fa",
-                paddingLeft: "20px",
-                paddingRight: "20px",
-              }}
-            >
+            <div className="main-div5">
               <h2>Enable / Disable Deprecated Features</h2>
             </div>
             <div style={{ height: "187px", padding: "5px 30px" }}>
@@ -341,16 +220,7 @@ function BusinessInfo() {
               height: "227px",
             }}
           >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                borderBottom: "2px solid #f2f7fa",
-                paddingLeft: "20px",
-                paddingRight: "20px",
-              }}
-            >
+            <div className="card-div5">
               <h2>Missed Call Text Back</h2>
             </div>
             <div style={{ height: "136px", padding: "20px 30px" }}>
@@ -360,15 +230,7 @@ function BusinessInfo() {
                   className="check"
                   style={{ width: "3%" }}
                 />
-                <p
-                  style={{
-                    marginLeft: "3%",
-                    fontSize: "small",
-                    marginTop: "3%",
-                  }}
-                >
-                  Enable missed call text back
-                </p>
+                <p className="check-para">Enable missed call text back</p>
               </div>
               <button className="savemissed">
                 save missedcall text settings

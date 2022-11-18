@@ -9,7 +9,7 @@ import Calendars from "./Pages/Calender/Calendar";
 import BusinessInfo from "./Pages/Settings/BusinessInfo/BusinessInfo";
 import Sites from "./Pages/Sites/Sites";
 import Funnels from "./Pages/Sites/Funnel";
-import Pipelines from "./Pages/Pipelines/Pipelines";
+import Pipelines from "./Pages/Settings/pipelines/Pipelines";
 import Websites from "./Pages/Sites/Websites";
 import Blog from "./Pages/Sites/Blog";
 import Wordpress from "./Pages/Sites/Wordpress";
@@ -47,8 +47,8 @@ import Submission from "./Pages/Sites/Surveys/Submissionsurvey";
 import Builderform from "./Pages/Sites/Form/Builderform";
 import Analyzeform from "./Pages/Sites/Form/Analyzeform";
 import Submissionform from "./Pages/Sites/Form/Submissionform";
-import Tasks from './Pages/Contacts/Tasks';
-import ContactPersonal from './Pages/Contacts/ContactPersonal';
+import Tasks from "./Pages/Contacts/Tasks";
+import ContactPersonal from "./Pages/Contacts/ContactPersonal";
 
 function App() {
   return (
@@ -63,7 +63,10 @@ function App() {
           <Route path="/contacts/bulkactions" element={<BulkActions />} />
           <Route path="/contacts/restore" element={<Restore />} />
           <Route path="/contacts/task" element={<Tasks />} />
-          <Route path="/contacts/contactpersonal" element={<ContactPersonal />} />
+          <Route
+            path="/contacts/contactpersonal"
+            element={<ContactPersonal />}
+          />
           <Route
             path="/contacts/managesmartlist"
             element={<ManageSmartList />}
