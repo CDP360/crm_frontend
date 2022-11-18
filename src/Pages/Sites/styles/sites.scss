@@ -1075,40 +1075,40 @@
     }
   }
 }
-// ------------------------------Builder form--------------------------
+// ------------------------------ chat widget--------------------------
 
-.buildeform-main-container {
+.chatwidget-main-container {
   margin-top: 3%;
   background: $light;
   padding: 3%;
-  .builderform-header {
+  .chatwidget-header {
     display: flex;
     justify-content: space-between;
-    .builderform-header-left {
-      .builderform-header-left-h4 {
+    .chatwidget-header-left {
+      .chatwidget-header-left-h4 {
         font-size: 1.5rem;
         margin-bottom: 0.5rem;
         color: #2a3135;
       }
-      .builderform-header-left-lable {
-        .builderform-header-left-p {
+      .chatwidget-header-left-lable {
+        .chatwidget-header-left-p {
           color: #607179;
           font-size: 0.75rem;
         }
       }
     }
-    .builderform-header-right {
+    .chatwidget-header-right {
       display: flex;
       margin: 20px;
       justify-content: flex-end;
-      .builderform-header-right-p {
+      .chatwidget-header-right-p {
         color: #607179 !important;
         font-size: 0.875rem;
         font-weight: 400;
         line-height: 1.8;
         padding-top: 0.29rem;
       }
-      .builderform-right-getcode-btn {
+      .chatwidget-right-getcode-btn {
         margin-left: 20px;
         font-weight: 500;
         border: 2px solid $lightblue;
@@ -1120,7 +1120,7 @@
         background-color: $light;
         color: $lightblue;
       }
-      .builderform-right-save-btn {
+      .chatwidget-right-save-btn {
         cursor: pointer;
         background: $green;
         border: none;
@@ -1133,36 +1133,47 @@
       }
     }
   }
-  .builderform-accordion-holder {
+  .chatwidget-accordion-holder {
     margin-top: 2%;
-    .builderform-accordion {
-      .builderform-accordion-item {
-        .builderform-accordion-header {
+    .chatwidget-accordion {
+      .chatwidget-accordion-item {
+        .chatwidget-accordion-header {
           font-weight: 700;
           margin-left: 25px;
           font-size: 16px;
           color: $lightblue;
         }
-        .builderform-accordion-body {
-          .builderform-left-accordion {
+        .chatwidget-accordion-body {
+          .chatwidget-left-accordion {
             width: 50%;
             padding: 2rem;
-            .builderform-input-container {
+            .chatwidget-input-container {
               position: relative;
-              .builderform-input {
+              .chatwidget-input {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
                 padding: 24px;
                 position: relative;
-                .builderform-input-lable {
+                .chatwidget-input-lable {
                   font-weight: 700;
                   font-size: 14px;
                   margin-right: 20px;
                   width: 30%;
                   color: #607179;
                 }
-                .builderform-input-box {
+                .chatwidget-left-switch-holder {
+                  display: flex;
+                  .chatwidget-left-switch-lable {
+                    margin-left: 2rem;
+                    color: #607179;
+                    font-size: 0.75rem;
+                    .chatwidget-left-switch-p {
+                      color: #afb8bc;
+                    }
+                  }
+                }
+                .chatwidget-input-box {
                   // line-height: 0% !important;
                   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
                   font-size: 0.875rem;
@@ -1172,16 +1183,38 @@
                   height: 2.75rem;
                   width: 70%;
                 }
+                .form-control-container {
+                  .form-control-container-avatar {
+                    display: flex;
+                    justify-content: space-between;
+                    .form-control-btn-avatar-holder {
+                      .form-control-btn {
+                        background: $ash;
+                        color: $blue;
+                        border: none;
+                        border-radius: 5px;
+                        .form-control-edit-img {
+                        }
+                      }
+                    }
+                  }
+                  .form-control-container-label {
+                    .form-control-container-p {
+                      color: #afb8bc;
+                      font-size: 0.75rem;
+                    }
+                  }
+                }
               }
             }
           }
-          .builderform-right-accordion {
+          .chatwidget-right-accordion {
             background: $ash;
             width: 40%;
             padding: 3% 5% 0% 5%;
             border-radius: 10px;
             margin-top: 1.5rem;
-            .builderform-right-body {
+            .chatwidget-right-body {
               background: $light;
               height: 20rem;
               border-radius: 5px;
@@ -1201,18 +1234,18 @@
       }
     }
   }
-  .builderform-footer-right {
+  .chatwidget-footer-right {
     display: flex;
     margin: 20px;
     justify-content: flex-end;
-    .builderform-footer-right-p {
+    .chatwidget-footer-right-p {
       color: #607179 !important;
       font-size: 0.875rem;
       font-weight: 400;
       line-height: 1.8;
       padding-top: 0.29rem;
     }
-    .builderform-footer-getcode-btn {
+    .chatwidget-footer-getcode-btn {
       margin-left: 20px;
       font-weight: 500;
       border: 2px solid $lightblue;
@@ -1224,7 +1257,7 @@
       background-color: $light;
       color: $lightblue;
     }
-    .builderform-footer-save-btn {
+    .chatwidget-footer-save-btn {
       cursor: pointer;
       background: $green;
       border: none;
@@ -1234,6 +1267,53 @@
       font-weight: 500;
       padding-left: 1.5rem !important;
       padding-right: 1.5rem !important;
+    }
+  }
+}
+
+// ------------------------------------- builder form---------------------------------------
+.builderform-main-container {
+  margin-top: 8%;
+  padding-bottom: 20%;
+  .builderform-body {
+    display: flex;
+    justify-content: space-between;
+    .builderform-builder-text {
+      font-size: 1.25rem;
+      color: #2a3135;
+      padding-left: 2%;
+      font-weight: 400;
+    }
+    .builderform-btn {
+      font-size: 0.875rem;
+      border-radius: 0.3125rem;
+      border: none;
+      background-color: #37ca37;
+      color: $light;
+      cursor: pointer;
+      font-weight: 700;
+      margin-right: 2%;
+    }
+  }
+  .builderform-search-holder {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4%;
+    .builderform-search-img-holder {
+      background: $light;
+      height: 2.5rem;
+      border-radius: 5px;
+
+      .builderform-search-img {
+        margin-top: 0.75rem;
+      }
+    }
+    .builderform-input-holder {
+      .builderform-input {
+        border: none;
+        height: 2.5rem;
+        margin-right: 1rem;
+      }
     }
   }
 }

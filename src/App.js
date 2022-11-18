@@ -7,13 +7,7 @@ import OverView from "./Pages/Reputation/OverView";
 import Reputation from "./Pages/Reputation/Reputation";
 import Calendars from "./Pages/Calender/Calendar";
 import BusinessInfo from "./Pages/Settings/BusinessInfo/BusinessInfo";
-import Sites from "./Pages/Sites/Sites";
-import Funnels from "./Pages/Sites/Funnel";
 import Pipelines from "./Pages/Pipelines/Pipelines";
-import Websites from "./Pages/Sites/Websites";
-import Blog from "./Pages/Sites/Blog";
-import Wordpress from "./Pages/Sites/Wordpress";
-import Dashboardmembership from "./Pages/Sites/Membership/Dashboardmembership";
 import Review from "./Pages/Reputation/Review";
 // import Review from "./Pages/Reputation/Review";
 import Conversation from "./Pages/Conversation/Conversation";
@@ -31,14 +25,13 @@ import Url from "./Pages/Settings/Url/Url";
 import Emailservice from "./Pages/Settings/Emailservice/Emailservice";
 import Integration from "./Pages/Settings/Integrations/Integration";
 import Tags from "./Pages/Settings/Tags/Tags";
-import Productsmembership from "./Pages/Sites/Membership/Productsmembership";
 import Reputationmanagement from "./Pages/Settings/Reputation/Reputationmanagement";
-import Offersmembership from "./Pages/Sites/Membership/Offersmembership";
 import BulkActions from "./Pages/Contacts/BulkActions";
 import Restore from "./Pages/Contacts/Restore";
 import ManageSmartList from "./Pages/Contacts/ManageSmartList";
 import Company from "./Pages/Contacts/Company";
 import Customfields from "./Pages/Settings/Customfields/Customfields";
+// ------------sites---------------
 import Analyticsmembership from "./Pages/Sites/Membership/Analyticsmembership";
 import Settingsmembership from "./Pages/Sites/Membership/Settingsmembership";
 import Buildersurvey from "./Pages/Sites/Surveys/Buildersurvey";
@@ -47,6 +40,16 @@ import Submission from "./Pages/Sites/Surveys/Submissionsurvey";
 import Builderform from "./Pages/Sites/Form/Builderform";
 import Analyzeform from "./Pages/Sites/Form/Analyzeform";
 import Submissionform from "./Pages/Sites/Form/Submissionform";
+import Chatwidget from "./Pages/Sites/Chatwidget";
+import Productsmembership from "./Pages/Sites/Membership/Productsmembership";
+import Sites from "./Pages/Sites/Sites";
+import Funnels from "./Pages/Sites/Funnel";
+import Websites from "./Pages/Sites/Websites";
+import Blog from "./Pages/Sites/Blog";
+import Wordpress from "./Pages/Sites/Wordpress";
+import Dashboardmembership from "./Pages/Sites/Membership/Dashboardmembership";
+import Offersmembership from "./Pages/Sites/Membership/Offersmembership";
+// ------------------------
 
 function App() {
   return (
@@ -70,27 +73,34 @@ function App() {
           <Route path="/sites/" element={<Funnels />} />
           <Route path="/sites/websites" element={<Websites />} />
           <Route path="/sites/blog" element={<Blog />} />
-          <Route path="/sites/wordpress" element={<Wordpress />} />
+          <Route path="/sites/wordpress/dashboard" element={<Wordpress />} />
           <Route
-            path="/sites/dashboardmembership"
+            path="/sites/membership/dashboard"
             element={<Dashboardmembership />}
           />
           <Route
-            path="/sites/productsmembership"
+            path="/sites/membership/products"
             element={<Productsmembership />}
           />
           <Route
-            path="/sites/offersmembership"
+            path="/sites/membership/offers"
             element={<Offersmembership />}
           />
-          <Route path="/sites/settings" element={<Settingsmembership />} />
-          <Route path="/sites/Analytics" element={<Analyticsmembership />} />
-          <Route path="/sites/Builder" element={<Buildersurvey />} />
-          <Route path="/sites/analyze" element={<Analyze />} />
-          <Route path="/sites/submission" element={<Submission />} />
-          <Route path="/sites/Builderform" element={<Builderform />} />
-          <Route path="/sites/Analyzeform" element={<Analyzeform />} />
-          <Route path="/sites/Submissionform" element={<Submissionform />} />
+          <Route
+            path="/sites/membership/settings"
+            element={<Settingsmembership />}
+          />
+          <Route
+            path="/sites/membership/Analytics"
+            element={<Analyticsmembership />}
+          />
+          <Route path="/sites/survey/Builder" element={<Buildersurvey />} />
+          <Route path="/sites/survey/analyze" element={<Analyze />} />
+          <Route path="/sites/survey/submission" element={<Submission />} />
+          <Route path="/sites/form/Builder" element={<Builderform />} />
+          <Route path="/sites/form/Analyze" element={<Analyzeform />} />
+          <Route path="/sites/form/Submission" element={<Submissionform />} />
+          <Route path="/sites/chatwidget" element={<Chatwidget />} />
         </Route>
         <Route path="/settings/businessInfo" element={<BusinessInfo />} />
         <Route path="/pipelines" element={<Pipelines />} />

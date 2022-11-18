@@ -1,148 +1,107 @@
 import React from "react";
-import Accordion from "react-bootstrap/Accordion";
-import Volume from "../../../assests/volume.svg";
-import Message from "../../../assests/message.svg";
-import Clipboard from "../../../assests/clipboard-check.svg";
+import Search from "../../../assests/search.svg";
+import Table from "react-bootstrap/Table";
+import Button from "react-bootstrap/Button";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
+import Dropdown from "react-bootstrap/Dropdown";
 
-const Builderform = () => {
+const Buildersurvey = () => {
   return (
-    <div className="buildeform-main-container">
-      <div className="builderform-header">
-        <div className="builderform-header-left">
-          <p className="builderform-header-left-h4">Webchat for your website</p>
-          <label className="builderform-header-left-lable">
-            <p className="builderform-header-left-p">
-              Configure a chat widget to convert your website visitors to leads
-            </p>
-          </label>
+    <div className="builderform-main-container">
+      <div className="builderform-body">
+        <h2 className="builderform-builder-text">Builder</h2>
+        <button className="builderform-btn">Create New Survey</button>
+      </div>
+      <hr style={{ marginTop: "3%" }} />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "flex-end",
+          marginTop: "0.5rem",
+          borderRadius: "5px",
+          marginRight: "2%",
+        }}
+      >
+        <div style={{ background: "white", width: "2rem" }}>
+          <img
+            style={{ marginTop: "0.75rem", marginLeft: "0.5rem" }}
+            src={Search}
+            alt="Search"
+          />
         </div>
-        <div className="builderform-header-right">
-          <p className="builderform-header-right-p"> Get it for wordpress</p>
-          <button className="builderform-right-getcode-btn"> Get Code </button>
-          <button className="builderform-right-save-btn">Save</button>
+        <div>
+          <input
+            style={{ border: "none", width: "18rem", height: "2.5rem" }}
+            placeholder="Search form."
+          />
         </div>
       </div>
-      <div>
-        <div className="builderform-accordion-holder">
-          <Accordion className="builderform-accordion">
-            <Accordion.Item eventKey="0" className="builderform-accordion-item">
-              <Accordion.Header>
-                <img src={Volume} alt="Volume" />
-                <span className="builderform-accordion-header">
-                  Chat Bubble
-                </span>
-              </Accordion.Header>
-              <Accordion.Body className="builderform-accordion-body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
-        </div>
-        <div className="builderform-accordion-holder">
-          <Accordion className="builderform-accordion">
-            <Accordion.Item eventKey="0" className="builderform-accordion-item">
-              <Accordion.Header>
-                <img src={Message} alt="Message" />
-                <span className="builderform-accordion-header">
-                  Widget window
-                </span>
-              </Accordion.Header>
-              <Accordion.Body className="builderform-accordion-body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
-        </div>
-        <div className="builderform-accordion-holder">
-          <Accordion className="builderform-accordion">
-            <Accordion.Item eventKey="0" className="builderform-accordion-item">
-              <Accordion.Header>
-                <img src={Clipboard} alt="Clipboard" />
-                <span className="builderform-accordion-header">
-                  Acknowledgement settings
-                </span>
-              </Accordion.Header>
-              <Accordion.Body className="builderform-accordion-body">
-                <div>
-                  <div>
-                    <div style={{ display: "flex" }}>
-                      <div className="builderform-left-accordion">
-                        <div className="builderform-input-container">
-                          <div className="builderform-input">
-                            <label className="builderform-input-lable">
-                              Customer Support contact
-                            </label>
-                            <input
-                              className="builderform-input-box"
-                              type="text"
-                              placeholder="Phone or Email-Id"
-                            />
-                          </div>
-                        </div>
-                        <hr />
-                        <div className="builderform-input-container">
-                          <div className="builderform-input">
-                            <label className="builderform-input-lable">
-                              Acknowledgement Greeting
-                            </label>
-                            <textarea
-                              className="builderform-input-box"
-                              type="text"
-                              placeholder="Acknowledgement Greeting"
-                            />
-                          </div>
-                        </div>
-                        <hr />
-                        <div className="builderform-input-container">
-                          <div className="builderform-input">
-                            <label className="builderform-input-lable">
-                              Acknowledgement Message
-                            </label>
-                            <textarea
-                              className="builderform-input-box"
-                              type="text"
-                              placeholder="Acknowledgement Message"
-                            />
-                          </div>
-                        </div>
-                        <hr />
-                      </div>
-                      <div className="builderform-right-accordion">
-                        <div className="builderform-right-body">
-                          <div className="bilderform-right-p-holder">
-                            <p className="bilderform-right-p">
-                              Have a question?
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
-        </div>
-        <div className="builderform-footer-right">
-          <p className="builderform-footer-right-p">Get it for wordpress</p>
-          <button className="builderform-footer-getcode-btn">Get Code</button>
-          <button className="builderform-footer-save-btn">Save</button>
-        </div>
+      <div style={{ padding: "2rem", fontWeight: "500", fontSize: "0.75rem" }}>
+        <Table striped>
+          <thead>
+            <tr style={{ cursor: "pointer", color: "#6b7280" }}>
+              <th>NAME</th>
+              <th>FORM ID</th>
+              <th>STATUS</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Form4</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>
+                <Dropdown as={ButtonGroup}>
+                  <Button>Edit</Button>
+
+                  <Dropdown.Toggle split id="dropdown-split-basic" />
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item>Copy</Dropdown.Item>
+                    <Dropdown.Item>Delete</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </td>
+            </tr>
+            <tr>
+              <td>Form4</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>
+                <Dropdown as={ButtonGroup}>
+                  <Button>Edit</Button>
+
+                  <Dropdown.Toggle split id="dropdown-split-basic" />
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item>Copy</Dropdown.Item>
+                    <Dropdown.Item>Delete</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </td>
+            </tr>
+            <tr>
+              <td>Home Buyer Info Form</td>
+              <td colSpan={2}>Larry the Bird</td>
+              <td>
+                <Dropdown as={ButtonGroup}>
+                  <Button>Edit</Button>
+
+                  <Dropdown.Toggle split id="dropdown-split-basic" />
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item>Copy</Dropdown.Item>
+                    <Dropdown.Item>Delete</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </td>
+            </tr>
+          </tbody>
+        </Table>
       </div>
     </div>
   );
 };
 
-export default Builderform;
+export default Buildersurvey;
