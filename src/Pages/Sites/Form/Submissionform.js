@@ -71,13 +71,6 @@ const Submissionform = () => {
               borderRadius: "5px",
             }}
           >
-            {/* <div
-              style={{
-                width: "1rem",
-                background: "white",
-                borderRadius: "5px",
-              }}
-            ></div> */}
             <div style={{ background: "white" }}>
               <img style={{ marginTop: "0.75rem" }} src={Search} alt="Search" />
             </div>
@@ -87,13 +80,6 @@ const Submissionform = () => {
                 placeholder="Search by name, emai..."
               />
             </div>
-            {/* <div
-              style={{
-                width: "1rem",
-                background: "white",
-                borderRadius: "5px",
-              }}
-            ></div> */}
           </div>
           <div
             style={{
@@ -108,7 +94,6 @@ const Submissionform = () => {
                 Totals: <strong>0</strong> records | 1 of 1 pages
               </label>
             </div>
-            {/* <div> */}
             <button
               style={{
                 border: "none",
@@ -128,7 +113,6 @@ const Submissionform = () => {
                 />
               </div>
             </button>
-            {/* </div> */}
           </div>
           <div
             style={{

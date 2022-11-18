@@ -1,4 +1,3 @@
-import { mergeBreakpointsInOrder } from "@mui/system";
 import React from "react";
 import Dashboard from "../../../assests/dashboard-banner.jpeg";
 import Email from "../../../assests/email-img.svg";
@@ -20,15 +19,6 @@ const Dashboardmembership = () => {
   return (
     <div className="dashboardmember-card">
       {loading ? (
-        // <BounceLoader
-        //   color="#36d7b7"
-        //   loading={loading}
-        //   className="dashboard-spinner"
-        //   //   style={{ color: "green" }}
-        //   size={150}
-        //   aria-label="Loading Spinner"
-        //   data-testid="loader"
-        // />
         <div
           style={{ display: "flex", justifyContent: "center", marginTop: "5%" }}
         >

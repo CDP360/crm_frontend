@@ -29,12 +29,8 @@ const Sites = () => {
           >
             Blog
           </p>
-          <Dropdown onClick={() => navigate("/sites/wordpress")}>
-            <Dropdown.Toggle
-              variant="light"
-              // id="dropdown-basic"
-              className="sites-dropdown"
-            >
+          <Dropdown onClick={() => navigate("/sites/wordpress/dashboard")}>
+            <Dropdown.Toggle variant="light" className="sites-dropdown">
               WordPress
             </Dropdown.Toggle>
 
@@ -43,34 +39,34 @@ const Sites = () => {
             </Dropdown.Menu>
           </Dropdown>
           <Dropdown>
-            <Dropdown.Toggle
-              variant="light"
-              // id="dropdown-basic"
-              className="sites-dropdown"
-            >
+            <Dropdown.Toggle variant="light" className="sites-dropdown">
               Membership
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
               <Dropdown.Item
-                onClick={() => navigate("/sites/dashboardmembership")}
+                onClick={() => navigate("/sites/membership/dashboard")}
               >
                 Dashboard
               </Dropdown.Item>
               <Dropdown.Item
-                onClick={() => navigate("/sites/productsmembership")}
+                onClick={() => navigate("/sites/membership/products")}
               >
                 Products
               </Dropdown.Item>
               <Dropdown.Item
-                onClick={() => navigate("/sites/offersmembership")}
+                onClick={() => navigate("/sites/membership/offers")}
               >
                 Offers
               </Dropdown.Item>
-              <Dropdown.Item onClick={() => navigate("/sites/Analytics")}>
+              <Dropdown.Item
+                onClick={() => navigate("/sites/membership/Analytics")}
+              >
                 Analytics
               </Dropdown.Item>
-              <Dropdown.Item onClick={() => navigate("/sites/settings")}>
+              <Dropdown.Item
+                onClick={() => navigate("/sites/membership/settings")}
+              >
                 Settings
               </Dropdown.Item>
             </Dropdown.Menu>
@@ -85,13 +81,13 @@ const Sites = () => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item onClick={() => navigate("/sites/Builderform")}>
+              <Dropdown.Item onClick={() => navigate("/sites/form/Builder")}>
                 Builders
               </Dropdown.Item>
-              <Dropdown.Item onClick={() => navigate("/sites/Analyzeform")}>
+              <Dropdown.Item onClick={() => navigate("/sites/form/Analyze")}>
                 Analyze
               </Dropdown.Item>
-              <Dropdown.Item onClick={() => navigate("/sites/Submissionform")}>
+              <Dropdown.Item onClick={() => navigate("/sites/form/Submission")}>
                 Submissions
               </Dropdown.Item>
             </Dropdown.Menu>
@@ -106,35 +102,27 @@ const Sites = () => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item onClick={() => navigate("/sites/Builder")}>
+              <Dropdown.Item onClick={() => navigate("/sites/survey/Builder")}>
                 Builders
               </Dropdown.Item>
-              <Dropdown.Item onClick={() => navigate("/sites/analyze")}>
+              <Dropdown.Item onClick={() => navigate("/sites/survey/analyze")}>
                 Analyze
               </Dropdown.Item>
-              <Dropdown.Item onClick={() => navigate("/sites/submission")}>
+              <Dropdown.Item
+                onClick={() => navigate("/sites/survey/submission")}
+              >
                 Submissions
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           <p
+            onClick={() => navigate("/sites/chatwidget")}
             className="sites-options"
-            // style={{ marginTop: "0.35%" }}
           >
             Chat Widget
           </p>
-          <p
-            className="sites-options"
-            // style={{ marginTop: "0.35%" }}
-          >
-            Media
-          </p>
-          <p
-            className="sites-options"
-            // style={{ marginTop: "0.35%" }}
-          >
-            URL Redirection
-          </p>
+          <p className="sites-options">Media</p>
+          <p className="sites-options">URL Redirection</p>
           <div style={{ borderLeft: "1px solid gray", height: "20px" }}></div>
           <img
             src={Settings}
