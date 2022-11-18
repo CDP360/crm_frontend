@@ -40,7 +40,7 @@ import Submission from "./Pages/Sites/Surveys/Submissionsurvey";
 import Builderform from "./Pages/Sites/Form/Builderform";
 import Analyzeform from "./Pages/Sites/Form/Analyzeform";
 import Submissionform from "./Pages/Sites/Form/Submissionform";
-import Tasks from "./Pages/Contacts/Tasks";
+// import Tasks from "./Pages/Contacts/Tasks";
 import ContactPersonal from "./Pages/Contacts/ContactPersonal";
 import Chatwidget from "./Pages/Sites/Chatwidget";
 import Productsmembership from "./Pages/Sites/Membership/Productsmembership";
@@ -53,7 +53,7 @@ import Dashboardmembership from "./Pages/Sites/Membership/Dashboardmembership";
 import Offersmembership from "./Pages/Sites/Membership/Offersmembership";
 // ------------------------
 import Tasks from "./Pages/Contacts/Tasks";
-import ContactPersonal from "./Pages/Contacts/ContactPersonal";
+// import ContactPersonal from "./Pages/Contacts/ContactPersonal";
 
 function App() {
   return (
