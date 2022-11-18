@@ -50,6 +50,8 @@ import Wordpress from "./Pages/Sites/Wordpress";
 import Dashboardmembership from "./Pages/Sites/Membership/Dashboardmembership";
 import Offersmembership from "./Pages/Sites/Membership/Offersmembership";
 // ------------------------
+import Tasks from "./Pages/Contacts/Tasks";
+import ContactPersonal from "./Pages/Contacts/ContactPersonal";
 
 function App() {
   return (
@@ -63,6 +65,11 @@ function App() {
           <Route path="/contacts" element={<SmartList />} />
           <Route path="/contacts/bulkactions" element={<BulkActions />} />
           <Route path="/contacts/restore" element={<Restore />} />
+          <Route path="/contacts/task" element={<Tasks />} />
+          <Route
+            path="/contacts/contactpersonal"
+            element={<ContactPersonal />}
+          />
           <Route
             path="/contacts/managesmartlist"
             element={<ManageSmartList />}

@@ -13,7 +13,8 @@ import RemoveTag from "../../assests/removeTag.png";
 import Modal from "react-bootstrap/Modal";
 import Phone from "../../assests/phone.png";
 import Info from "../../assests/info.png";
-// import SmartListTable from './SmartListTable';
+import FilterOffcanvas from "./FilterOffcanvas";
+import DataTable from "./SmartListTable";
 
 export default function SmartList() {
   const [addContact, setAddContact] = useState(false);
@@ -24,6 +25,12 @@ export default function SmartList() {
 
   const pipelineClose = () => setPipeline(false);
   const pipelineShow = () => setPipeline(true);
+
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div className="smartlist-maincontainer">
       <p>All</p>
@@ -86,7 +93,7 @@ export default function SmartList() {
           </div>
           <button className="button-container">
             <div>More Filter</div>
-            <img className="button-image" src={Filter} />
+            <img className="button-image" src={Filter} onClick={handleShow}/>
           </button>
         </div>
       </div>
@@ -161,7 +168,7 @@ export default function SmartList() {
                 <h5>DND all channels</h5>
                 <input type="checkbox" />
               </div>
-              <h6 className="spanline">
+              <h6>
                 <span>OR</span>
               </h6>
               <div className="bottom-field">
@@ -215,6 +222,9 @@ export default function SmartList() {
           </div>
         </Modal.Body>
       </Modal>
+      <FilterOffcanvas show={show} handleClose={handleClose}/>
+      {/* <SmartListTable/> */}
+      <DataTable/>
     </div>
   );
 }

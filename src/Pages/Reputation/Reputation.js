@@ -62,6 +62,34 @@ function Reputation() {
           />
         </div>
       </div>
+      <div
+        style={{
+          padding: "15px",
+          backgroundColor: "#f0f5fc",
+          position: "sticky",
+          top: "98px",
+        }}
+      >
+        <div
+          style={{
+            backgroundColor: "white",
+            padding: "15px",
+            textAlign: "end",
+          }}
+        >
+          <button
+            style={{
+              backgroundColor: "#42c41d",
+              border: "none",
+              padding: "10px",
+              borderRadius: "8px",
+              color: "white",
+            }}
+          >
+            Send Review Request
+          </button>
+        </div>
+      </div>
       <Outlet />
     </div>
   );

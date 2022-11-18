@@ -11,9 +11,9 @@ import "./styles/overview.scss";
 function OverView() {
   return (
     <div className="overview-main-container">
-      <div className="button-container">
+      {/* <div className="button-container">
         <button className="button-card">Send Review Request</button>
-      </div>
+      </div> */}
       <div className="firstrow-card-container">
         <div className="firstcard-container">
           <div className="firstcard-header">

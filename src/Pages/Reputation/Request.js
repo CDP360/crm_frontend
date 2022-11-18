@@ -5,9 +5,9 @@ import "./styles/request.scss";
 function Request() {
   return (
     <div className="request-container">
-      <div className="request-button-container">
+      {/* <div className="request-button-container">
         <button className="request-button">Send Review Request</button>
-      </div>
+      </div> */}
 
       <div className="request-body-container">
         <h3>Oops</h3>
