@@ -11,7 +11,7 @@ function Url() {
   const handleShow = () => setShow(true);
   return (
     <div
-      style={{ marginTop: "5%", backgroundColor: "#f0f5fc", height: "100vh" }}
+      style={{ marginTop: "5%", backgroundColor: "#f0f5fc", height: "83vh" }}
     >
       <div style={{ display: "flex", padding: "30px" }}>
         <p>URL Redirects</p>

@@ -17,8 +17,15 @@ function BusinessInfo() {
             </div>
             <div className="main-one">
               <div style={{ display: "flex" }}>
-                <div className="box">+</div>
-                <div style={{ marginLeft: "5%" }}>
+                <div
+                  style={{
+                    backgroundColor: "grey",
+                    width: "42%",
+                    height: "129px",
+                    marginLeft: "1%",
+                  }}
+                ></div>
+                <div style={{ marginLeft: "12%" }}>
                   <p>Company Logo</p>
                   <p className="para-one">The proposed size is 350px * 180px</p>
                   <p className="para-two">no bigger than 2.5mb</p>

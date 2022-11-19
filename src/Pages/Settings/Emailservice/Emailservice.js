@@ -11,7 +11,7 @@ function Emailservice() {
 
   return (
     <div
-      style={{ marginTop: "5%", backgroundColor: "#f0f5fc", height: "100vh" }}
+      style={{ marginTop: "5%", backgroundColor: "#f0f5fc", height: "80vh" }}
     >
       <div style={{ padding: "20px", display: "flex" }}>
         <p>EMAIL Service</p>

@@ -14,7 +14,12 @@ function Dashboard() {
           General
         </p>
         <p
-          style={{ color: "grey", marginLeft: "2%", marginTop: "2%" }}
+          style={{
+            color: "grey",
+            marginLeft: "2%",
+            marginTop: "2%",
+            cursor: "pointer",
+          }}
           onClick={() => setNotification(false)}
         >
           Notifications

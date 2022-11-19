@@ -11,12 +11,12 @@ function Tags() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <div style={{ backgroundColor: "#f0f5fc", height: "120vh" }}>
+    <div style={{ backgroundColor: "#f0f5fc", height: "100vh" }}>
       <div style={{ padding: "30px", display: "flex" }}>
-        <p style={{ fontSize: "larger" }}>Tags</p>
+        <p style={{ fontSize: "larger", cursor: "pointer" }}>Tags</p>
         <Button
           variant="success"
-          style={{ marginLeft: "86%" }}
+          style={{ marginLeft: "86%", cursor: "pointer" }}
           onClick={() => handleShow()}
         >
           + New Tag
@@ -73,7 +73,10 @@ function Tags() {
             <Card style={{ width: "100%", height: "482px" }}>
               <div style={{ marginLeft: "39%", marginTop: "16%" }}>
                 <p style={{ color: "grey" }}>No tags to show yet</p>
-                <p style={{ color: "blue" }} onClick={() => handleShow()}>
+                <p
+                  style={{ color: "blue", cursor: "pointer" }}
+                  onClick={() => handleShow()}
+                >
                   Add a new Tag
                 </p>
               </div>

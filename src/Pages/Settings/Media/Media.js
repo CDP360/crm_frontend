@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 function Media() {
   return (
     <div
-      style={{ marginTop: "5%", backgroundColor: "#f0f5fc", height: "100vh" }}
+      style={{ marginTop: "5%", backgroundColor: "#f0f5fc", height: "83vh" }}
     >
       <div style={{ padding: "30px" }}>
         <p style={{ fontSize: "larger" }}>Media</p>

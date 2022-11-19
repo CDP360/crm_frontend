@@ -19,7 +19,7 @@ function Reputationmanagement() {
         overflow: "auto",
       }}
     >
-      <div
+      {/* <div
         style={{
           position: "sticky",
           top: "30px",
@@ -34,6 +34,34 @@ function Reputationmanagement() {
         >
           Send review request
         </Button>
+      </div> */}
+      <div
+        style={{
+          padding: "15px",
+          backgroundColor: "#f0f5fc",
+          position: "sticky",
+          top: "0px",
+        }}
+      >
+        <div
+          style={{
+            backgroundColor: "white",
+            padding: "15px",
+            textAlign: "end",
+          }}
+        >
+          <button
+            style={{
+              backgroundColor: "#42c41d",
+              border: "none",
+              padding: "10px",
+              borderRadius: "8px",
+              color: "white",
+            }}
+          >
+            Send Review Request
+          </button>
+        </div>
       </div>
       <div
         style={{
@@ -89,13 +117,13 @@ function Reputationmanagement() {
           </p>
           <div style={{ display: "flex", marginLeft: "2%" }}>
             <input type="radio" />
-            <p style={{ marginTop: "1%" }}>
+            <p style={{ marginTop: "1%", marginLeft: "1%" }}>
               Send review request immediately once
             </p>
           </div>
           <div style={{ display: "flex", marginLeft: "2%" }}>
             <input type="radio" />
-            <p style={{ marginTop: "1%" }}>
+            <p style={{ marginTop: "1%", marginLeft: "1%" }}>
               Follow a custom schedule for review requests
             </p>
           </div>

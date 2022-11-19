@@ -9,7 +9,6 @@ import Calendars from "./Pages/Calender/Calendar";
 import BusinessInfo from "./Pages/Settings/BusinessInfo/BusinessInfo";
 import Pipelines from "./Pages/Settings/pipelines/Pipelines";
 import Review from "./Pages/Reputation/Review";
-// import Review from "./Pages/Reputation/Review";
 import Conversation from "./Pages/Conversation/Conversation";
 import Listing from "./Pages/Reputation/Listing";
 import Contacts from "./Pages/Contacts/Contacts";
@@ -20,7 +19,6 @@ import SmartList from "./Pages/Contacts/SmartList";
 import Calendar from "./Pages/Settings/Calender/Calendar";
 import Domains from "./Pages/Settings/Domains/Domains";
 import Media from "./Pages/Settings/Media/Media";
-// import Calendar from "./Pages/Settings/Calender/Calendar";
 import Url from "./Pages/Settings/Url/Url";
 import Emailservice from "./Pages/Settings/Emailservice/Emailservice";
 import Integration from "./Pages/Settings/Integrations/Integration";
@@ -40,7 +38,6 @@ import Submission from "./Pages/Sites/Surveys/Submissionsurvey";
 import Builderform from "./Pages/Sites/Form/Builderform";
 import Analyzeform from "./Pages/Sites/Form/Analyzeform";
 import Submissionform from "./Pages/Sites/Form/Submissionform";
-// import Tasks from "./Pages/Contacts/Tasks";
 import ContactPersonal from "./Pages/Contacts/ContactPersonal";
 import Chatwidget from "./Pages/Sites/Chatwidget";
 import Productsmembership from "./Pages/Sites/Membership/Productsmembership";
@@ -53,7 +50,7 @@ import Dashboardmembership from "./Pages/Sites/Membership/Dashboardmembership";
 import Offersmembership from "./Pages/Sites/Membership/Offersmembership";
 // ------------------------
 import Tasks from "./Pages/Contacts/Tasks";
-// import ContactPersonal from "./Pages/Contacts/ContactPersonal";
+import Opportunities from "./Pages/Opportunities/Opportunities";
 
 function App() {
   return (
@@ -63,6 +60,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/conversation" element={<Conversation />} />
         <Route path="/calendar" element={<Calendars />} />
+        <Route path="/Opportunities" element={<Opportunities />} />
         <Route path="/contacts" element={<Contacts />}>
           <Route path="/contacts" element={<SmartList />} />
           <Route path="/contacts/bulkactions" element={<BulkActions />} />
