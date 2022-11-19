@@ -13,7 +13,7 @@ function Pipelines() {
   const handleShow = () => setShow(true);
 
   return (
-    <div className="main-container" style={{ height: "100vh" }}>
+    <div className="main-container" style={{ height: "80vh" }}>
       <div className="main-containerdiv">
         <h1 className="main-containerheading">Pipelines</h1>
 
