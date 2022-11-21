@@ -4,8 +4,14 @@ import Dropdown from "react-bootstrap/Dropdown";
 import Form from "react-bootstrap/Form";
 import Table from "react-bootstrap/Table";
 import Edit from "../../../assests/edit.png";
+import Modal from "react-bootstrap/Modal";
+import { useState } from "react";
 
 function Campaign() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div
       style={{
@@ -39,9 +45,9 @@ function Campaign() {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <Dropdown.Item href="#/action-1">All</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Draft</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Archieved</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -51,7 +57,9 @@ function Campaign() {
             </Form.Group>
           </div>
           <div style={{ marginLeft: "2%" }}>
-            <Button variant="outline-info">CreateFolder</Button>{" "}
+            <Button variant="outline-info" onClick={() => handleShow()}>
+              CreateFolder
+            </Button>{" "}
           </div>
           <div style={{ marginLeft: "2%" }}>
             <Button variant="success">CreateCampaign</Button>
@@ -88,12 +96,40 @@ function Campaign() {
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">
-                      Another action
+                    <Dropdown.Item
+                      href="#/action-1"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Move to folder
+                      <span style={{ color: "grey" }}>
+                        Move this campaign to a folder
+                      </span>
                     </Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">
-                      Something else
+                    <Dropdown.Item
+                      href="#/action-2"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      clone
+                      <span style={{ color: "grey" }}>
+                        create a copy of this campaign
+                      </span>
+                    </Dropdown.Item>
+                    <hr />
+                    <Dropdown.Item
+                      href="#/action-3"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Archeive campaign
+                      <span style={{ color: "grey" }}>Hide the campaign</span>
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      href="#/action-4"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Delete
+                      <span style={{ color: "grey" }}>
+                        Permenently delete thiis campaign
+                      </span>
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
@@ -117,12 +153,40 @@ function Campaign() {
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">
-                      Another action
+                    <Dropdown.Item
+                      href="#/action-1"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Move to folder
+                      <span style={{ color: "grey" }}>
+                        Move this campaign to a folder
+                      </span>
                     </Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">
-                      Something else
+                    <Dropdown.Item
+                      href="#/action-2"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      clone
+                      <span style={{ color: "grey" }}>
+                        create a copy of this campaign
+                      </span>
+                    </Dropdown.Item>
+                    <hr />
+                    <Dropdown.Item
+                      href="#/action-3"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Archeive campaign
+                      <span style={{ color: "grey" }}>Hide the campaign</span>
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      href="#/action-4"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Delete
+                      <span style={{ color: "grey" }}>
+                        Permenently delete thiis campaign
+                      </span>
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
@@ -146,12 +210,40 @@ function Campaign() {
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">
-                      Another action
+                    <Dropdown.Item
+                      href="#/action-1"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Move to folder
+                      <span style={{ color: "grey" }}>
+                        Move this campaign to a folder
+                      </span>
                     </Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">
-                      Something else
+                    <Dropdown.Item
+                      href="#/action-2"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      clone
+                      <span style={{ color: "grey" }}>
+                        create a copy of this campaign
+                      </span>
+                    </Dropdown.Item>
+                    <hr />
+                    <Dropdown.Item
+                      href="#/action-3"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Archeive campaign
+                      <span style={{ color: "grey" }}>Hide the campaign</span>
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      href="#/action-4"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Delete
+                      <span style={{ color: "grey" }}>
+                        Permenently delete thiis campaign
+                      </span>
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
@@ -189,6 +281,29 @@ function Campaign() {
           </div>
         </div>
       </div>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Create Folder</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form.Group
+            className="mb-3"
+            controlId="exampleForm.ControlInput1"
+            style={{ marginLeft: "8%" }}
+          >
+            <Form.Label>Folder Name</Form.Label>
+            <Form.Control type="text" style={{ width: "80%" }} />
+          </Form.Group>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Cancel
+          </Button>
+          <Button variant="success" onClick={handleClose}>
+            Create
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 }
