@@ -1,0 +1,52 @@
+@use "variables" as *;
+
+$primary: "primary";
+$secondary: "secondary";
+$background: "background";
+$background-alt: "background-alt";
+$inverter: "inverter";
+$text: "text";
+$frosted: "frosted";
+
+$navbar-bg: "navbar-bg--dark";
+$chess-bg: "chess-bg--dark";
+$carousel-texts: "carousel--text";
+$carousel--bg: "carousel--dark--bg";
+$text-grey: "text-grey--darks";
+$shadow-box-bg: "box-shadow";
+$text-color-bg: "text-color-bg";
+
+$themes: (
+    light: (
+        primary: $primary--light,
+        secondary: $secondary--light,
+        background: $background--light,
+        background-alt: $background-alt--light,
+        text: $text--light,
+        inverter: $inverter--light,
+        frosted: $frosted-light,
+        navbar-bg--dark: $navbar--bg--dark,
+        chess-bg--dark: $chess-bg--dark,
+        carousel--text: $carousel_text_color,
+        carousel--dark--bg: $carouser_bg,
+        text-grey--darks: $text-grey--dark,
+        box-shadow: $navbar--bg--dark,
+        text-color-bg: $text--dark,
+    ),
+    dark: (
+        primary: $primary--dark,
+        secondary: $secondary--dark,
+        background: $background--dark,
+        background-alt: $background-alt--dark,
+        text: $text--dark,
+        inverter: $inverter--dark,
+        frosted: $frosted-dark,
+        navbar-bg--dark: $navbar--bg--dark,
+        chess-bg--dark: $chess-bg--dark,
+        carousel--text: $carousel_text_color,
+        carousel--dark--bg: $carouser_bg,
+        text-grey--darks: $text-grey--dark,
+        box-shadow: $carousel_text_color,
+        text-color-bg: $navbar--bg--dark,
+    ),
+);
