@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Dropdown from "react-bootstrap/Dropdown";
 import Form from "react-bootstrap/Form";
@@ -6,7 +6,12 @@ import Table from "react-bootstrap/Table";
 import Eye from "../../../assests/eye (2).png";
 import edit from "../../../assests/edit.png";
 import clone from "../../../assests/duplicate.png";
+import Modal from "react-bootstrap/Modal";
 function Emailtemplates() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div
       style={{
@@ -39,9 +44,8 @@ function Emailtemplates() {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <Dropdown.Item href="#/action-1">Active</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Archieved</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -51,10 +55,55 @@ function Emailtemplates() {
             </Form.Group>
           </div>
           <div style={{ marginLeft: "7%" }}>
-            <Button variant="outline-info">CreateFolder</Button>{" "}
+            <Button variant="outline-info" onClick={handleShow}>
+              CreateFolder
+            </Button>
           </div>
           <div style={{ marginLeft: "5%" }}>
-            <Button variant="success">+NEW</Button>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                + NEW
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Dropdown.Item
+                  href="#/action-1"
+                  style={{ display: "flex", flexDirection: "column" }}
+                >
+                  Create from Exicisting Campaign
+                  <span style={{ color: "grey" }}>
+                    Pick a template used in excisting campaigns
+                  </span>
+                </Dropdown.Item>
+                <Dropdown.Item
+                  href="#/action-2"
+                  style={{ display: "flex", flexDirection: "column" }}
+                >
+                  Email Marketing Templates{" "}
+                  <span style={{ color: "grey" }}>
+                    Choose from a world of templates
+                  </span>
+                </Dropdown.Item>
+                <Dropdown.Item
+                  href="#/action-3"
+                  style={{ display: "flex", flexDirection: "column" }}
+                >
+                  Blank Templates
+                  <span style={{ color: "grey" }}>
+                    Design a new blank email from scratch
+                  </span>
+                </Dropdown.Item>
+                <Dropdown.Item
+                  href="#/action-4"
+                  style={{ display: "flex", flexDirection: "column" }}
+                >
+                  import Email
+                  <span style={{ color: "grey" }}>
+                    import Email from external source
+                  </span>
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </div>
         </div>
       </div>
@@ -105,12 +154,58 @@ function Emailtemplates() {
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">
-                      Another action
+                    <Dropdown.Item
+                      href="#/action-1"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Preview Template
+                      <span style={{ color: "grey" }}>
+                        Get a preview of the template
+                      </span>
                     </Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">
-                      Something else
+                    <Dropdown.Item
+                      href="#/action-2"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Share
+                      <span style={{ color: "grey" }}>
+                        share this email across other locations
+                      </span>
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      href="#/action-3"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Move to the folder
+                      <span style={{ color: "grey" }}>
+                        move this template to a folder
+                      </span>
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      href="#/action-4"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Create campaign
+                      <span style={{ color: "grey" }}>
+                        create campaign from this template
+                      </span>
+                    </Dropdown.Item>
+                    <hr />
+                    <Dropdown.Item
+                      href="#/action-5"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Archieve
+                      <span style={{ color: "grey" }}>Hide the template</span>
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      href="#/action-6"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Delete
+                      <span style={{ color: "grey" }}>
+                        Permanently delete this template
+                      </span>
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
@@ -151,12 +246,58 @@ function Emailtemplates() {
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">
-                      Another action
+                    <Dropdown.Item
+                      href="#/action-1"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Preview Template
+                      <span style={{ color: "grey" }}>
+                        Get a preview of the template
+                      </span>
                     </Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">
-                      Something else
+                    <Dropdown.Item
+                      href="#/action-2"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Share
+                      <span style={{ color: "grey" }}>
+                        share this email across other locations
+                      </span>
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      href="#/action-3"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Move to the folder
+                      <span style={{ color: "grey" }}>
+                        move this template to a folder
+                      </span>
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      href="#/action-4"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Create campaign
+                      <span style={{ color: "grey" }}>
+                        create campaign from this template
+                      </span>
+                    </Dropdown.Item>
+                    <hr />
+                    <Dropdown.Item
+                      href="#/action-5"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Archieve
+                      <span style={{ color: "grey" }}>Hide the template</span>
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      href="#/action-6"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Delete
+                      <span style={{ color: "grey" }}>
+                        Permanently delete this template
+                      </span>
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
@@ -197,12 +338,58 @@ function Emailtemplates() {
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">
-                      Another action
+                    <Dropdown.Item
+                      href="#/action-1"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Preview Template
+                      <span style={{ color: "grey" }}>
+                        Get a preview of the template
+                      </span>
                     </Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">
-                      Something else
+                    <Dropdown.Item
+                      href="#/action-2"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Share
+                      <span style={{ color: "grey" }}>
+                        share this email across other locations
+                      </span>
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      href="#/action-3"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Move to the folder
+                      <span style={{ color: "grey" }}>
+                        move this template to a folder
+                      </span>
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      href="#/action-4"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Create campaign
+                      <span style={{ color: "grey" }}>
+                        create campaign from this template
+                      </span>
+                    </Dropdown.Item>
+                    <hr />
+                    <Dropdown.Item
+                      href="#/action-5"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Archieve
+                      <span style={{ color: "grey" }}>Hide the template</span>
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      href="#/action-6"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      Delete
+                      <span style={{ color: "grey" }}>
+                        Permanently delete this template
+                      </span>
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
@@ -222,7 +409,7 @@ function Emailtemplates() {
           }}
         >
           <div>
-            <p style={{ color: "skyblue" }}>Showing 1 to 3 of 3 results</p>
+            <p style={{ color: "skyblue" }}>Showing 1 to 5 of 5 results</p>
           </div>
           <div style={{ display: "flex", height: "15%" }}>
             <Button
@@ -240,6 +427,29 @@ function Emailtemplates() {
           </div>
         </div>
       </div>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Create Folder</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form.Group
+            className="mb-3"
+            controlId="exampleForm.ControlInput1"
+            style={{ marginLeft: "8%" }}
+          >
+            <Form.Label>Folder Name</Form.Label>
+            <Form.Control type="text" style={{ width: "80%" }} />
+          </Form.Group>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Cancel
+          </Button>
+          <Button variant="success" onClick={handleClose}>
+            Create
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 }
