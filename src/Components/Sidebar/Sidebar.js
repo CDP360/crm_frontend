@@ -114,7 +114,7 @@ function Sidebar() {
                 Marketing
               </p>
             </div>
-            <div className="sidebar-option">
+            <div className="sidebar-option" onClick={() => navigate("automation")}>
               <img src={Automation} className="sidebar-img" />
               <p className="sidebar-name">Automation</p>
             </div>

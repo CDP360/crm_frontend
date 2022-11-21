@@ -2,10 +2,10 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 function Opportunities() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <div>
-      <div
+      {/* <div
         style={{ backgroundColor: "white", position: "sticky", top: "60px" }}
       >
         <div
@@ -25,7 +25,7 @@ function Opportunities() {
             Pipelines
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
