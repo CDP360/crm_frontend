@@ -40,7 +40,7 @@ import Analyzeform from "./Pages/Sites/Form/Analyzeform";
 import Submissionform from "./Pages/Sites/Form/Submissionform";
 import ContactPersonal from "./Pages/Contacts/ContactPersonal";
 import Chatwidget from "./Pages/Sites/Chatwidget";
-import Productsmembership from "./Pages/Sites/Membership/Productsmembership";
+import Productsmembership from "./Pages/Sites/Membership/product/Productsmembership";
 import Sites from "./Pages/Sites/Sites";
 import Funnels from "./Pages/Sites/Funnel";
 import Websites from "./Pages/Sites/Websites";
@@ -48,6 +48,7 @@ import Blog from "./Pages/Sites/Blog";
 import Wordpress from "./Pages/Sites/Wordpress";
 import Dashboardmembership from "./Pages/Sites/Membership/Dashboardmembership";
 import Offersmembership from "./Pages/Sites/Membership/Offersmembership";
+import CreateProduct from "./Pages/Sites/Membership/product/CreateProduct";
 // ------------------------
 import Tasks from "./Pages/Contacts/Tasks";
 import Opportunities from "./Pages/Opportunities/Opportunities";
@@ -59,12 +60,12 @@ import Emailtemplates from "./Pages/Marketing/Email/Emailtemplates";
 import Analyzetrigger from "./Pages/Marketing/Triggerlinks/Analyzetrigger";
 import Links from "./Pages/Marketing/Triggerlinks/Links";
 import Campaigns from "./Pages/Marketing/Affiliates/Campaigns";
-import './App.scss'
-import Automation from './Pages/Automation/Automation';
-import Workflows from './Pages/Automation/Workflows';
-import AutomationCampaigns from './Pages/Automation/Campaigns';
-import Trigger from './Pages/Automation/Trigger';
-import CreateWorkflow from './Pages/Automation/CreateWorkflow';
+import "./App.scss";
+import Automation from "./Pages/Automation/Automation";
+import Workflows from "./Pages/Automation/Workflows";
+import AutomationCampaigns from "./Pages/Automation/Campaigns";
+import Trigger from "./Pages/Automation/Trigger";
+import CreateWorkflow from "./Pages/Automation/CreateWorkflow";
 function App() {
   return (
     <Routes>
@@ -102,10 +103,16 @@ function App() {
           <Route path="marketing/campaigns" element={<Campaigns />} />
         </Route>
         <Route path="/automation" element={<Automation />}>
-          <Route path="/automation" element={<Workflows/>}/>
-          <Route path="/automation/createworkflow" element={<CreateWorkflow/>}/>
-          <Route path="/automation/campaigns" element={<AutomationCampaigns/>}/>
-          <Route path="/automation/trigger" element={<Trigger/>}/>
+          <Route path="/automation" element={<Workflows />} />
+          <Route
+            path="/automation/createworkflow"
+            element={<CreateWorkflow />}
+          />
+          <Route
+            path="/automation/campaigns"
+            element={<AutomationCampaigns />}
+          />
+          <Route path="/automation/trigger" element={<Trigger />} />
         </Route>
         <Route path="/sites" element={<Sites />}>
           <Route path="/sites/" element={<Funnels />} />
@@ -139,6 +146,7 @@ function App() {
           <Route path="/sites/form/Analyze" element={<Analyzeform />} />
           <Route path="/sites/form/Submission" element={<Submissionform />} />
           <Route path="/sites/chatwidget" element={<Chatwidget />} />
+          <Route path="/sites/products/blueprint" element={<CreateProduct />} />
         </Route>
         <Route path="/settings/businessInfo" element={<BusinessInfo />} />
         <Route path="/pipelines" element={<Pipelines />} />

@@ -62,7 +62,7 @@
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import { useNavigate } from "react-router-dom";
-import { createSearchParams } from "react-router-dom";
+// import { createSearchParams } from "react-router-dom";
 
 const columns = [
   { field: "id", headerName: "ID", width: 70 },
@@ -109,14 +109,14 @@ export default function DataTable() {
         marginTop: "2%",
       }}
     >
-      <DataGrid
+      {/* <DataGrid
         rows={rows}
         columns={columns}
         pageSize={5}
         rowsPerPageOptions={[5]}
         checkboxSelection
         onSelectionModelChange={(index) => {
-          let selectedRow = rows[index -1];
+          let selectedRow = rows[index - 1];
           console.log("row", selectedRow);
           navigate("/contacts/contactpersonal", {
             state: {
@@ -126,7 +126,7 @@ export default function DataTable() {
             },
           });
         }}
-      />
+      /> */}
     </div>
   );
 }
