@@ -145,9 +145,8 @@ function Conversation() {
         hidden={step !== 1}
         style={{
           backgroundColor: "#f0f5fc",
-          top: "60px",
-          position: "sticky",
-          height: "100vh",
+          height: "80vh",
+          overflow:'auto'
         }}
       >
         <div style={{ display: "flex" }}>
@@ -229,10 +228,7 @@ function Conversation() {
         style={{
           backgroundColor: "#f0f5fc",
           padding: "5%",
-          height: "100vh",
-          overflow: "auto",
-          position: "sticky",
-          top: "60px",
+          height: "80vh",
         }}
         hidden={step !== 2}
       >
@@ -278,9 +274,7 @@ function Conversation() {
         hidden={step !== 3}
         style={{
           backgroundColor: "#f0f5fc",
-          height: "100vh",
-          position: "sticky",
-          top: "60px",
+          height: "80vh",
           padding: "1%",
         }}
       >
