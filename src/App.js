@@ -51,7 +51,7 @@ import Offersmembership from "./Pages/Sites/Membership/Offersmembership";
 // ------------------------
 import Tasks from "./Pages/Contacts/Tasks";
 import Opportunities from "./Pages/Opportunities/Opportunities";
-import Automation from "./Pages/Marketing/Marketing";
+import Marketing from "./Pages/Marketing/Marketing";
 import Socialplanner from "./Pages/Marketing/Socialplanner";
 import Campaign from "./Pages/Marketing/Email/Campaign";
 import Templates from "./Pages/Marketing/Templates";
@@ -62,7 +62,7 @@ import Campaigns from "./Pages/Marketing/Affiliates/Campaigns";
 import './App.scss'
 import Automation from './Pages/Automation/Automation';
 import Workflows from './Pages/Automation/Workflows';
-import Campaigns from './Pages/Automation/Campaigns';
+import AutomationCampaigns from './Pages/Automation/Campaigns';
 import Trigger from './Pages/Automation/Trigger';
 import CreateWorkflow from './Pages/Automation/CreateWorkflow';
 function App() {
@@ -89,7 +89,7 @@ function App() {
           />
           <Route path="/contacts/company" element={<Company />} />
         </Route>
-        <Route path="/marketing" element={<Automation />}>
+        <Route path="/marketing" element={<Marketing />}>
           <Route path="/marketing" element={<Socialplanner />} />
           <Route path="marketing/email/campaigns" element={<Campaign />} />
           <Route path="marketing/templates" element={<Templates />} />
@@ -104,7 +104,7 @@ function App() {
         <Route path="/automation" element={<Automation />}>
           <Route path="/automation" element={<Workflows/>}/>
           <Route path="/automation/createworkflow" element={<CreateWorkflow/>}/>
-          <Route path="/automation/campaigns" element={<Campaigns/>}/>
+          <Route path="/automation/campaigns" element={<AutomationCampaigns/>}/>
           <Route path="/automation/trigger" element={<Trigger/>}/>
         </Route>
         <Route path="/sites" element={<Sites />}>

@@ -3,7 +3,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 
-function Automation() {
+function Marketing() {
   const navigate = useNavigate();
 
   return (
@@ -101,4 +101,4 @@ function Automation() {
   );
 }
 
-export default Automation;
+export default Marketing;

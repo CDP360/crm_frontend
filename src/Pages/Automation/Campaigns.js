@@ -5,7 +5,7 @@ import Modal from "react-bootstrap/Modal";
 import Dropdown from "react-bootstrap/Dropdown";
 import "./styles/Campaigns.scss";
 
-function Campaigns() {
+function AutomationCampaigns() {
   const [createFolder, setCreateFolder] = useState(false);
   const [createCampaigns, setCreateCampaigns] = useState(false);
 
@@ -309,4 +309,4 @@ function Campaigns() {
   );
 }
 
-export default Campaigns;
+export default AutomationCampaigns;
