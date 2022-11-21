@@ -110,7 +110,9 @@ function Sidebar() {
             <hr />
             <div className="sidebar-option">
               <img src={Marketing} className="sidebar-img" />
-              <p className="sidebar-name">Marketing</p>
+              <p className="sidebar-name" onClick={() => navigate("marketing")}>
+                Marketing
+              </p>
             </div>
             <div className="sidebar-option">
               <img src={Automation} className="sidebar-img" />

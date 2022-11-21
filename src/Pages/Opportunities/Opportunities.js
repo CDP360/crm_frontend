@@ -11,51 +11,19 @@ function Opportunities() {
         <div
           style={{
             display: "flex",
-            justifyContent: "space-around",
             width: "40%",
             marginTop: "auto",
           }}
         >
           <p style={{ fontWeight: 700, fontSize: "15px", cursor: "pointer" }}>
-            Reputation
+            Opportunities
           </p>
-          <p
-            style={{ fontSize: "15px", cursor: "pointer" }}
-            onClick={() => navigate("")}
-          >
-            Overview
+          <p style={{ fontSize: "15px", cursor: "pointer", marginLeft: "6%" }}>
+            Opportunities
           </p>
-          <p
-            style={{ fontSize: "15px", cursor: "pointer" }}
-            onClick={() => navigate("/reputation/request")}
-          >
-            Requests
+          <p style={{ fontSize: "15px", cursor: "pointer", marginLeft: "4%" }}>
+            Pipelines
           </p>
-          <p
-            style={{ fontSize: "15px", cursor: "pointer" }}
-            onClick={() => navigate("/reputation/review")}
-          >
-            Reviews{" "}
-          </p>
-          <p
-            style={{ fontSize: "15px", cursor: "pointer" }}
-            onClick={() => navigate("/reputation/listing")}
-          >
-            Listings
-            <span
-              style={{
-                border: "1px solid black",
-                backgroundColor: "yellow",
-                borderRadius: "5px",
-                fontSize: "12px",
-                padding: "1px",
-              }}
-            >
-              New
-            </span>
-          </p>
-          <div style={{ borderLeft: "1px solid gray", height: "20px" }}></div>
-          <img style={{ width: "20px", height: "20px", cursor: "pointer" }} />
         </div>
       </div>
     </div>

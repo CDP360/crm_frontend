@@ -51,6 +51,14 @@ import Offersmembership from "./Pages/Sites/Membership/Offersmembership";
 // ------------------------
 import Tasks from "./Pages/Contacts/Tasks";
 import Opportunities from "./Pages/Opportunities/Opportunities";
+import Automation from "./Pages/Marketing/Marketing";
+import Socialplanner from "./Pages/Marketing/Socialplanner";
+import Campaign from "./Pages/Marketing/Email/Campaign";
+import Templates from "./Pages/Marketing/Templates";
+import Emailtemplates from "./Pages/Marketing/Email/Emailtemplates";
+import Analyzetrigger from "./Pages/Marketing/Triggerlinks/Analyzetrigger";
+import Links from "./Pages/Marketing/Triggerlinks/Links";
+import Campaigns from "./Pages/Marketing/Affiliates/Campaigns";
 
 function App() {
   return (
@@ -75,6 +83,18 @@ function App() {
             element={<ManageSmartList />}
           />
           <Route path="/contacts/company" element={<Company />} />
+        </Route>
+        <Route path="/marketing" element={<Automation />}>
+          <Route path="/marketing" element={<Socialplanner />} />
+          <Route path="marketing/email/campaigns" element={<Campaign />} />
+          <Route path="marketing/templates" element={<Templates />} />
+          <Route
+            path="marketing/email/templates"
+            element={<Emailtemplates />}
+          />
+          <Route path="marketing/links" element={<Links />} />
+          <Route path="marketing/analyze" element={<Analyzetrigger />} />
+          <Route path="marketing/campaigns" element={<Campaigns />} />
         </Route>
         <Route path="/sites" element={<Sites />}>
           <Route path="/sites/" element={<Funnels />} />
