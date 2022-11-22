@@ -1,17 +1,22 @@
 import React from "react";
-import Internet from "../../../assests/internet.svg";
-import Phone from "../../../assests/phone.svg";
-import Email from "../../../assests/emails.svg";
-import gearWide from "../../../assests/gear-wide.svg";
+import { useNavigate } from "react-router-dom";
+import Internet from "../../../../assests/internet.svg";
+import Phone from "../../../../assests/phone.svg";
+import Email from "../../../../assests/emails.svg";
+import gearWide from "../../../../assests/gear-wide.svg";
 
 const Settingsmembership = () => {
+  const navigate = useNavigate();
   return (
     <div className="settingsmembership-main-container">
       <div className="settingsmembership-settings-text-holder">
         <p className="settingsmembership-settings-text">Settings</p>
       </div>
       <div className="settingsmembership-main-card-holder">
-        <div className="settingsmembership-card-holder">
+        <div
+          onClick={() => navigate("/sites/settings/site-details")}
+          className="settingsmembership-card-holder"
+        >
           <div className="settingsmembership-card">
             <div className="settingsmembership-card-img-holder">
               <img
@@ -28,7 +33,10 @@ const Settingsmembership = () => {
             </div>
           </div>
         </div>
-        <div className="settingsmembership-card-holder">
+        <div
+          onClick={() => navigate("/sites/settings/custom-domain")}
+          className="settingsmembership-card-holder"
+        >
           <div className="settingsmembership-card">
             <div className="settingsmembership-card-img-holder">
               <img
@@ -47,7 +55,10 @@ const Settingsmembership = () => {
             </div>
           </div>
         </div>
-        <div className="settingsmembership-card-holder">
+        <div
+          onClick={() => navigate("/sites/settings/email-settings")}
+          className="settingsmembership-card-holder"
+        >
           <div className="settingsmembership-card">
             <div className="settingsmembership-card-img-holder">
               <img
@@ -66,7 +77,10 @@ const Settingsmembership = () => {
             </div>
           </div>
         </div>
-        <div className="settingsmembership-card-holder">
+        <div
+          onClick={() => navigate("/sites/settings/app-settings")}
+          className="settingsmembership-card-holder"
+        >
           <div className="settingsmembership-card">
             <div className="settingsmembership-card-img-holder">
               <img

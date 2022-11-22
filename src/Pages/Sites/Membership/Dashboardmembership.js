@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Dashboard from "../../../assests/dashboard-banner.jpeg";
 import Email from "../../../assests/email-img.svg";
 import People from "../../../assests/people.png";
 import Fileupload from "../../../assests/fileupload.svg";
 import Dollar from "../../../assests/dollar.svg";
 import BounceLoader from "react-spinners/ClipLoader";
-import { useState, useEffect } from "react";
 
 const Dashboardmembership = () => {
   const [loading, setLoading] = useState(false);

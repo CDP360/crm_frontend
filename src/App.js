@@ -30,8 +30,12 @@ import ManageSmartList from "./Pages/Contacts/ManageSmartList";
 import Company from "./Pages/Contacts/Company";
 import Customfields from "./Pages/Settings/Customfields/Customfields";
 // ------------sites---------------
-import Analyticsmembership from "./Pages/Sites/Membership/Analyticsmembership";
-import Settingsmembership from "./Pages/Sites/Membership/Settingsmembership";
+import Analyticsmembership from "./Pages/Sites/Membership/analytics/Analyticsmembership";
+import Settingsmembership from "./Pages/Sites/Membership/settings/Settingsmembership";
+import Sitedetails from "./Pages/Sites/Membership/settings/Sitedetails";
+import Customdomain from "./Pages/Sites/Membership/settings/Customdomain";
+import Emailsetings from "./Pages/Sites/Membership/settings/Emailsetings";
+import Appsettings from "./Pages/Sites/Membership/settings/Appsettings";
 import Buildersurvey from "./Pages/Sites/Surveys/Buildersurvey";
 import Analyze from "./Pages/Sites/Surveys/Analyzesurvey";
 import Submission from "./Pages/Sites/Surveys/Submissionsurvey";
@@ -49,6 +53,8 @@ import Wordpress from "./Pages/Sites/Wordpress";
 import Dashboardmembership from "./Pages/Sites/Membership/Dashboardmembership";
 import Offersmembership from "./Pages/Sites/Membership/Offersmembership";
 import CreateProduct from "./Pages/Sites/Membership/product/CreateProduct";
+import Productprogress from "./Pages/Sites/Membership/analytics/Productprogress";
+import Analyticsassesment from "./Pages/Sites/Membership/analytics/Analyticsassesment";
 // ------------------------
 import Tasks from "./Pages/Contacts/Tasks";
 import Opportunities from "./Pages/Opportunities/Opportunities";
@@ -147,6 +153,30 @@ function App() {
           <Route path="/sites/form/Submission" element={<Submissionform />} />
           <Route path="/sites/chatwidget" element={<Chatwidget />} />
           <Route path="/sites/products/blueprint" element={<CreateProduct />} />
+          <Route
+            path="/sites/analytics/product-progress"
+            element={<Productprogress />}
+          />
+          <Route
+            path="/sites/analytics/analytics-assesments"
+            element={<Analyticsassesment />}
+          />
+          <Route
+            path="/sites/settings/site-details"
+            element={<Sitedetails />}
+          />
+          <Route
+            path="/sites/settings/custom-domain"
+            element={<Customdomain />}
+          />
+          <Route
+            path="/sites/settings/email-settings"
+            element={<Emailsetings />}
+          />
+          <Route
+            path="/sites/settings/app-settings"
+            element={<Appsettings />}
+          />
         </Route>
         <Route path="/settings/businessInfo" element={<BusinessInfo />} />
         <Route path="/pipelines" element={<Pipelines />} />
