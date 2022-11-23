@@ -59,12 +59,15 @@ import Emailtemplates from "./Pages/Marketing/Email/Emailtemplates";
 import Analyzetrigger from "./Pages/Marketing/Triggerlinks/Analyzetrigger";
 import Links from "./Pages/Marketing/Triggerlinks/Links";
 import Campaigns from "./Pages/Marketing/Affiliates/Campaigns";
-import './App.scss'
-import Automation from './Pages/Automation/Automation';
-import Workflows from './Pages/Automation/Workflows';
-import AutomationCampaigns from './Pages/Automation/Campaigns';
-import Trigger from './Pages/Automation/Trigger';
-import CreateWorkflow from './Pages/Automation/CreateWorkflow';
+import "./App.scss";
+import Automation from "./Pages/Automation/Automation";
+import Workflows from "./Pages/Automation/Workflows";
+import AutomationCampaigns from "./Pages/Automation/Campaigns";
+import Trigger from "./Pages/Automation/Trigger";
+import CreateWorkflow from "./Pages/Automation/CreateWorkflow";
+import Affiliates from "./Pages/Marketing/Affiliates/Affiliates";
+import Payouts from "./Pages/Marketing/Affiliates/Payouts";
+import CampaignAdd from "./Pages/Marketing/Affiliates/CampaignAdd";
 function App() {
   return (
     <Routes>
@@ -100,12 +103,24 @@ function App() {
           <Route path="marketing/links" element={<Links />} />
           <Route path="marketing/analyze" element={<Analyzetrigger />} />
           <Route path="marketing/campaigns" element={<Campaigns />} />
+          <Route path="marketing/affiliates" element={<Affiliates />} />
+          <Route path="marketing/payouts" element={<Payouts />} />
+          <Route
+            path="/marketing/email/campaigns/add"
+            element={<CampaignAdd />}
+          />
         </Route>
         <Route path="/automation" element={<Automation />}>
-          <Route path="/automation" element={<Workflows/>}/>
-          <Route path="/automation/createworkflow" element={<CreateWorkflow/>}/>
-          <Route path="/automation/campaigns" element={<AutomationCampaigns/>}/>
-          <Route path="/automation/trigger" element={<Trigger/>}/>
+          <Route path="/automation" element={<Workflows />} />
+          <Route
+            path="/automation/createworkflow"
+            element={<CreateWorkflow />}
+          />
+          <Route
+            path="/automation/campaigns"
+            element={<AutomationCampaigns />}
+          />
+          <Route path="/automation/trigger" element={<Trigger />} />
         </Route>
         <Route path="/sites" element={<Sites />}>
           <Route path="/sites/" element={<Funnels />} />

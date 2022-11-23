@@ -20,50 +20,46 @@ function Campaign() {
         overflow: "auto",
       }}
     >
-      <div style={{ marginTop: "3%" }}>
-        <div style={{ marginLeft: "3%", display: "flex" }}>
+      <div style={{ display: "flex", padding: "3%" }}>
+        <div style={{ width: "40%" }}>
           <h1 style={{ fontSize: "x-large", fontWeight: "300" }}>
             EmailCampaigns
           </h1>
-          <div style={{ display: "flex", marginLeft: "18%" }}>
-            <p style={{ marginLeft: "18%", marginTop: "4%" }}>Status</p>
-            <Dropdown
+        </div>
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
+          <p>Status</p>
+          <Dropdown>
+            <Dropdown.Toggle
+              variant="light"
+              id="dropdown-basic"
               style={{
-                marginLeft: "18%",
+                color: "skyblue",
+                backgroundColor: "white",
+                border: "none",
               }}
             >
-              <Dropdown.Toggle
-                variant="light"
-                id="dropdown-basic"
-                style={{
-                  color: "skyblue",
-                  backgroundColor: "white",
-                  border: "none",
-                }}
-              >
-                All
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">All</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Draft</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Archieved</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
-          <div style={{ marginLeft: "15%" }}>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Control type="email" placeholder="Search Campaign Name" />
-            </Form.Group>
-          </div>
-          <div style={{ marginLeft: "2%" }}>
-            <Button variant="outline-info" onClick={() => handleShow()}>
-              CreateFolder
-            </Button>{" "}
-          </div>
-          <div style={{ marginLeft: "2%" }}>
-            <Button variant="success">CreateCampaign</Button>
-          </div>
+              All
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item href="#/action-1">All</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">Draft</Dropdown.Item>
+              <Dropdown.Item href="#/action-3">Archieved</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+          <Form.Group controlId="exampleForm.ControlInput1">
+            <Form.Control type="email" placeholder="Search Campaign Name" />
+          </Form.Group>
+          <Button variant="outline-info" onClick={() => handleShow()}>
+            Create Folder
+          </Button>
+          <div style={{ borderLeft: "1px solid grey", height: "40px" }}></div>
+          <Button variant="success">Create Campaign</Button>
         </div>
       </div>
       <hr />
@@ -85,11 +81,15 @@ function Campaign() {
               <td></td>
               <td>
                 <img src={Edit} style={{ width: "6%" }} />
-                <span style={{ color: "grey" }}>Draft</span>
+                <span style={{ color: "grey", padding: "4%", margin: "1%" }}>
+                  Draft
+                </span>
               </td>
               <td style={{ display: "flex" }}>
-                {" "}
-                <img src={Edit} style={{ width: "10%" }} />
+                <img
+                  src={Edit}
+                  style={{ width: "10%", height: "2%", marginTop: "2%" }}
+                />
                 <Dropdown style={{ marginLeft: "31%" }}>
                   <Dropdown.Toggle variant="outline-info" id="dropdown-basic">
                     Actions
@@ -140,13 +140,16 @@ function Campaign() {
               <td> Nov 19, 2022 04:48 pm</td>
               <td></td>
               <td>
-                {" "}
                 <img src={Edit} style={{ width: "6%" }} />
-                <span style={{ color: "grey" }}>Draft</span>
+                <span style={{ color: "grey", padding: "4%", margin: "1%" }}>
+                  Draft
+                </span>
               </td>
               <td style={{ display: "flex" }}>
-                {" "}
-                <img src={Edit} style={{ width: "10%" }} />
+                <img
+                  src={Edit}
+                  style={{ width: "10%", height: "2%", marginTop: "2%" }}
+                />
                 <Dropdown style={{ marginLeft: "31%" }}>
                   <Dropdown.Toggle variant="outline-info" id="dropdown-basic">
                     Actions
@@ -158,7 +161,9 @@ function Campaign() {
                       style={{ display: "flex", flexDirection: "column" }}
                     >
                       Move to folder
-                      <span style={{ color: "grey" }}>
+                      <span
+                        style={{ color: "grey", padding: "4%", margin: "1%" }}
+                      >
                         Move this campaign to a folder
                       </span>
                     </Dropdown.Item>
@@ -199,11 +204,16 @@ function Campaign() {
               <td>
                 {" "}
                 <img src={Edit} style={{ width: "6%" }} />
-                <span style={{ color: "grey" }}>Draft</span>
+                <span style={{ color: "grey", padding: "4%", margin: "1%" }}>
+                  Draft
+                </span>
               </td>
               <td style={{ display: "flex" }}>
                 {" "}
-                <img src={Edit} style={{ width: "10%" }} />
+                <img
+                  src={Edit}
+                  style={{ width: "10%", height: "2%", marginTop: "2%" }}
+                />
                 <Dropdown style={{ marginLeft: "31%" }}>
                   <Dropdown.Toggle variant="outline-info" id="dropdown-basic">
                     Actions
@@ -249,6 +259,9 @@ function Campaign() {
                 </Dropdown>
               </td>
             </tr>
+            <tr>
+              <td></td>
+            </tr>
           </tbody>
         </Table>
         <div
@@ -256,7 +269,7 @@ function Campaign() {
             width: "100%",
             height: "300px",
             backgroundColor: "white",
-            marginTop: "-1.2%",
+            marginTop: "-2.2%",
             display: "flex",
             justifyContent: "space-between",
             padding: "1%",

@@ -20,91 +20,102 @@ function Emailtemplates() {
         overflow: "auto",
       }}
     >
-      <div style={{ marginTop: "3%" }}>
-        <div style={{ marginLeft: "3%", display: "flex" }}>
-          <h1 style={{ fontSize: "x-large", fontWeight: "300" }}>
+      <div style={{ padding: "2%", display: "flex" }}>
+        <div style={{ width: "40%" }}>
+          <h1
+            style={{
+              fontSize: "x-large",
+              fontWeight: "300",
+              marginBottom: "auto",
+            }}
+          >
             EmailTemplates
           </h1>
-          <div style={{ display: "flex", marginLeft: "18%" }}>
-            <Dropdown
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-evenly",
+            width: "100%",
+          }}
+        >
+          <Dropdown
+            style={{
+              marginLeft: "18%",
+            }}
+          >
+            <Dropdown.Toggle
+              variant="light"
+              id="dropdown-basic"
               style={{
-                marginLeft: "18%",
+                color: "skyblue",
+                backgroundColor: "white",
+                border: "none",
               }}
             >
-              <Dropdown.Toggle
-                variant="light"
-                id="dropdown-basic"
-                style={{
-                  color: "skyblue",
-                  backgroundColor: "white",
-                  border: "none",
-                }}
+              Active
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item href="#/action-1">Active</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">Archieved</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Control type="email" placeholder="Search Email Templates" />
+          </Form.Group>
+          <Button
+            variant="outline-info"
+            onClick={handleShow}
+            style={{ height: "72%" }}
+          >
+            Create Folder
+          </Button>
+          <div style={{ borderLeft: "1px solid grey", height: "39px" }}></div>
+          <Dropdown>
+            <Dropdown.Toggle variant="success" id="dropdown-basic">
+              + NEW
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item
+                href="#/action-1"
+                style={{ display: "flex", flexDirection: "column" }}
               >
-                Active
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Active</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Archieved</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
-          <div style={{ marginLeft: "15%" }}>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Control type="email" placeholder="Search Email Templates" />
-            </Form.Group>
-          </div>
-          <div style={{ marginLeft: "7%" }}>
-            <Button variant="outline-info" onClick={handleShow}>
-              CreateFolder
-            </Button>
-          </div>
-          <div style={{ marginLeft: "5%" }}>
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                + NEW
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <Dropdown.Item
-                  href="#/action-1"
-                  style={{ display: "flex", flexDirection: "column" }}
-                >
-                  Create from Exicisting Campaign
-                  <span style={{ color: "grey" }}>
-                    Pick a template used in excisting campaigns
-                  </span>
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#/action-2"
-                  style={{ display: "flex", flexDirection: "column" }}
-                >
-                  Email Marketing Templates{" "}
-                  <span style={{ color: "grey" }}>
-                    Choose from a world of templates
-                  </span>
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#/action-3"
-                  style={{ display: "flex", flexDirection: "column" }}
-                >
-                  Blank Templates
-                  <span style={{ color: "grey" }}>
-                    Design a new blank email from scratch
-                  </span>
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#/action-4"
-                  style={{ display: "flex", flexDirection: "column" }}
-                >
-                  import Email
-                  <span style={{ color: "grey" }}>
-                    import Email from external source
-                  </span>
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
+                Create from Exicisting Campaign
+                <span style={{ color: "grey" }}>
+                  Pick a template used in excisting campaigns
+                </span>
+              </Dropdown.Item>
+              <Dropdown.Item
+                href="#/action-2"
+                style={{ display: "flex", flexDirection: "column" }}
+              >
+                Email Marketing Templates{" "}
+                <span style={{ color: "grey" }}>
+                  Choose from a world of templates
+                </span>
+              </Dropdown.Item>
+              <Dropdown.Item
+                href="#/action-3"
+                style={{ display: "flex", flexDirection: "column" }}
+              >
+                Blank Templates
+                <span style={{ color: "grey" }}>
+                  Design a new blank email from scratch
+                </span>
+              </Dropdown.Item>
+              <Dropdown.Item
+                href="#/action-4"
+                style={{ display: "flex", flexDirection: "column" }}
+              >
+                import Email
+                <span style={{ color: "grey" }}>
+                  import Email from external source
+                </span>
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </div>
       </div>
       <hr />

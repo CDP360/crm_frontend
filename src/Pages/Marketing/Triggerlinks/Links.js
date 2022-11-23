@@ -6,7 +6,7 @@ function Links() {
     <div style={{ backgroundColor: "#f0f5fc", height: "84vh", padding: "3%" }}>
       <div style={{ display: "flex" }}>
         <p>Link</p>
-        <Button variant="success" style={{ marginLeft: "90%" }}>
+        <Button variant="success" style={{ marginLeft: "87%" }}>
           Add link
         </Button>
       </div>

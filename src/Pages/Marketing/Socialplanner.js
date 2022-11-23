@@ -1,18 +1,13 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import ProgressBar from "react-bootstrap/ProgressBar";
-
+import Button from "react-bootstrap/Button";
 function Socialplanner() {
   const now = 60;
   return (
     <div style={{ backgroundColor: "#f0f5fc", height: "80vh" }}>
       <div
         style={{
-          // backgroundColor: "white",
-          // width: "90%",
-          // height: "470px",
-          // marginTop: "3%",
-          // marginLeft: "4%",
           padding: "3%",
         }}
       >
@@ -20,10 +15,8 @@ function Socialplanner() {
           style={{
             display: "flex",
             justifyContent: "center",
-            // alignItems: "center",
             flexDirection: "column",
             backgroundColor: "white",
-            // width: "90%",
             padding: "5%",
           }}
         >
@@ -31,7 +24,6 @@ function Socialplanner() {
             Manage Your Social Media In One Place
           </h1>
           <div style={{ diplay: "flex", width: "40%", marginLeft: "30%" }}>
-            <div>{/* <p>bjhb</p> */}</div>
             <div>
               <div style={{ marginTop: "6%" }}>
                 <p style={{ color: "skyblue" }}>Manage Social Accounts</p>
@@ -84,6 +76,12 @@ function Socialplanner() {
               </div>
             </div>
           </div>
+          <Button
+            variant="success"
+            style={{ width: "10%", marginLeft: "88%", borderRadius: "19%" }}
+          >
+            Get Started
+          </Button>
         </div>
       </div>
     </div>

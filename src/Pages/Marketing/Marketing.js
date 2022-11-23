@@ -62,7 +62,7 @@ function Marketing() {
               variant="light"
               style={{ backgroundColor: "white", border: "none" }}
             >
-              TriggerLinks
+              Trigger Links
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
@@ -76,22 +76,25 @@ function Marketing() {
             </Dropdown.Menu>
           </Dropdown>
 
-          <Dropdown
-            style={{ marginTop: "-7px" }}
-            onClick={() => navigate("marketing/campaigns")}
-          >
+          <Dropdown style={{ marginTop: "-7px" }}>
             <Dropdown.Toggle
               variant="light"
               style={{ backgroundColor: "white", border: "none" }}
             >
-              AffiliateManager
+              Affiliate Manager
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item>Campaigns</Dropdown.Item>
+              <Dropdown.Item onClick={() => navigate("marketing/campaigns")}>
+                Campaigns
+              </Dropdown.Item>
 
-              <Dropdown.Item>Affiliates</Dropdown.Item>
-              <Dropdown.Item>Payouts</Dropdown.Item>
+              <Dropdown.Item onClick={() => navigate("marketing/affiliates")}>
+                Affiliates
+              </Dropdown.Item>
+              <Dropdown.Item onClick={() => navigate("marketing/payouts")}>
+                Payouts
+              </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </div>
