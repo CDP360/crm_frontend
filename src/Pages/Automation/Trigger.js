@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import Dropdown from 'react-bootstrap/Dropdown';
-import Modal from 'react-bootstrap/Modal';
+import React, { useState } from "react";
+import Dropdown from "react-bootstrap/Dropdown";
+import Modal from "react-bootstrap/Modal";
 
 function Trigger() {
   const [createFolder, setCreateFolder] = useState(false);
@@ -12,37 +12,131 @@ function Trigger() {
   const addTriggerClose = () => setAddTrigger(false);
   const addTriggerShow = () => setAddTrigger(true);
 
+  const TriggerData = [
+    {
+      id: 1,
+      name: "#1-A (Home Buyer Info Form - Add to Home Buyer Nurture - Create Opportunity in New Lead stage - Notify Client)",
+    },
+  ];
+
   return (
-    <div style={{padding:'2%',backgroundColor:'#f0f5fc',height:'85vh',overflow: 'auto',}}>
-        <div style={{display:'flex',justifyContent:'space-between'}}>
-            <div style={{display:'flex',marginTop:'2%',width:'60%'}}>
-             <h3 style={{marginBottom:'auto'}}>Trigger</h3>
-             <p style={{marginLeft:'2%',marginTop:'1%',marginBottom:'auto'}}>Showing <span style={{fontWeight:'bold',textDecoration:'underline'}}> All </span> rules based on<span style={{fontWeight:'bold',textDecoration:'underline'}}> Any Condition </span>that will fire <span style={{fontWeight:'bold',textDecoration:'underline'}}>Any Action</span></p>
-            </div>
-            <div style={{width:'30%',display:'flex',justifyContent:'space-around',height:'40px',marginTop:'2%'}}>
-                <button onClick={createFolderShow} style={{width:'40%',backgroundColor:'green',color:'white',border:'none',borderRadius:'5px'}}>+ New Folder</button>
-                <button onClick={addTriggerShow} style={{width:'40%',backgroundColor:'green',color:'white',border:'none',borderRadius:'5px'}}>+ Add Trigger</button>
-            </div>
+    <div
+      style={{
+        padding: "2%",
+        backgroundColor: "#f0f5fc",
+        height: "85vh",
+        overflow: "auto",
+      }}
+    >
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div style={{ display: "flex", marginTop: "2%", width: "60%" }}>
+          <h3 style={{ marginBottom: "auto" }}>Trigger</h3>
+          <p
+            style={{ marginLeft: "2%", marginTop: "1%", marginBottom: "auto" }}
+          >
+            Showing{" "}
+            <span style={{ fontWeight: "bold", textDecoration: "underline" }}>
+              {" "}
+              All{" "}
+            </span>{" "}
+            rules based on
+            <span style={{ fontWeight: "bold", textDecoration: "underline" }}>
+              {" "}
+              Any Condition{" "}
+            </span>
+            that will fire{" "}
+            <span style={{ fontWeight: "bold", textDecoration: "underline" }}>
+              Any Action
+            </span>
+          </p>
         </div>
-       <div style={{marginTop:'3%',display:'flex',justifyContent:'space-between',backgroundColor:'white',padding:'1%',borderRadius:'10px'}}>
-        <p style={{marginBottom:'auto'}}>#1-A (Home Buyer Info Form - Add to Home Buyer Nurture - Create Opportunity in New Lead stage - Notify Client)</p>
-        <div style={{display:'flex',width:'15%',justifyContent:'space-around'}}>
-        <Dropdown >
-            <Dropdown.Toggle style={{backgroundColor:'#f0f5fc',color:'black',fontWeight:'bold'}}>Draft</Dropdown.Toggle>
-            <Dropdown.Menu >
-              <Dropdown.Item>Activate</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-          <Dropdown >
-            <Dropdown.Toggle style={{backgroundColor:'skyblue',color:'blue',fontWeight:'bold'}}>Edit</Dropdown.Toggle>
-            <Dropdown.Menu >
-              <Dropdown.Item>Duplicate</Dropdown.Item>
-              <Dropdown.Item>Delete</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
+        <div
+          style={{
+            width: "30%",
+            display: "flex",
+            justifyContent: "space-around",
+            height: "40px",
+            marginTop: "2%",
+          }}
+        >
+          <button
+            onClick={createFolderShow}
+            style={{
+              width: "40%",
+              backgroundColor: "green",
+              color: "white",
+              border: "none",
+              borderRadius: "5px",
+            }}
+          >
+            + New Folder
+          </button>
+          <button
+            onClick={addTriggerShow}
+            style={{
+              width: "40%",
+              backgroundColor: "green",
+              color: "white",
+              border: "none",
+              borderRadius: "5px",
+            }}
+          >
+            + Add Trigger
+          </button>
         </div>
-       </div>
-       <Modal show={createFolder} onHide={createFolderClose} animation={false}>
+      </div>
+      {TriggerData.map((data) => (
+        <div
+          style={{
+            marginTop: "3%",
+            display: "flex",
+            justifyContent: "space-between",
+            backgroundColor: "white",
+            padding: "1%",
+            borderRadius: "10px",
+          }}
+        >
+          <p style={{ marginBottom: "auto" }}>{data.name}</p>
+          <div
+            style={{
+              display: "flex",
+              width: "15%",
+              justifyContent: "space-around",
+            }}
+          >
+            <Dropdown>
+              <Dropdown.Toggle
+                style={{
+                  backgroundColor: "#f0f5fc",
+                  color: "black",
+                  fontWeight: "bold",
+                }}
+              >
+                Draft
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item>Activate</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            <Dropdown>
+              <Dropdown.Toggle
+                style={{
+                  backgroundColor: "skyblue",
+                  color: "blue",
+                  fontWeight: "bold",
+                }}
+              >
+                Edit
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item>Duplicate</Dropdown.Item>
+                <Dropdown.Item>Delete</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
+        </div>
+      ))}
+      <Modal show={createFolder} onHide={createFolderClose} animation={false}>
         <Modal.Header closeButton>
           <Modal.Title>
             <p> Create Folder</p>
@@ -88,14 +182,12 @@ function Trigger() {
           </button>
         </Modal.Footer>
       </Modal>
-      <Modal
-        show={addTrigger}
-        onHide={addTriggerClose}
-        animation={false}
-      >
+      <Modal show={addTrigger} onHide={addTriggerClose} animation={false}>
         <Modal.Header closeButton>
           <Modal.Title>
-            <p style={{fontSize:'20px',marginBottom:'auto'}}>New Basic Rule</p>
+            <p style={{ fontSize: "20px", marginBottom: "auto" }}>
+              New Basic Rule
+            </p>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -139,7 +231,7 @@ function Trigger() {
         </Modal.Footer>
       </Modal>
     </div>
-  )
+  );
 }
 
-export default Trigger
+export default Trigger;

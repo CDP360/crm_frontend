@@ -5,6 +5,7 @@ import Edit from "../../assests/edit.png";
 import Delete from "../../assests/delete.png";
 import Copy from "../../assests/copy.png";
 import Folder from "../../assests/folder.png";
+import DownArrow from '../../assests/downArrow.png'
 import { useNavigate } from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
 import Dropdown from "react-bootstrap/Dropdown";
@@ -16,9 +17,14 @@ function Workflows() {
   const [published, setPublished] = useState(false);
 
   const [createFolder, setCreateFolder] = useState(false);
+  const [moveToFolder,setMoveToFolder]=useState(false)
+
+  const [dropdownSearch,setDropdownSearch]=useState(false)
 
   const createFolderClose = () => setCreateFolder(false);
   const createFolderShow = () => setCreateFolder(true);
+  const moveToFolderClose = () => setMoveToFolder(false);
+  const moveToFolderShow = () => setMoveToFolder(true);
 
   const workflowClick = () => {
     setDraft(false);
@@ -100,7 +106,7 @@ function Workflows() {
       </div>
       <hr />
       <div style={{ display: "flex", padding: "2%" }}>
-        <div style={{ width: "20%" }}>
+        <div style={{ width: "15%" }}>
           <p
             className={`${workflow ? "workflows" : "workflowsactived"}`}
             onClick={workflowClick}
@@ -133,7 +139,7 @@ function Workflows() {
               borderTopRightRadius: "10px",
             }}
           >
-            <p style={{ width: "30%" }}>NAME</p>
+            <p style={{ width: "31%" }}>NAME</p>
             <p style={{ width: "10%" }}>TOTAL ENROLLED</p>
             <p style={{ width: "10%" }}>ACTIVE ENROLLED</p>
             <p style={{ width: "10%" }}>LAST UPDATED</p>
@@ -165,7 +171,82 @@ function Workflows() {
             </p>
             <Dropdown>
               <Dropdown.Toggle
-                className="dropdown"
+                style={{
+                  backgroundColor: "white",
+                  color: "black",
+                  border: "1px solid lightgray",
+                  borderRadius: "5px",
+                }}
+              >
+                Actions
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item onClick={moveToFolderShow}>Move to folder</Dropdown.Item>
+                <Dropdown.Item>Open in a new tab</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            <p style={{ width: "10%" }}>0</p>
+            <p style={{ width: "10%" }}>0</p>
+            <p style={{ width: "10%" }}>July 26th 2022</p>
+            <p style={{ width: "10%" }}>July 26th 2022</p>
+            <div style={{ width: "10%", display: "flex" }}>
+              <button
+                style={{
+                  width: "30%",
+                  height: "90%",
+                  border: "1px solid lightgray",
+                  backgroundColor: "white",
+                }}
+              >
+                <img src={Edit} style={{ width: "100%" }} />
+              </button>
+              <button
+                style={{
+                  width: "30%",
+                  height: "90%",
+                  border: "1px solid lightgray",
+                  backgroundColor: "white",
+                }}
+              >
+                <img src={Delete} style={{ width: "100%" }} />
+              </button>
+              <button
+                style={{
+                  width: "30%",
+                  height: "90%",
+                  border: "1px solid lightgray",
+                  backgroundColor: "white",
+                }}
+              >
+                <img src={Copy} style={{ width: "100%" }} />
+              </button>
+            </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              width: "100%",
+              backgroundColor: "white",
+              padding: "1.5%",
+              height: "70px",
+              border: "1px solid lightgray",
+            }}
+          >
+            <p style={{ width: "20%" }}>
+              New Workflow : 1658817810406
+              <span
+                style={{
+                  backgroundColor: "gray",
+                  borderRadius: "5px",
+                  marginLeft: "5%",
+                }}
+              >
+                draft
+              </span>
+            </p>
+            <Dropdown>
+              <Dropdown.Toggle
                 style={{
                   backgroundColor: "white",
                   color: "black",
@@ -242,84 +323,6 @@ function Workflows() {
             </p>
             <Dropdown>
               <Dropdown.Toggle
-                className="dropdown"
-                style={{
-                  backgroundColor: "white",
-                  color: "black",
-                  border: "1px solid lightgray",
-                  borderRadius: "5px",
-                }}
-              >
-                Actions
-              </Dropdown.Toggle>
-              <Dropdown.Menu>
-                <Dropdown.Item>Move to folder</Dropdown.Item>
-                <Dropdown.Item>Open in a new tab</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-            <p style={{ width: "10%" }}>0</p>
-            <p style={{ width: "10%" }}>0</p>
-            <p style={{ width: "10%" }}>July 26th 2022</p>
-            <p style={{ width: "10%" }}>July 26th 2022</p>
-            <div style={{ width: "10%", display: "flex" }}>
-              <button
-                style={{
-                  width: "30%",
-                  height: "90%",
-                  border: "1px solid lightgray",
-                  backgroundColor: "white",
-                }}
-              >
-                <img src={Edit} style={{ width: "100%" }} />
-              </button>
-              <button
-                style={{
-                  width: "30%",
-                  height: "90%",
-                  border: "1px solid lightgray",
-                  backgroundColor: "white",
-                }}
-              >
-                <img src={Delete} style={{ width: "100%" }} />
-              </button>
-              <button
-                style={{
-                  width: "30%",
-                  height: "90%",
-                  border: "1px solid lightgray",
-                  backgroundColor: "white",
-                }}
-              >
-                <img src={Copy} style={{ width: "100%" }} />
-              </button>
-            </div>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-around",
-              width: "100%",
-              backgroundColor: "white",
-              padding: "1.5%",
-              height: "70px",
-              border: "1px solid lightgray",
-            }}
-          >
-            <p style={{ width: "20%" }}>
-              New Workflow : 1658817810406
-              <span
-                style={{
-                  backgroundColor: "gray",
-                  borderRadius: "5px",
-                  marginLeft: "5%",
-                }}
-              >
-                draft
-              </span>
-            </p>
-            <Dropdown>
-              <Dropdown.Toggle
-                className="dropdown"
                 style={{
                   backgroundColor: "white",
                   color: "black",
@@ -472,6 +475,71 @@ function Workflows() {
             Save
           </button>
         </Modal.Footer>
+      </Modal>
+      <Modal show={moveToFolder} onHide={moveToFolderClose} animation={false}>
+        <Modal.Header closeButton>
+          <Modal.Title style={{ display: "flex" }}>
+            <div>
+              <img
+                src={Folder}
+                style={{
+                  width: "40px",
+                  backgroundColor: "green",
+                  padding: "20%",
+                  borderRadius: "40%",
+                }}
+              />
+            </div>
+            <p
+              style={{ marginBottom: "auto", marginLeft: "5%", width: "500px" }}
+            >
+              Move to Folder
+            </p>
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>Folder Name</p>
+          <div onClick={()=>setDropdownSearch(!dropdownSearch)} style={{width:'100%',padding:'1%',border:'1px solid lightgray',borderRadius:'5px',display:'flex',justifyContent:'space-between'}}>
+            <p style={{marginBottom:'auto'}}>Select a Folder</p>
+            <img src={DownArrow} style={{width:'3%'}}/>
+          </div>
+          {dropdownSearch?(
+            <div style={{padding:'1%'}}>
+              <input style={{width:'100%',padding:'1%',borderRadius:'5px',border:'1px solid lightgray'}} placeholder='Type to Search'/>
+            </div>
+          ):(
+            <></>
+          )}
+          <div style={{textAlign:'end',backgroundColor: '#f2f0f0',padding:'2%',borderRadius:'5px',marginTop:'2%'}}>
+          <button
+            onClick={moveToFolderClose}
+            style={{
+              backgroundColor: "white",
+              border: "1px solid lightgray",
+              borderRadius: "5px",
+              width: "100px",
+              padding: "1%",
+              marginRight:'3%'
+            }}
+          >
+            Cancel
+          </button>
+          <button
+            onClick={moveToFolderClose}
+            style={{
+              backgroundColor: "lightgray",
+              border: "none",
+              borderRadius: "5px",
+              width: "100px",
+              padding: "1%",
+              color: "white",
+            }}
+            disabled
+          >
+            Save
+          </button>
+          </div>
+        </Modal.Body>
       </Modal>
     </div>
   );

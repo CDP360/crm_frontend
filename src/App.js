@@ -75,6 +75,7 @@ import CreateWorkflow from "./Pages/Automation/CreateWorkflow";
 import Affiliates from "./Pages/Marketing/Affiliates/Affiliates";
 import Payouts from "./Pages/Marketing/Affiliates/Payouts";
 import CampaignAdd from "./Pages/Marketing/Affiliates/CampaignAdd";
+import CampaignsPage from './Pages/Automation/CampaignsPage';
 function App() {
   return (
     <Routes>
@@ -127,6 +128,7 @@ function App() {
             path="/automation/campaigns"
             element={<AutomationCampaigns />}
           />
+          <Route path="/automation/campaignspage" element={<CampaignsPage/>}/>
           <Route path="/automation/trigger" element={<Trigger />} />
         </Route>
         <Route path="/sites" element={<Sites />}>

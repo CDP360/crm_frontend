@@ -4,8 +4,10 @@ import Dot from "../../assests/dot.png";
 import Modal from "react-bootstrap/Modal";
 import Dropdown from "react-bootstrap/Dropdown";
 import "./styles/Campaigns.scss";
+import { useNavigate } from 'react-router-dom';
 
 function AutomationCampaigns() {
+    const navigate=useNavigate()
   const [createFolder, setCreateFolder] = useState(false);
   const [createCampaigns, setCreateCampaigns] = useState(false);
 
@@ -101,7 +103,7 @@ function AutomationCampaigns() {
           border: "1px solid lightgray",
         }}
       >
-        <p style={{ width: "15%", marginBottom: "auto" }}>
+        <p style={{ width: "15%", marginBottom: "auto",cursor:'pointer' }} onClick={()=>navigate("/automation/campaignspage")}>
           A-1) Home Buyer Nurture
         </p>
         <p style={{ width: "5%", marginBottom: "auto" }}>0</p>
@@ -282,7 +284,7 @@ function AutomationCampaigns() {
         </Modal.Body>
         <Modal.Footer>
           <button
-            onClick={createFolderClose}
+            onClick={createCampaignsClose}
             style={{
               backgroundColor: "white",
               border: "1px solid lightgray",
@@ -294,7 +296,7 @@ function AutomationCampaigns() {
             Close
           </button>
           <button
-            onClick={createFolderClose}
+            onClick={createCampaignsClose}
             style={{
               backgroundColor: "green",
               border: "none",
