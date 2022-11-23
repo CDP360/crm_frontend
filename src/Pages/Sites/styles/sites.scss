@@ -272,7 +272,7 @@
     }
   }
   .website-NewWebsitesbtn {
-    width: 15%;
+    width: 11%;
     height: 40px;
     background: $green;
     color: $light;
@@ -285,10 +285,10 @@
       .website-NewWebsitesbtn-img {
         width: 9%;
         height: 2%;
-        margin-top: 6%;
+        margin-top: 11%;
       }
       .website-NewWebsitesbtn-p {
-        margin-top: 2%;
+        margin-top: 4%;
         margin-left: 5%;
       }
     }
@@ -1315,6 +1315,94 @@
         border: none;
         height: 2.5rem;
         margin-right: 1rem;
+      }
+    }
+  }
+}
+// -------------------create product membership--------------------------
+.createproduct-card {
+  padding: 0% 2% 5% 2%;
+  // .dashboard-spinner{}
+  .createproduct-card-body {
+    .createproduct-img-holder {
+      display: flex;
+      background-color: rgba(55, 63, 71, 0.9);
+      // align-items: center;
+      // justify-content: center;
+      .createproduct-createproductbanner-img {
+        border-radius: 0.5rem;
+        width: 55rem;
+        height: 350px;
+        // position: relative;
+      }
+      .createproduct-createproductbanner-p {
+        letter-spacing: 0.05em;
+        font-size: 1.5rem;
+        color: $light;
+        font-weight: 700;
+        width: "30%";
+        margin-top: 0.5rem;
+        padding: 2rem;
+      }
+    }
+    .createproduct-gird {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 2%;
+      flex-wrap: wrap;
+      .createproduct-gird-col-1 {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-align: inherit;
+        width: 45%;
+        background: $light;
+        // margin-left: 15%;
+        border-radius: 5px;
+        border-color: #e2e8f0;
+        margin-bottom: 5%;
+        padding: 1rem;
+        .createproduct-gird-col-1-text {
+          margin-top: 2%;
+          margin-left: 1rem;
+        }
+        .createproduct-gird-col-img-holder {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 8rem;
+          height: 8rem;
+          border-radius: 5px;
+          background-color: rgb(255, 188, 1);
+          .createproduct-gird-col-1-email-img {
+            width: 4rem;
+            height: 4rem;
+          }
+        }
+      }
+      .createproduct-gird-col-2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: inherit;
+        width: 45%;
+        background: $light;
+        // margin-right: 15%;
+        border-radius: 5px;
+        border-color: #e2e8f0;
+        margin-bottom: 5%;
+        .createproduct-gird-col-img-holder {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 8rem;
+          height: 8rem;
+          border-radius: 5px;
+          .createproduct-gird-col-1-email-img {
+            width: 4rem;
+            height: 4rem;
+          }
+        }
       }
     }
   }

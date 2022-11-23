@@ -1,8 +1,11 @@
 import React from "react";
-import BarChart from "../../../assests/bar-chart-fill.svg";
-import Clipboard from "../../../assests/clipboard-check.svg";
+import { Navigate, useNavigate } from "react-router-dom";
+import BarChart from "../../../../assests/bar-chart-fill.svg";
+import Clipboard from "../../../../assests/clipboard-check.svg";
 
 const Analyticsmembership = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="Analyticsmembership-main-container">
       <div className="Analyticsmembership-analytics-p-holder">
@@ -26,7 +29,12 @@ const Analyticsmembership = () => {
             </div>
           </div>
           <div className="Analyticsmembership-view-text-holder">
-            <p className="Analyticsmembership-view-text">View</p>
+            <p
+              onClick={() => navigate("/sites/analytics/product-progress")}
+              className="Analyticsmembership-view-text"
+            >
+              View
+            </p>
           </div>
         </div>
         <div className="Analyticsmembership-main-card">
@@ -45,7 +53,10 @@ const Analyticsmembership = () => {
               </p>
             </div>
           </div>
-          <div className="Analyticsmembership-view-text-holder">
+          <div
+            onClick={() => navigate("/sites/analytics/analytics-assesments")}
+            className="Analyticsmembership-view-text-holder"
+          >
             <p className="Analyticsmembership-view-text">View</p>
           </div>
         </div>

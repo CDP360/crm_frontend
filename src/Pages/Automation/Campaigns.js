@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Dot from "../../assests/dot.png";
-import Folder from "../../assests/folder.png";
+// import Folder from "../../assests/folder.png";
 import Modal from "react-bootstrap/Modal";
 import Dropdown from "react-bootstrap/Dropdown";
 import "./styles/Campaigns.scss";
@@ -114,47 +114,9 @@ function AutomationCampaigns() {
           jjfF3obZbOj8FuDZ8iSY
         </p>
         <div style={{ width: "10%" }}>
-        <Dropdown>
-            <Dropdown.Toggle className="dropdown"
-              style={{
-                backgroundColor: "white",
-                color: "black",
-                fontWeight: "bold",
-                border: "none",
-              }}
-            >
-              <img src={Dot} style={{ width: "30px" }} />
-            </Dropdown.Toggle>
-            <Dropdown.Menu>
-              <Dropdown.Item>Delete</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-        </div>
-      </div>
-      <div
-        style={{
-          padding: "1%",
-          backgroundColor: "white",
-          display: "flex",
-          justifyContent: "space-around",
-          border: "1px solid lightgray",
-        }}
-      >
-        <p style={{ width: "15%", marginBottom: "auto" }}>
-          A-1) Home Buyer Nurture
-        </p>
-        <p style={{ width: "5%", marginBottom: "auto" }}>0</p>
-        <p style={{ width: "5%", marginBottom: "auto" }}>0</p>
-        <p style={{ width: "5%", marginBottom: "auto" }}>0</p>
-        <p style={{ width: "5%", marginBottom: "auto" }}>0</p>
-        <p style={{ width: "5%", marginBottom: "auto" }}>0.00%</p>
-        <p style={{ width: "5%", marginBottom: "auto" }}>Draft</p>
-        <p style={{ width: "18%", marginBottom: "auto" }}>
-          jjfF3obZbOj8FuDZ8iSY
-        </p>
-        <div style={{ width: "10%" }}>
-        <Dropdown>
-            <Dropdown.Toggle className="dropdown"
+          <Dropdown>
+            <Dropdown.Toggle
+              className="dropdown"
               style={{
                 backgroundColor: "white",
                 color: "black",
@@ -193,7 +155,48 @@ function AutomationCampaigns() {
         </p>
         <div style={{ width: "10%" }}>
           <Dropdown>
-            <Dropdown.Toggle className="dropdown"
+            <Dropdown.Toggle
+              className="dropdown"
+              style={{
+                backgroundColor: "white",
+                color: "black",
+                fontWeight: "bold",
+                border: "none",
+              }}
+            >
+              <img src={Dot} style={{ width: "30px" }} />
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item>Delete</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </div>
+      </div>
+      <div
+        style={{
+          padding: "1%",
+          backgroundColor: "white",
+          display: "flex",
+          justifyContent: "space-around",
+          border: "1px solid lightgray",
+        }}
+      >
+        <p style={{ width: "15%", marginBottom: "auto" }}>
+          A-1) Home Buyer Nurture
+        </p>
+        <p style={{ width: "5%", marginBottom: "auto" }}>0</p>
+        <p style={{ width: "5%", marginBottom: "auto" }}>0</p>
+        <p style={{ width: "5%", marginBottom: "auto" }}>0</p>
+        <p style={{ width: "5%", marginBottom: "auto" }}>0</p>
+        <p style={{ width: "5%", marginBottom: "auto" }}>0.00%</p>
+        <p style={{ width: "5%", marginBottom: "auto" }}>Draft</p>
+        <p style={{ width: "18%", marginBottom: "auto" }}>
+          jjfF3obZbOj8FuDZ8iSY
+        </p>
+        <div style={{ width: "10%" }}>
+          <Dropdown>
+            <Dropdown.Toggle
+              className="dropdown"
               style={{
                 backgroundColor: "white",
                 color: "black",
